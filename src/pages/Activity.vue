@@ -271,14 +271,4 @@
 		border-radius: 10px;
 		color:white;
 	}
-
-
-
-
-	
-
-
 </style>
-
-	</div>
-</template>
