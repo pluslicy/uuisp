@@ -1,8 +1,5 @@
-
 <!-- 首页 -->
 <template>
-	<div class="Activity">
-		<template>
 	<div class="Activity">
 		
 		<h1>行业热门活动</h1>
@@ -33,7 +30,7 @@
 				</ul>
 			</div>
 		</div>
-				<div class="second-pic">
+		<div class="second-pic">
 			<div class="three">
 				
 			</div>
@@ -58,8 +55,8 @@
 						<a class="sixth" href=""><button>我要报名</button></a>
 					</ul>
 				</div>
-			</div>
-			<div class="forth-pic">
+			</div>	
+		<div class="forth-pic">
 				<div class="seven">
 					
 				</div>
@@ -72,7 +69,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="fifth-pic">
+		<div class="fifth-pic">
 				<div class="nine">
 					
 				</div>
@@ -85,9 +82,6 @@
 					</ul>
 				</div>
 			</div>	
-			
-		
-
 	</div>
 </template>
 <script>
@@ -145,6 +139,7 @@
 	}
 	.first-pic{
 		position:relative;
+		top:50px;
 
 	}
 	.two{
@@ -165,7 +160,7 @@
 	}
 	.second-pic{
 		position:relative;
-		top:50px;
+		top:120px;
 	}
 	.three{
 		margin-top:-20px;
@@ -195,6 +190,7 @@
 	}
 	.third-pic{
 		position:relative;
+		top:90px;
 
 	}
 	.five{
@@ -224,6 +220,7 @@
 	}
 	.forth-pic{
 		position:relative;
+		top:115px;
 	}
 	.seven{
 		position:absolute;
@@ -248,6 +245,7 @@
 	}
 	.fifth-pic{
 		position:relative;
+		top:140px;
 	}
 	.nine{
 		width: 300px;
@@ -271,4 +269,11 @@
 		border-radius: 10px;
 		color:white;
 	}
+
+
+
+
+	
+
+
 </style>
