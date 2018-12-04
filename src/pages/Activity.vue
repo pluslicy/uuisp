@@ -1,412 +1,314 @@
 <!-- 首页 -->
 <template>
 	<div class="Activity">
-		
-		<h1>行业热门活动</h1>
-		<h2>汇聚各大产业最新、最热、最前沿的盛会</h2>
-	<div class="title">
-		<ul class="title-nav">
-			<a id="first" href=""><li>活动类型</li></a>
-			<a href=""><li>不限</li></a>
-			<a href=""><li>展会论坛</li></a>
-			<a href=""><li>互动沙龙</li></a>
-			<a href=""><li>项目路演</li></a>
-			<a href=""><li>培训讲座</li></a>
-			<a href=""><li>走访考察</li></a>
-			<a href=""><li>培训讲座</li></a>
-			<a href=""><li>其他</li></a>
-		</ul>
-	</div>
-		<div class="first-pic">
-			<div class="one">
+	<div class="content">
+		<div class="title"><h1>行业热门活动</h1></div>
+		<div class="text"><h2>汇聚各大产业最新、最热、最前沿的盛会</h2></div>
+		<br>
+		<div class="globnav">
+			<ul>
+				<a id="first-item" href=""><li>活动类型</li></a>
+				<a href=""><li>不限</li></a>
+				<a href=""><li>展会论坛</li></a>
+				<a href=""><li>互动沙龙</li></a>
+				<a href=""><li>项目路演</li></a>
+				<a href=""><li>培训讲座</li></a>
+				<a href=""><li>走访考察</li></a>
+				<a href=""><li>线上分析</li></a>
+				<a href=""><li>其他</li></a>
+			</ul>
+		</div><br>
+		<div class="list">
+			<div class="left">
 				<img src="" alt="">
 			</div>
-			<div class="two">
+			<div class="right">
 				<ul>
-					<a class="second"><li>创合汇"商学院好项目"第十期路演会|与资本零距离</li></a>
-					<a href=""><li>活动时间：2018.12.09-2018.12.09</li></a>
-					<a href=""><li>简介：迈科技，创和汇强强联合，携手百家投资机构，助力创业者进准对接，实现创业梦想</li></a>
-					<a class="third"><button>我要报名</button></a>
+					<li id="second">与资本零距离|创合会"商学院好项目"第十期路演会</li>
+					<li>活动时间：2018.12.09-2018.12.09</li>
+					<li>简介：迈科技，创合会强强联合，携手百家投资机构，助力创业者精准对接，实现创业梦想</li>
+					<li><button>我要报名</button></li>
 				</ul>
 			</div>
-		</div>
 
-		<div class="second-pic">
-			<div class="three">
+		</div><br>
+		<div class="item">
+			<div class="item-1">
 				<img src="" alt="">
 			</div>
-			<div class="four">
+			<div class="item-2">
 				<ul>
-					<a id="one" href=""><li>让技术与市场来一场真正的对决|。迈科技公益大讲堂</li></a>
-					<a href=""><li>活动时间：2018.07.01-2018.12.31</li></a>
-					<a href=""><li>简介：不让优质项目埋没，真正让技术发挥价值</li></a>
-					<a class="fifth" href=""><button>我要报名</button></a>
+					<li id="third">【讲座】|吴晓波带你解读《避免失败》</li>
+					<li>活动时间：2018.12.11-2018.12.13</li>
+					<li>简介：现在报名享受会员优惠，赠送超值服务</li>
+					<li><button>我要报名</button></li>
 				</ul>
 			</div>
+		</div><br>
+		<div class="meet">
+			<div class="meet-1">
+				<img src="" alt="">
+			</div>
+			<div class="meet-2">
+				<ul>
+					<li id="forth">第二届平湖市科技企业投融资对接会</li>
+					<li>活动时间：2018.12.11-2018.12.13</li>
+					<li>简介：科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技企业投融资对接会</li>
+					<li><button>我要报名</button></li>
+				</ul>
+			</div>
+		</div><br>
+		<div class="filter">
+			<div class="filter-1">
+				<img src="" alt="">
+			</div>
+			<div class="filter-2">
+				<ul>
+					<li id="fifth">让技术与市场来一次真正的对话|迈科技公益大讲堂</li>
+					<li>活动时间：2018.07.01-2018.12.31</li>
+					<li>简介：不要让优质项目埋没，真正让技术发挥价值</li>
+					<li><button>我要报名</button></li>
+				</ul>
+			</div>
+		</div><br>
+		<div class="read">
+			<div class="read-1">
+				<img src="" alt="">
+			</div>
+			<div class="read-2">
+				<ul>
+					<li id="sixth">2019第十一届上海化工技术装备展览会</li>
+					<li>活动时间：2019.08.21-2019.08.23</li>
+					<li>简介：2019第十一届上海化工技术装备展览会开始报名啦</li>
+					<li><button>我要报名</button></li>
+				</ul>
+			</div>
+		</div><br>
+		<div class="page">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>27</li>
+				<li>...</li>
+				<li>下一页</li>
+			</ul>
 		</div>
-			<div class="third-pic">
-				<div class="five">
-					<img src="" alt="">
-				</div>
-				<div class="six">
-					<ul>
-						<a id="three" href=""><li>【讲座】吴晓波带你解读《避免失败》</li></a>
-						<a href=""><li>活动时间：2018.12.11-2018.12.13</li></a>
-						<a href=""><li>简介：现报名享受会员优惠，赠送超值服务</li></a>
-						<a class="sixth" href=""><button>我要报名</button></a>
-					</ul>
-				</div>
-			</div>	
-		<div class="forth-pic">
-				<div class="seven">
-					<img src="" alt="">
-				</div>
-				<div class="eight">
-					<ul>
-						<a class="item" href=""><li>第二届平湖市科技企业投融资对接会</li></a>
-						<a href=""><li>活动时间：2018.12.01-2018.12.31</li></a>
-						<a href=""><li>简介：科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技投融资对接会</li></a>
-						<a class="seventh" href=""><button>我要报名</button></a>
-					</ul>
-				</div>
-			</div>
-			<div class="page">
-				<ul>
-					<a href=""><li>1</li></a>
-					<a href=""><li>2</li></a>
-					<a href=""><li>3</li></a>
-					<a href=""><li>4</li></a>
-					<a href=""><li>5</li></a>
-					<a href=""><li>6</li></a>
-					<a href=""><li>...</li></a>
-					<a href=""><li>27</li></a>
-					<a href=""><li>下一页</li></a>
-				</ul>
-			</div>
-			<div class="right-nav">
-				<a href=""><div class="act">活动回顾</div></a>
-				<div class="chn">
-					<img src="" alt="">
-				</div>
-				<a href=""><div class="need">
-					需求征集中，第三届中国创新挑...
-				</div></a>
-				<div class="long">
-					<img src="" alt="">
-				</div>
-				<a href=""><div class="meet">
-					【公开课】首届长三角科技教...
-				</div></a>
-				<div class="lib">
-					<img src="" alt="">
-				</div>
-				<a href=""><div class="water">
-					有机工业废水如何处理？查看
-				</div></a>
-				<div class="que">
-					活动咨询
-				</div>
-				<div class="desc">
-					<img src="" alt="">
-				</div>
-			</div>
+		<div class="rightnav">
+			
+		</div>
+	</div>
 
 	</div>
 </template>
 <script>
-	export default {
-		data (){
-			return{
-
-			}
-		}
-	}
+	
 </script>
 <style>
-body{
-       overflow: scroll;
-       overflow-x: hidden;
-        }
-	ul li {
+	ul  li {
 		list-style:none;
 	}
-	
-	h1{
-		margin-left: 500px;
-		color:gold;
-		font-size: 50px;
+	.content{
+		width:80%;
+		height:100%;
+		position:relative;
+		text-align:center;
+
 	}
-	h2{
-		margin-left: 460px;
+	.title>h1{
+		color:gold;
+		font-size:40px;
+	}
+	.text>h2{
 		color:gold;
 		font-size:20px;
 	}
-	
-
-	.title{
-		border:1px solid #ccc;
-		width:730px;
-		height:50px;
-		background-color: #ededed;
-		margin-left: 100px;
+	.globnav{
+		width:80%;
+		
+		margin:0 auto;
 	}
-	.title-nav a>li{
-		float:left;
+
+	ul>a>li{
+		display: inline-block;
 		width:80px;
-		line-height:50px;
-		text-align: center;
+		font-size:15px;
+		color:#7ea9ba;
 	}
-	#first{
-		font-weight:bolder;
+	ul>a>li:hover{
+		color:#559dcb;
+	}
+	#first-item{
+		font-weight: bolder;
 		color:black;
 	}
-	.title-nav a>li:hover{
+	.list{
+		position:relative;
+		height:180px;
+		width:840px;
 		
-		color:blue;
-	}
-	.one{
-		width: 300px;
-		height: 150px;
-		border:1px solid black;
-		margin-left: 100px;
-		background-color:teal;
-	}
-	.first-pic{
-		position:relative;
-		top:50px;
-
-	}
-	.two{
-		position: absolute;
-		right:350px;
-		bottom:50px;
-	}
-
-	.second{
-		font-size:20px;
-		color:black;
-	}
-	.third button{
-		background-color:blue;
-		width: 100px;
-		height:30px;
-		border-radius: 10px;
-		color:white;
-	}
-	.second-pic{
-		position:relative;
-		top:120px;
-	}
-	.three{
-		margin-top:-20px;
-		margin-left:100px;
-		width: 300px;
-		height: 150px;
-		border:1px solid black;
-		background-color:orange;
-	}
-	.four{
-		top:20px;
-		position: absolute;
-		right:440px;
-
-	}
-	.fifth button{
-		background-color:blue;
-		width: 100px;
-		height:30px;
-		border-radius: 10px;
-		color:white;
-	}
-	#one{
-		color:black;
+		margin:0 auto;
 		
-		font-size:20px;
-	}
-	.third-pic{
-		position:relative;
-		top:90px;
-		clear:both;
-		display:block;
 
 	}
-	.five{
-		position:absolute;
-		top:80px;
-		left:100px;
-		width: 300px;
-		height: 150px;
-		border:1px solid black;
+	.left{
+		width:310px;
+		height:180px;
 		background-color:pink;
 	}
-	.six{
+	.right{
+		width:530px;
+		height:180px;
+		
 		position:absolute;
-		right:560px;
-		top:100px;
+		top:0;
+		right:0;
+		line-height:35px;
+
 	}
-	.sixth button{
-		background-color:blue;
-		width: 100px;
-		height:30px;
-		border-radius: 10px;
-		color:white;
-	}
-	#three{
-		font-size:20px;
+	#second{
 		color:black;
+		font-size:18px;
 	}
-	.forth-pic{
-		position:relative;
-		top:120px;
-		clear:both;
-		display:block;
-	}
-	.seven{
-		position:absolute;
-		width: 300px;
-		height: 150px;
-		border:1px solid black;
-		background-color:gold;
-		top:260px;
-		left:100px;
-	}
-	.eight{
-		position:absolute;
-		right:400px;
-		top:300px;
-	}
-	.seventh button{
-		background-color:blue;
-		width: 100px;
-		height:30px;
+	 li>button{
+		background-color: #1f86ed;
+		width:150px;
+		height:50px;
 		border-radius: 10px;
 		color:white;
+		font-size:18px;
+		cursor: pointer;
 	}
-	.fifth-pic{
+	.item{
 		position:relative;
-		clear:both;
-		display:block;
+		height:180px;
+		width:840px;
+		
+		margin:0 auto;
 	}
-	.nine{
-		width: 300px;
-		height: 150px;
-		border:1px solid black;
-		background-color:purple;
-		position:absolute;
-		top:440px;
-		left:100px;
-	}
-	.ten{
-		position:absolute;
-		right:10px;
-		top:500px;
-		right:500px;
-	}
-	.eightth button{
+	.item-1{
+		width:310px;
+		height:180px;
 		background-color:blue;
-		width: 100px;
-		height:30px;
-		border-radius: 10px;
-		color:white;
 	}
-.item{
-	font-size:20px;
-	color:black;
-}
-.page{
-	position:relative;
-	bottom:-550px;
-	left:450px;
-}
-.page>ul>a>li{
-	float:left;
-	width:60px;
-	font-size:15px;
-	font-weight:bolder;
+	.item-2{
+        width:530px;
+		height:180px;
+		
+		position:absolute;
+		top:0;
+		right:0;
+		line-height:45px;
+	}
+	#third{
+		color:black;
+		font-size:18px;
+	}
+	.meet{
+		position:relative;
+		height:180px;
+		width:840px;
+		
+		margin:0 auto;
+	}
+	.meet-1{
+		width:310px;
+		height:180px;
+		background-color:red;
+	}
+	.meet-2{
+		 width:530px;
+		height:180px;
+		
+		position:absolute;
+		top:0;
+		right:0;
+		line-height:45px;
+	}
+	#forth{
+		color:black;
+		font-size:18px;
+	}
+  .filter{
+  	    position:relative;
+		height:180px;
+		width:840px;
+		
+		margin:0 auto;
+  }
+  .filter-1{
+  		width:310px;
+		height:180px;
+		background-color:teal;
+  }
+  .filter-2{
+  	 	width:530px;
+		height:180px;
+		
+		position:absolute;
+		top:0;
+		right:0;
+		line-height:45px;
+  }
+  #fifth{
+  		color:black;
+		font-size:18px;
+  }
+  .read{
+  		position:relative;
+		height:180px;
+		width:840px;
+		
+		margin:0 auto;
+  }
+  .read-1{
+  		width:310px;
+		height:180px;
+		background-color:blue;
+  }
+  .read-2{
+  		width:530px;
+		height:180px;
+		
+		position:absolute;
+		top:0;
+		right:0;
+		line-height:45px;
+  }
+  #sixth{
+  		color:black;
+		font-size:18px;
+  }
+  .page{
+  		position:relative;
+		height:30px;
+		width:840px;
+		left:300px;
+		margin:0 auto;
+  }
+  .page>ul>li{
+  	float:left;
+  	width:60px;
+  	font-size:18px;
+  	color:black;
 
-}
-.page>ul>a>li:hover{
-	color:blue;
-}
-.right-nav{
-	width:280px;
-	height:1000px;
-	box-sizing:border-box;
-	border:1px solid #ededed;
-	position:absolute;
-	right:50px;
-	top:0;
-}
-.act{
-	height:50px;
-	text-align:center;
-	font-size:20px;
-	background-color: #ededed;
-	line-height:50px;
-}
-.chn{
-	width:280px;
-	height:150px;
-	background-color: pink;
-	position:absolute;
-	top:70px;
-}
-.need{
-	width:280px;
-	height:50px;
-	background-color:#ededed;
-	position:absolute;
-	top:240px;
-	line-height: 50px;
-	text-align: center;
-}
-.long{
-	width:280px;
-	height:150px;
-	background-color:lightblue;
-	position:absolute;
-	top:310px;
-}
-.meet{
-	width:280px;
-	height:50px;
-	background-color:#ededed;
-	position:absolute;
-	top:480px;
-	line-height:50px;
-	text-align:center;
-}
-.lib{
-	width:280px;
-	height:150px;
-	background-color:purple;
-	position:absolute;
-	top:550px;
-}
-.water{
-	width:280px;
-	height:50px;
-	background-color:#ededed;
-	position:absolute;
-	top:720px;
-	line-height:50px;
-	text-align:center;
+  }
+  .page>ul>li:hover{
+  	color:#1f86ed;
+  	cursor:pointer;
+  }
+ 
+  .rightnav{
+  	box-sizing: border-box;
+  	width:300px;
+  	height:1000px;
+  	border:1px solid #ccc;
+  	position:absolute;
+  	right:-180px;
+  	top:100px;
+  }
 
-}
-.que{
-	width:280px;
-	height:50px;
-	background-color:#ededed;
-	position:absolute;
-	top:800px;
-	line-height:50px;
-	text-align:center;
-}
-.desc{
-	width:280px;
-	height:150px;
-	background-color:lightblue;
-	position:absolute;
-	top:860px;
-}
 </style>
