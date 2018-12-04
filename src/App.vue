@@ -35,5 +35,9 @@ a {
   color: #707070;
   text-decoration: none;
 }
+#app {
+  width: 1240px;
+  margin: 0 auto;
+}
 /*... */
 </style>
