@@ -19,7 +19,7 @@
 	</div>
 		<div class="first-pic">
 			<div class="one">
-				<a href=""></a>
+				<img src="" alt="">
 			</div>
 			<div class="two">
 				<ul>
@@ -30,9 +30,10 @@
 				</ul>
 			</div>
 		</div>
+
 		<div class="second-pic">
 			<div class="three">
-				
+				<img src="" alt="">
 			</div>
 			<div class="four">
 				<ul>
@@ -45,7 +46,7 @@
 		</div>
 			<div class="third-pic">
 				<div class="five">
-					
+					<img src="" alt="">
 				</div>
 				<div class="six">
 					<ul>
@@ -58,33 +59,60 @@
 			</div>	
 		<div class="forth-pic">
 				<div class="seven">
-					
+					<img src="" alt="">
 				</div>
 				<div class="eight">
 					<ul>
-						<a href=""><li>第二届平湖市科技企业投融资对接会</li></a>
+						<a class="item" href=""><li>第二届平湖市科技企业投融资对接会</li></a>
 						<a href=""><li>活动时间：2018.12.01-2018.12.31</li></a>
 						<a href=""><li>简介：科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技投融资对接会</li></a>
 						<a class="seventh" href=""><button>我要报名</button></a>
 					</ul>
 				</div>
 			</div>
-		<div class="fifth-pic">
-				<div class="nine">
-					
+			<div class="page">
+				<ul>
+					<a href=""><li>1</li></a>
+					<a href=""><li>2</li></a>
+					<a href=""><li>3</li></a>
+					<a href=""><li>4</li></a>
+					<a href=""><li>5</li></a>
+					<a href=""><li>6</li></a>
+					<a href=""><li>...</li></a>
+					<a href=""><li>27</li></a>
+					<a href=""><li>下一页</li></a>
+				</ul>
+			</div>
+			<div class="right-nav">
+				<a href=""><div class="act">活动回顾</div></a>
+				<div class="chn">
+					<img src="" alt="">
 				</div>
-				<div class="ten">
-					<ul>
-						<a href=""><li>2019第十一届上海国际化工技术装备展览会</li></a>
-						<a href=""><li>活动时间：2019.8.21-2019.8.23</li></a>
-						<a href=""><li>简介：2019第十一届上海国际化工技术装备展览会开始报名啦</li></a>
-						<a class="eightth" href=""><button>我要报名</button></a>
-					</ul>
+				<a href=""><div class="need">
+					需求征集中，第三届中国创新挑...
+				</div></a>
+				<div class="long">
+					<img src="" alt="">
 				</div>
-			</div>	
+				<a href=""><div class="meet">
+					【公开课】首届长三角科技教...
+				</div></a>
+				<div class="lib">
+					<img src="" alt="">
+				</div>
+				<a href=""><div class="water">
+					有机工业废水如何处理？查看
+				</div></a>
+				<div class="que">
+					活动咨询
+				</div>
+				<div class="desc">
+					<img src="" alt="">
+				</div>
+			</div>
+
 	</div>
 </template>
-
 <script>
 	export default {
 		data (){
@@ -95,6 +123,10 @@
 	}
 </script>
 <style>
+body{
+       overflow: scroll;
+       overflow-x: hidden;
+        }
 	ul li {
 		list-style:none;
 	}
@@ -109,6 +141,7 @@
 		color:gold;
 		font-size:20px;
 	}
+	
 
 	.title{
 		border:1px solid #ccc;
@@ -148,6 +181,7 @@
 		right:350px;
 		bottom:50px;
 	}
+
 	.second{
 		font-size:20px;
 		color:black;
@@ -192,6 +226,8 @@
 	.third-pic{
 		position:relative;
 		top:90px;
+		clear:both;
+		display:block;
 
 	}
 	.five{
@@ -221,7 +257,9 @@
 	}
 	.forth-pic{
 		position:relative;
-		top:115px;
+		top:120px;
+		clear:both;
+		display:block;
 	}
 	.seven{
 		position:absolute;
@@ -246,7 +284,8 @@
 	}
 	.fifth-pic{
 		position:relative;
-		top:140px;
+		clear:both;
+		display:block;
 	}
 	.nine{
 		width: 300px;
@@ -270,11 +309,104 @@
 		border-radius: 10px;
 		color:white;
 	}
+.item{
+	font-size:20px;
+	color:black;
+}
+.page{
+	position:relative;
+	bottom:-550px;
+	left:450px;
+}
+.page>ul>a>li{
+	float:left;
+	width:60px;
+	font-size:15px;
+	font-weight:bolder;
 
+}
+.page>ul>a>li:hover{
+	color:blue;
+}
+.right-nav{
+	width:280px;
+	height:1000px;
+	box-sizing:border-box;
+	border:1px solid #ededed;
+	position:absolute;
+	right:50px;
+	top:0;
+}
+.act{
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	background-color: #ededed;
+	line-height:50px;
+}
+.chn{
+	width:280px;
+	height:150px;
+	background-color: pink;
+	position:absolute;
+	top:70px;
+}
+.need{
+	width:280px;
+	height:50px;
+	background-color:#ededed;
+	position:absolute;
+	top:240px;
+	line-height: 50px;
+	text-align: center;
+}
+.long{
+	width:280px;
+	height:150px;
+	background-color:lightblue;
+	position:absolute;
+	top:310px;
+}
+.meet{
+	width:280px;
+	height:50px;
+	background-color:#ededed;
+	position:absolute;
+	top:480px;
+	line-height:50px;
+	text-align:center;
+}
+.lib{
+	width:280px;
+	height:150px;
+	background-color:purple;
+	position:absolute;
+	top:550px;
+}
+.water{
+	width:280px;
+	height:50px;
+	background-color:#ededed;
+	position:absolute;
+	top:720px;
+	line-height:50px;
+	text-align:center;
 
-
-
-	
-
-
+}
+.que{
+	width:280px;
+	height:50px;
+	background-color:#ededed;
+	position:absolute;
+	top:800px;
+	line-height:50px;
+	text-align:center;
+}
+.desc{
+	width:280px;
+	height:150px;
+	background-color:lightblue;
+	position:absolute;
+	top:860px;
+}
 </style>
