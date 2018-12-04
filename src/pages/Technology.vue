@@ -1,7 +1,379 @@
 <!-- 首页 -->
 <template>
 	<div class="technology">
-		this is 技术
-
+		<div class="insert">
+			<h1 class="insert-text">汇聚全球技术 助力企业升级</h1>
+			<div class="insert-input">
+				<input type="text" placeholder="请输入想要的技术项目">
+				<div class="button">搜   索</div>
+			</div>
+		</div>
+		<div class="first">
+			<div class="screen">
+				<ul class="territory">
+					<li>所属领域</li>
+					<li>不限</li>
+					<li>能源电力</li>
+					<li>环境工程</li>
+					<li>化学化工</li>
+					<li>科技材料</li>
+					<li>生农医药</li>
+					<li>机械电子</li>
+				</ul>
+				<ul class="territory">
+					<li>应用行业</li>
+					<li>不限</li>
+					<li>环保行业</li>
+					<li>化工新材料行业</li>
+					<li>IT|通信|电子|互联网</li>
+					<li>生产|加工|制造</li>
+					<li>能源|电力</li>
+					<li>其它</li>
+				</ul>
+				<ul class="territory">
+					<li>成熟度</li>
+					<li>不限</li>
+					<li>小试</li>
+					<li>生试</li>
+					<li>中试</li>
+				</ul>
+				<ul class="territory">
+					<li>来源地</li>
+					<li>不限</li>
+					<li>中国</li>
+					<li>中国(香港)</li>
+					<li>中国(台湾)</li>
+					<li>美国</li>
+					<li>德国</li>
+					<li>英国</li>
+					<li>日本</li>
+					<li>俄罗斯</li>
+				</ul>
+				<ul class="territory">
+					<li>合作标签</li>
+					<li>不限</li>
+					<li>股权融资合作</li>
+					<li>市场渠道合作</li>
+					<li>落地孵化合作</li>
+				</ul>
+			</div>
+		</div>
+		<div class="technology-content ">
+			<div class="technology-nav">
+				<div>默认</div>
+				<div>关注度&nbsp;<i class="fa fa-angle-down"></i></div>
+				<div>发布时间&nbsp;<i class="fa fa-angle-down"></i></div>
+			</div>
+			<div class="technology-body">
+				<div class="product" v-for="item in product">
+					<div class="shade">
+						<div class="tel">
+							<i class="fa fa-phone"></i>&nbsp;联系技术方
+						</div>
+						<div class="use">
+							适用于:{{item.use}}
+						</div>
+						<div class="read">
+							<div class="readtime">浏览量:{{item.readtime}}</div>
+							<div class="infotime">咨询量:{{item.infotime}}</div>
+						</div>
+					</div>
+					<img :src="item.image" alt="">
+					<div class="wape">
+						<div class="presentation">
+						<h3>{{item.title}}</h3>
+						<p>{{item.description}}</p>
+					</div>
+					<div class="product-message">
+						<div class="site">{{item.site}}</div>
+						<div class="stage">{{item.stage}}</div>
+					</div>
+				</div>
+					</div>
+			</div>
+		</div>
+		
 	</div>
 </template>
+<script>
+	export default{
+		data(){
+			return{
+				product:[{
+        	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
+        	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
+        	description:"脱模剂是一种在轮胎硫化时介于胶囊和轮胎之间的功能性物质，起到润滑、隔...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"通用|工程塑料、天然|合成橡胶、表面处理、功能材料",
+        	readtime:12,
+        	infotime:5
+        },{
+        	image:"https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq",
+        	title:"有机硅助剂－流平剂",
+        	description:"本技术方案是国家有机硅重点实验室研发团队提供，产品基本能达到德国某公...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"树脂",
+        	readtime:22,
+        	infotime:12
+        },{
+        	image:"https://res4.maikeji.cn/Fj6oIUyEekYqDgWLqoPe6pt8VmJn",
+        	title:"食品中违禁物残留检测",
+        	description:"国际上食品安全最权威的仲裁测定方法，产品价格是进口的25%左右，打破...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"仪器仪表及工业自动化",
+        	readtime:15,
+        	infotime:2
+        },{
+        	image:"https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X",
+        	title:"绿色环保低成本的LED光催化有机合成技术",
+        	description:"LED光催化合成技术，是仿植物的光合作用来合成有机产品，以极低的成本...",
+        	site:"中国",
+        	stage:"中试阶段",
+        	use:"新型高分子材料、功能材料、医药|生物工程、光学",
+        	readtime:42,
+        	infotime:14
+        },{
+        	image:"https://res4.maikeji.cn/Fk-6BgdAGybk136VAE44vrwbVZaS",
+        	title:"全自动轮毂打磨生产线",
+        	description:null,
+        	site:"中国",
+        	stage:"中试阶段",
+        	use:"大型设备|机电设备|重工业、仪器仪表及工业自动化、加工制造（原料加工|模具）",
+        	readtime:4029,
+        	infotime:14
+        },{
+        	image:"https://res4.maikeji.cn/FmQQe-ZADjIlc3uGAoVScXxrJdlK",
+        	title:"欠驱动三指手爪系统",
+        	description:null,
+        	site:"中国",
+        	stage:"中试阶段",
+        	use:"仪器仪表及工业自动化、大型设备|机电设备|重工业",
+        	readtime:4029,
+        	infotime:14
+        },{
+        	image:"https://res4.maikeji.cn/FqZKIIPTWXB46zq3LFCuXQ2Fe5Zx",
+        	title:"可节约空间的多叶光栅压电控制定位和驱动技术",
+        	description:null,
+        	site:"德国",
+        	stage:"中试阶段",
+        	use:"医疗|医疗设备|器械 ",
+        	readtime:4029,
+        	infotime:14
+        },{
+        	image:"https://res4.maikeji.cn/Fk8LX5Ck9zkV1j8PfrstHcy8vO0C",
+        	title:"运用传统中医药药食同源理论开发的女性“颜值”药食同源产品",
+        	description:null,
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"医药|生物工程 ",
+        	readtime:4029,
+        	infotime:14
+        }]
+			}
+		},
+		methods:{
+			
+		}
+	}
+</script>
+<style>
+	ul{
+		list-style: none;
+	}
+	div{
+		box-sizing: border-box;
+	}
+	.insert{
+		text-align: center;
+		background-color: #ccc;
+		padding: 1em	
+	}
+	.insert-text{
+		color: #fff;
+	}
+	.insert-input{
+		box-sizing: border-box;
+		/*padding: 0px 10px;*/
+		margin:3em auto;
+		width: 900px;
+		height: 50px;
+	}
+	.insert-input > input{
+		box-sizing: border-box;
+		padding: 0 2em;
+		margin:0;
+		border: none;
+		width: 800px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+	}
+	.insert-input > .button{
+		cursor:pointer;
+		float: right;
+		background-color:#156FB8;
+		color: #fff;
+		font-size: 18px;
+		margin:0;
+		height: 50px;
+		line-height: 50px;
+		width: 100px;
+		text-align: center;
+	}
+	.insert-input > .button:hover{
+		background-color: #286091;
+	}
+	.first{
+		margin-top: 2em;
+	}
+	.screen{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 0 2em;
+		height: 350px;
+		width:850px;
+		background-color: #FAFAFA;
+		border: 1px solid #ccc;
+	}
+	.screen > ul > li{
+		cursor:pointer;
+		float: left;
+		min-width: 4em;
+		height: 2em;
+		line-height: 2em;
+		text-align: left;
+		margin-left:1em;
+	}
+	.screen > ul > li:first-child{
+		cursor:auto;
+		margin-left:0;
+		font-weight: bolder;
+		color: #333;
+	}
+	.screen > ul > li:nth-child(2){
+		text-align: center;
+		width:20px;
+		border: 1px solid #4DAFED;
+		background-color: #E3F1FF;
+		color:#0A539A
+	}
+	.technology-nav{
+		margin-top: 1em;
+		padding: 1em 1em 0 1em;
+		border-bottom: 1px solid #ccc;
+		overflow:hidden;
+	}
+	.technology-nav > div{
+		cursor:pointer;
+		float: left;
+		width: 6em;
+		height: 3em;
+		line-height: 3em;
+		text-align: center;
+		font-weight: bolder;
+	}
+	.technology-nav > div:hover{
+		color: #1F86ED
+	}
+	.technology-nav > div:first-child{
+		border-top:2px solid #1F86ED;
+		color:#1F86ED;
+	}
+	.technology-body{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:left;
+		margin-bottom: 2em;
+	}
+	.shade{
+		position: absolute;
+		background:rgba(0,0,0,0.6);
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		padding:80px 20px 0 20px;
+		display: none;
+	}
+	.shade .use,.shade .read{
+		color: #fff;
+		font-weight: bolder;
+		font-size: 16px;
+		height:100px;
+	}
+	.shade .read{
+		display: flex;
+		justify-content: space-between;
+	}
+	.shade .tel{
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		height: 80px;
+		line-height: 80px;
+		text-align: center;
+		color: #F1B74C;
+		font-size: 20px;
+		border-top:2px solid #fff;
+	}
+	.product{
+		position: relative;
+		cursor: pointer;
+		width: 280px;
+		height: 315px;
+		margin: 20px 2.1em 0 0;
+		padding-bottom: 10px;
+		border:1px solid #ccc;
+	}
+	.product img{
+		width: 278px;
+		height: 160px;
+		margin-bottom: 10px;
+	}
+	.product .wape{
+		padding: 0 1em;
+	}
+	.product h3{
+		font-size: 20px;
+		height: 55px;
+		margin-bottom: 10px;
+	}
+	.product:hover{
+		box-shadow: 2px 2px 2px #ccc;
+	}
+	.product:hover .shade{
+		display: block;
+	}
+	.product:hover h3{
+		color: #1E87ED;
+	}
+	.product-message{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+	}
+	.product-message > .site{
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		font-size: 16px;
+	}
+	.product-message > .stage{
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+		width: 64px;
+		height: 24px;
+		line-height: 24px;
+		text-align: center;
+		color: #1F86EF;
+		background-color: #C6E8FE;
+		border-radius: 5px;
+	}
+</style>
