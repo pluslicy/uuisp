@@ -158,7 +158,7 @@
 
 		width:78%;
 		height:50px;
-		
+		background-color:#fafafa;
 		margin:0 auto;
 		line-height: 50px;
 		
