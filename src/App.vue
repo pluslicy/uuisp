@@ -1,19 +1,23 @@
 <template>
   <div id="app">
     <!-- 头部 -->
-    <div class="header">导航之类...</div>
+    <Header></Header>
     <!-- 体部 -->
     <router-view/>
     <!-- 底部 -->
-    <div class="footer">
-      关于迈科技
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    Header,
+    Footer
+  }
 }
 </script>
 
