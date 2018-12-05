@@ -8,7 +8,7 @@
 				<div class="button">搜   索</div>
 			</div>
 		</div>
-		<div class="first">
+		<div class="technology-first">
 			<div class="screen">
 				<ul class="territory">
 					<li>所属领域</li>
@@ -67,32 +67,81 @@
 			<div class="technology-body">
 				<div class="product" v-for="item in product">
 					<div class="shade">
-						<div class="tel">
-							<i class="fa fa-phone"></i>&nbsp;联系技术方
+							<div class="tel">
+								<i class="fa fa-phone"></i>&nbsp;联系技术方
+							</div>
+							<div class="use">
+								适用于:{{item.use}}
+							</div>
+							<div class="read">
+								<div class="readtime">浏览量:{{item.readtime}}</div>
+								<div class="infotime">咨询量:{{item.infotime}}</div>
+							</div>
 						</div>
-						<div class="use">
-							适用于:{{item.use}}
+						<img :src="item.image" alt="">
+						<div class="wape">
+							<div class="presentation">
+							<h3>{{item.title}}</h3>
+							<p>{{item.description}}</p>
 						</div>
-						<div class="read">
-							<div class="readtime">浏览量:{{item.readtime}}</div>
-							<div class="infotime">咨询量:{{item.infotime}}</div>
+						<div class="product-message">
+							<div class="site">{{item.site}}</div>
+							<div class="stage">{{item.stage}}</div>
 						</div>
+					</div>
+				</div>
+				<div class="product-paging">
+					<ul>
+						<li v-for="item in 7">{{item}}</li>
+						<li>...</li>
+						<li>下一页</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="technology-recommend">
+			<div class="recommend-title">迈科技推荐</div>
+			<div class="recommend-product">
+				<div class="product" v-for="item in recommendProduct">
+					<div class="recommend-logo">推荐技术</div>
+					<div class="shade">
+							<div class="tel">
+								<i class="fa fa-phone"></i>&nbsp;联系技术方
+							</div>
+							<div class="use">
+								适用于:{{item.use}}
+							</div>
+							<div class="read">
+								<div class="readtime">浏览量:{{item.readtime}}</div>
+								<div class="infotime">咨询量:{{item.infotime}}</div>
+							</div>
 					</div>
 					<img :src="item.image" alt="">
 					<div class="wape">
 						<div class="presentation">
-						<h3>{{item.title}}</h3>
-						<p>{{item.description}}</p>
-					</div>
-					<div class="product-message">
-						<div class="site">{{item.site}}</div>
-						<div class="stage">{{item.stage}}</div>
-					</div>
+							<h3>{{item.title}}</h3>
+							<p>{{item.description}}</p>
+						</div>
+						<div class="product-message">
+							<div class="site">{{item.site}}</div>
+							<div class="stage">{{item.stage}}</div>
+						</div>
 				</div>
-					</div>
+				</div>
 			</div>
 		</div>
-		
+		<div class="related-service">
+			<div class="service-title">相关服务推荐</div>
+			<div class="service-content">
+				<h1>寻找技术资源，实现创新升级</h1>
+				<p>用我的专业，换你省心省力</p>
+				<div class="find-btn">帮我找</div>
+				<div class="service-img">
+					<img src="https://maikeji.cn/images/recommend/technologies-list-image.jpg" alt="">
+				</div>
+				<div class="service-msg">可多次脱模的高性价比橡胶轮胎脱模剂</div>
+			</div>
+		</div>
 	</div>
 </template>
 <script>
@@ -171,6 +220,34 @@
         	use:"医药|生物工程 ",
         	readtime:4029,
         	infotime:14
+        }],
+        recommendProduct:[{
+        	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
+        	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
+        	description:"脱模剂是一种在轮胎硫化时介于胶囊和轮胎之间的功能性物质，起到润滑、隔...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"通用|工程塑料、天然|合成橡胶、表面处理、功能材料",
+        	readtime:12,
+        	infotime:5
+        },{
+        	image:"https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq",
+        	title:"有机硅助剂－流平剂",
+        	description:"本技术方案是国家有机硅重点实验室研发团队提供，产品基本能达到德国某公...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"树脂",
+        	readtime:22,
+        	infotime:12
+        },{
+        	image:"https://res4.maikeji.cn/Fj6oIUyEekYqDgWLqoPe6pt8VmJn",
+        	title:"食品中违禁物残留检测",
+        	description:"国际上食品安全最权威的仲裁测定方法，产品价格是进口的25%左右，打破...",
+        	site:"中国",
+        	stage:"生试阶段",
+        	use:"仪器仪表及工业自动化",
+        	readtime:15,
+        	infotime:2
         }]
 			}
 		},
@@ -183,7 +260,7 @@
 	ul{
 		list-style: none;
 	}
-	div{
+	div,span,li,p{
 		box-sizing: border-box;
 	}
 	.insert{
@@ -226,7 +303,7 @@
 	.insert-input > .button:hover{
 		background-color: #286091;
 	}
-	.first{
+	.technology-first{
 		margin-top: 2em;
 	}
 	.screen{
@@ -284,10 +361,12 @@
 		color:#1F86ED;
 	}
 	.technology-body{
+		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content:left;
 		margin-bottom: 2em;
+		padding: 0 2em 7em 2em;
 	}
 	.shade{
 		position: absolute;
@@ -327,7 +406,7 @@
 		cursor: pointer;
 		width: 280px;
 		height: 315px;
-		margin: 20px 2.1em 0 0;
+		margin: 20px 1em 0 0;
 		padding-bottom: 10px;
 		border:1px solid #ccc;
 	}
@@ -375,5 +454,139 @@
 		color: #1F86EF;
 		background-color: #C6E8FE;
 		border-radius: 5px;
+	}
+	.product-paging{
+		position: absolute;
+		bottom: 0;
+		right: 4em;
+	}
+	.product-paging li{
+		float: left;
+		margin-right:1em;
+		width: 3em;
+		height: 3em;
+		line-height: 3em;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 14px;
+		border:2px solid #D6D6D6;
+		color: #1F86ED;
+	}
+	.product-paging li:last-child{
+		width: 5em
+	}
+	.product-paging li:first-child{
+		color: #fff;
+		background-color: #1F86ED;
+		border: none;
+	}
+	.product-paging li:first-child ~ li{
+		cursor:pointer;
+	}
+	.product-paging li:first-child ~ li:hover{
+		background-color: #EFEFEF;
+		color: #23527C
+	}
+	.technology-recommend{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:left;
+		margin-bottom: 2em;
+		padding: 2em;
+	}
+	.recommend-title{
+		position: absolute;
+		top: 0;
+		left: 2em;
+		width: 7em;
+		text-align: center;
+		color: #1f86ed;
+		font-weight:bolder;
+		font-size:16px;
+		border-right: 5px solid #f7b52d;
+		margin-bottom: 2em;
+	}
+	.recommend-product{
+		/*overflow: hidden;*/
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:left;
+	}
+	.recommend-logo{
+		position: absolute;
+		left: 1.5em;
+		height: 4em;
+		width: 4em;
+		/*line-height: 4em;*/
+		text-align: center;
+		padding: .5em 1em;
+		font-size: 16px;
+		font-weight: bolder;
+		background-color: rgba(211,95,0,0.8);
+		color: #fff;
+	}
+	.service-title{
+		width: 9em;
+		text-align: center;
+		color: #1f86ed;
+		font-weight:bolder;
+		font-size:16px;
+		border-right: 5px solid #f7b52d;
+		margin-bottom: 2em;
+	}
+	.service-content{
+		position: relative;
+		padding: 5em 175px 0 175px;
+		height: 240px;
+		background:url(https://maikeji.cn/images/recommend/technologies-list.gif);
+	}
+	.service-content > h1{
+		font-size: 36px;
+		color: #fff;
+	}
+	.service-content > p{
+		margin-top: 10px;
+		font-size: 24px;
+		color: #fff;
+	}
+	.service-content > div.find-btn{
+		cursor: pointer;
+		background-color: #ffd648;
+		color: #333;
+		font-size: 18px;
+		font-weight: bolder;
+		width: 6em;
+		height: 2em;
+		line-height: 2em;
+		text-align: center;
+		margin:1em 0;
+		border-radius: 50px;
+	}
+	.service-img{
+		position: absolute;
+		top:2em;
+		right: 275px;
+		width: 200px;
+		height: 200px;
+		background-color: #497fc1;
+		padding: 5px;
+		border-radius: 50%;
+
+	}
+	.service-img > img{
+		width: 190px;
+		height: 190px;
+		border-radius: 50%;
+	}
+	.service-msg{
+		position: absolute;
+		top: 3em;
+		right: 175px;
+		width: 1em;
+		line-height: 1.1em;
+		font-size: 10px;
+		color: #fff;
 	}
 </style>

@@ -24,27 +24,7 @@
 				
 				</a>
 			</div>
-			<!-- <div class="message-section-1 card">
-				<div class="title">
-					<div class="title">
-						讲堂●<span class="emphasis">科技服务 </span>指导
-					</div>
-				</div>
-			</div>
-			<div class="message-section-1 card">
-				<div class="title">
-					<div class="title">
-						洞悉●<span class="emphasis">行业热点</span>观察
-					</div>
-				</div>
-			</div>
-			<div class="message-section-1 card">
-				<div class="title">
-					<div class="title">
-						动态●<span class="emphasis">迈科技新闻</span>一览
-					</div>
-				</div>
-			</div> -->
+			
 		</div>
 
 	</div>
@@ -173,6 +153,8 @@
 	    text-decoration: none;
     }
     .message{
+        padding-bottom: 100px;
+        background-color: #f5f5f6;
 	    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 	    font-size: 14px;
 	    line-height: 1.42857143;
