@@ -3,9 +3,9 @@
 	<div class="main">
 		<div class="right_top_float">
 			<div class="header">
-					<a href=""><div>热门技术</div></a>
-					<a href=""><div>热门活动</div></a>
-					<a href=""><div>热门资讯</div></a>
+					<div>热门技术</div>
+					<div>热门活动</div>
+					<div>热门资讯</div>
 			</div>
 			<div class="contanter"></div>
 			<div class="footer"></div>
@@ -346,9 +346,11 @@
 	}
 
 	.right_top_float > .header div{
+		cursor:pointer;
 		color: #fff;
 		height: 49px;
 		line-height: 50px;
+		text-align: center;
 		width: 70px;
 	}
 	.message{
