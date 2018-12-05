@@ -134,7 +134,7 @@
 		}
 	}
 </script>
-<style scop>  
+<style scoped>
     *, :after,:before{
     	box-sizing: border-box;
 	    margin: 0;
@@ -142,15 +142,15 @@
     ul>li{
     	list-style: none;
     }
-    .message{
-    	font-size: 14px;
-	    line-height: 1.42857143;
-	    color: #333;
-    }
     a{
     	display: block;
     	color: #337ab7;
 	    text-decoration: none;
+    }
+    .message{
+    	font-size: 14px;
+	    line-height: 1.42857143;
+	    color: #333;
     }
     .message{
         padding-bottom: 100px;
@@ -235,7 +235,7 @@
 	    right: 18px;
 	    bottom: 18px;
 	}
-	.btn{
+	.message .btn{
 	    display: inline-block;
 	    padding: 6px 12px;
 	    margin-bottom: 0;
@@ -256,35 +256,35 @@
 	    border: 1px solid transparent;
 	    border-radius: 4px;
 	}
-	.btn-primary:focus{
+	.message .btn-primary:focus{
         background-color: #1f86ed; */
 	    border-color: #1f86ed;
 	    color: #fff;
 	}
-	.btn-primary{
+	.message .btn-primary{
         color: #fff;
 	    background-color: #337ab7;
 	    border-color: #2e6da4;
 	}
-	.message-section-1 .section-left{
+	.message .message-section-1 .section-left{
 		float: left;
 	}
-	.message-section-1 .m-cover{
+	.message .message-section-1 .m-cover{
 		position: relative;
 	    width: 476px;
 	    height: 360px;
 	    background-color: #a0a0a0;
 	}
-	.m-cover{
+	.message .m-cover{
 		background-color: #1f86ed;
 	    background-size: cover;
 	    background-position: 50%;
 	    background-repeat: no-repeat;
 	}
-	.message-section-1 .section-right{
+	.message .message-section-1 .section-right{
 		float: right;
 	}
-	.message-section-1  .m-cover-caption{
+	.message .message-section-1  .m-cover-caption{
         position: absolute;
 	    bottom: 0;
 	    padding: 0 20px;
@@ -295,13 +295,13 @@
 	    background-color: rgba(0,0,0,.7);
 	    color: #fff;
 	}
-	.overflow-hidden{
+	.message .overflow-hidden{
 		white-space: nowrap;
 	    overflow: hidden;
 	    text-overflow: ellipsis;
 	    word-break: break-all;
 	}
-	.card{
+	.message .card{
 	    padding: 18px;
 	    background-color: #fff;
 	    border: .5px solid #eee;
