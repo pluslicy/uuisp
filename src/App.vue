@@ -35,6 +35,12 @@ body,ul,ol,dl,p,h1,h2,h3 {
   margin: 0;
   padding:0;
 }
+div,p,h1,h2,h3,ul{
+	box-sizing: border-box;
+}
+ul,ol{
+  list-style: none;
+}
 a {
   color: #707070;
   text-decoration: none;
