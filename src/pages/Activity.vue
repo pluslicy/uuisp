@@ -20,7 +20,7 @@
 		</div><br>
 		<div class="list">
 			<div class="left">
-				<img src="" alt="">
+				<img class="picture" src="https://res4.maikeji.cn/FssbvCnaFfUFW8ScbkpJ4cdxqXHl" alt="">
 			</div>
 			<div class="right">
 				<ul>
@@ -34,7 +34,7 @@
 		</div><br>
 		<div class="item">
 			<div class="item-1">
-				<img src="" alt="">
+				<img class="picture" src="https://res4.maikeji.cn/FvB-7IMYN14zo1DbhfrOwVwx5IgD" alt="">
 			</div>
 			<div class="item-2">
 				<ul>
@@ -47,7 +47,7 @@
 		</div><br>
 		<div class="meet">
 			<div class="meet-1">
-				<img src="" alt="">
+				<img class="picture" src="https://res4.maikeji.cn/FhQtJGLFWeMtBaA9uiCZYasWDsYD" alt="">
 			</div>
 			<div class="meet-2">
 				<ul>
@@ -60,7 +60,7 @@
 		</div><br>
 		<div class="filter">
 			<div class="filter-1">
-				<img src="" alt="">
+				<img class="picture" src="https://res4.maikeji.cn/Fhk0j9OoOT8IaQsP2pzjodCyS_0Q" alt="">
 			</div>
 			<div class="filter-2">
 				<ul>
@@ -73,7 +73,7 @@
 		</div><br>
 		<div class="read">
 			<div class="read-1">
-				<img src="" alt="">
+				<img class="picture" src="https://res4.maikeji.cn/Fk1kiY55VQDnvqHwxjfnOj8hm2Wm" alt="">
 			</div>
 			<div class="read-2">
 				<ul>
@@ -97,10 +97,34 @@
 				<li>下一页</li>
 			</ul>
 		</div>
-		<div class="rightnav">
-			
-		</div>
+		
 	</div>
+	<div class="rightnav">
+			<div class="top">
+				<span>活动回顾</span>
+			</div>
+			<div class="top-1">
+				<img class="picture" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
+			</div>
+			<div class="top-2">
+				<span>需求征集中！第三方中国创新挑。。。</span>
+			</div>
+			<div class="top-3">
+				<img class="picture" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
+			</div>
+			<div class="top-4">
+				<span>【公开课】首届长三角技术交</span>
+			</div>
+			<div class="top-5">
+				<img class="picture" src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
+			</div>
+			<div class="top-6">
+				<span>有机工业废水如何处理？看看</span>
+			</div>
+			<div class="top-7">
+				<img class="picture" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+			</div>
+		</div>
 
 	</div>
 </template>
@@ -127,9 +151,12 @@
 		font-size:20px;
 	}
 	.globnav{
-		width:80%;
-		
+		width:78%;
+		height:50px;
+		border:1px solid #ccc;
 		margin:0 auto;
+		line-height: 50px;
+		background-color: #fafafa;
 	}
 
 	ul>a>li{
@@ -160,9 +187,11 @@
 		background-color:pink;
 	}
 	.right{
+		left:350px;
+		text-align:left;
 		width:530px;
 		height:180px;
-		
+		text-align:left;
 		position:absolute;
 		top:0;
 		right:0;
@@ -175,8 +204,8 @@
 	}
 	 li>button{
 		background-color: #1f86ed;
-		width:150px;
-		height:50px;
+		width:130px;
+		height:35px;
 		border-radius: 10px;
 		color:white;
 		font-size:18px;
@@ -197,7 +226,8 @@
 	.item-2{
         width:530px;
 		height:180px;
-		
+		left:350px;
+		text-align:left;
 		position:absolute;
 		top:0;
 		right:0;
@@ -222,7 +252,8 @@
 	.meet-2{
 		 width:530px;
 		height:180px;
-		
+		left:350px;
+		text-align:left;
 		position:absolute;
 		top:0;
 		right:0;
@@ -247,7 +278,8 @@
   .filter-2{
   	 	width:530px;
 		height:180px;
-		
+		left:350px;
+		text-align:left;
 		position:absolute;
 		top:0;
 		right:0;
@@ -272,7 +304,8 @@
   .read-2{
   		width:530px;
 		height:180px;
-		
+		left:350px;
+		text-align:left;
 		position:absolute;
 		top:0;
 		right:0;
@@ -300,15 +333,63 @@
   	color:#1f86ed;
   	cursor:pointer;
   }
- 
-  .rightnav{
-  	box-sizing: border-box;
-  	width:300px;
-  	height:1000px;
-  	border:1px solid #ccc;
-  	position:absolute;
-  	right:-180px;
-  	top:100px;
+  .picture{
+  	width:310px;
+  	height:180px;
   }
+ .rightnav{
+ 	position: absolute;
+	box-sizing:border-box;
+	width:23%;
+	height:1080px;
+	/* border:1px solid #ccc; */ 
+	right:15px;
+	top:20%;
+	margin:0 auto;
+ }
+  .top{
 
+  	width:100%;
+  	height:50px;
+  	background-color:#fafafa;
+  	text-align:center;
+  	line-height: 50px;
+  	font-size:18px;
+  }
+.top-1{
+	margin-top:30px;
+}
+.top-2{
+	background-color:grey;
+	text-align:center;
+	margin-top:30px;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	color:white;
+}
+.top-3{
+	margin-top:30px;
+}
+.top-4{
+	background-color:grey;
+	text-align:center;
+	margin-top:30px;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	color:white;
+}
+.top-5{
+	margin-top:30px;
+}
+.top-6{
+	background-color:grey;
+	text-align:center;
+	margin-top:30px;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	color:white;
+}
 </style>
