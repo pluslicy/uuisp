@@ -135,28 +135,33 @@
 	ul  li {
 		list-style:none;
 	}
-	.content{
+	.Activity{
+		margin:0 auto;
+	}
+	.Activity .content{
 		width:80%;
 		height:100%;
 		position:relative;
 		text-align:center;
+		
 
 	}
-	.title>h1{
+	.Activity .title>h1{
 		color:gold;
 		font-size:40px;
 	}
-	.text>h2{
+	.Activity .text>h2{
 		color:gold;
 		font-size:20px;
 	}
-	.globnav{
+	.Activity .globnav{
+
 		width:78%;
 		height:50px;
-		border:1px solid #ccc;
+		
 		margin:0 auto;
 		line-height: 50px;
-		background-color: #fafafa;
+		
 	}
 
 	ul>a>li{
@@ -168,11 +173,11 @@
 	ul>a>li:hover{
 		color:#559dcb;
 	}
-	#first-item{
+	.Activity #first-item{
 		font-weight: bolder;
 		color:black;
 	}
-	.list{
+	.Activity .list{
 		position:relative;
 		height:180px;
 		width:840px;
@@ -181,12 +186,12 @@
 		
 
 	}
-	.left{
+	.Activity .left{
 		width:310px;
 		height:180px;
 		background-color:pink;
 	}
-	.right{
+	.Activity .right{
 		left:350px;
 		text-align:left;
 		width:530px;
@@ -198,7 +203,7 @@
 		line-height:35px;
 
 	}
-	#second{
+	.Activity #second{
 		color:black;
 		font-size:18px;
 	}
@@ -211,19 +216,19 @@
 		font-size:18px;
 		cursor: pointer;
 	}
-	.item{
+	.Activity .item{
 		position:relative;
 		height:180px;
 		width:840px;
 		
 		margin:0 auto;
 	}
-	.item-1{
+	.Activity .item-1{
 		width:310px;
 		height:180px;
 		background-color:blue;
 	}
-	.item-2{
+	.Activity .item-2{
         width:530px;
 		height:180px;
 		left:350px;
@@ -233,23 +238,23 @@
 		right:0;
 		line-height:45px;
 	}
-	#third{
+	.Activity #third{
 		color:black;
 		font-size:18px;
 	}
-	.meet{
+	.Activity .meet{
 		position:relative;
 		height:180px;
 		width:840px;
 		
 		margin:0 auto;
 	}
-	.meet-1{
+	.Activity .meet-1{
 		width:310px;
 		height:180px;
 		background-color:red;
 	}
-	.meet-2{
+	.Activity .meet-2{
 		 width:530px;
 		height:180px;
 		left:350px;
@@ -259,23 +264,23 @@
 		right:0;
 		line-height:45px;
 	}
-	#forth{
+	.Activity #forth{
 		color:black;
 		font-size:18px;
 	}
-  .filter{
+  .Activity .filter{
   	    position:relative;
 		height:180px;
 		width:840px;
 		
 		margin:0 auto;
   }
-  .filter-1{
+  .Activity .filter-1{
   		width:310px;
 		height:180px;
 		background-color:teal;
   }
-  .filter-2{
+  .Activity .filter-2{
   	 	width:530px;
 		height:180px;
 		left:350px;
@@ -285,23 +290,23 @@
 		right:0;
 		line-height:45px;
   }
-  #fifth{
+  .Activity #fifth{
   		color:black;
 		font-size:18px;
   }
-  .read{
+  .Activity .read{
   		position:relative;
 		height:180px;
 		width:840px;
 		
 		margin:0 auto;
   }
-  .read-1{
+  .Activity .read-1{
   		width:310px;
 		height:180px;
 		background-color:blue;
   }
-  .read-2{
+  .Activity .read-2{
   		width:530px;
 		height:180px;
 		left:350px;
@@ -311,33 +316,33 @@
 		right:0;
 		line-height:45px;
   }
-  #sixth{
+  .Activity #sixth{
   		color:black;
 		font-size:18px;
   }
-  .page{
+  .Activity .page{
   		position:relative;
 		height:30px;
 		width:840px;
 		left:300px;
 		margin:0 auto;
   }
-  .page>ul>li{
+  .Activity .page>ul>li{
   	float:left;
   	width:60px;
   	font-size:18px;
   	color:black;
 
   }
-  .page>ul>li:hover{
+  .Activity .page>ul>li:hover{
   	color:#1f86ed;
   	cursor:pointer;
   }
-  .picture{
+  .Activity .picture{
   	width:310px;
   	height:180px;
   }
- .rightnav{
+ .Activity .rightnav{
  	position: absolute;
 	box-sizing:border-box;
 	width:23%;
@@ -347,7 +352,7 @@
 	top:20%;
 	margin:0 auto;
  }
-  .top{
+  .Activity .top{
 
   	width:100%;
   	height:50px;
@@ -356,10 +361,10 @@
   	line-height: 50px;
   	font-size:18px;
   }
-.top-1{
+.Activity .top-1{
 	margin-top:30px;
 }
-.top-2{
+.Activity .top-2{
 	background-color:grey;
 	text-align:center;
 	margin-top:30px;
@@ -368,10 +373,10 @@
 	font-size:16px;
 	color:white;
 }
-.top-3{
+.Activity .top-3{
 	margin-top:30px;
 }
-.top-4{
+.Activity .top-4{
 	background-color:grey;
 	text-align:center;
 	margin-top:30px;
@@ -380,10 +385,10 @@
 	font-size:16px;
 	color:white;
 }
-.top-5{
+.Activity .top-5{
 	margin-top:30px;
 }
-.top-6{
+.Activity .top-6{
 	background-color:grey;
 	text-align:center;
 	margin-top:30px;
