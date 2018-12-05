@@ -29,20 +29,20 @@
         <div class="header-nav-position"></div>
 
         <div class="header-nav-right">
-          <div>
-            <span>企业服务</span>
+          <div class="nav-service">
+            <span class="nav-service-span">企业服务</span>
           </div>
-          <div>
-            <span>区域合作</span>
+          <div class="nav-cooperation">
+            <span class="nav-cooperation-span">区域合作</span>
           </div>
-          <div>
-            <span>我是专家</span>
+          <div class="nav-experts">
+            <span class="nav-experts-span">我是专家</span>
           </div>
-          <div>
-            <span>登录</span>
+          <div class="nav-login">
+            <span class="nav-login-span">登录</span>
           </div>
-          <div>
-            <span></span>
+          <div class="nav-release">
+            <button>发布</button>
           </div>
         </div>
 
@@ -86,7 +86,7 @@ export default {
     position: relative;
     min-width: 1240px;
     width: 100%;
-    background-color: #ccc;
+    background-color:  rgba(0, 0, 0, 0.7);
   }
   .header-wrapper .header-nav{
     display: flex;
@@ -96,20 +96,21 @@ export default {
   .header-wrapper .header-nav>div{
     height: 70px;
   }
+  /* header-left */
   .header-wrapper .header-nav .header-nav-left{
     flex: 360px;
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     position: relative;
     display: flex;
   }
   .header-wrapper .header-nav .header-nav-position{
     flex: 472px;
-    background-color: rgba(255,0,0,0.7);
+    background-color: rgba(255, 255, 255, 0);
     opacity: 0;
   }
   .header-wrapper .header-nav .header-nav-right{
     flex: 408px;
-    background-color: rgba(173, 216, 230, 0.5);
+    background-color: rgba(255, 255, 255, 0);
   }
   .header-wrapper .header-nav .header-nav-left .nav-logo{
     /* background-color: rgba(0,0,0,0); */
@@ -120,10 +121,40 @@ export default {
     margin-right:40px; 
   }
   .header-wrapper .header-nav .header-nav-left>div:not(:first-child){
-    background:  rgba(255,0,0,0.5);
+    background:  rgba(255, 255, 255, 0);
     line-height: 70px;
     flex:1;
     text-align: center;
+  }
+  /* header-right */
+  .header-wrapper .header-nav .header-nav-right{
+    position: relative;
+    display: flex;
+  }
+  .header-wrapper .header-nav .header-nav-right>div:not(:last-child){
+    background:  rgba(255, 255, 255, 0);
+    line-height: 70px;
+    flex:1;
+    text-align: center;
+  }
+  .header-nav-right .nav-release{
+    padding: 5% 0;
+  }
+  .header-nav-right .nav-release button{
+    display: block;
+    padding: 2px 9px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: #1f86ed;
+    border-color: #1f86ed;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
   }
 </style>
 
