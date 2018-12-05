@@ -1,14 +1,58 @@
 <!-- 首页 -->
 <template>
 	<div class="main">
-		<div class="right_top_float">
+		<div class="insert">
 			<div class="header">
-					<div>热门技术</div>
-					<div>热门活动</div>
-					<div>热门资讯</div>
+					<div @click="hotTechnology">热门技术</div>
+					<div @click="hotActive">热门活动</div>
+					<div @click="hotCms">热门资讯</div>
 			</div>
-			<div class="contanter"></div>
-			<div class="footer"></div>
+			<div class="contanter">
+				<div class="hot-mas" v-show="showOne">
+					<div class="ht-msg" v-for="item in hotTechnologyMsg">
+						&nbsp;· {{item.title}}
+						<div class="particular-ht-msg">
+							<h3>{{item.title}}</h3>
+							<p>{{item.msg}}</p>
+						</div>
+					</div>	
+				</div>
+				<div class="hot-mas" v-show="showTwo">
+					<div class="ht-msg" v-for="item in hotActiveMsg">
+						&nbsp;· {{item.title}}
+						<div class="particular-ht-msg">
+							<h3>{{item.title}}</h3>
+							<p>{{item.msg}}</p>
+						</div>
+					</div>	
+				</div>
+				<div class="hot-mas" v-show="showThree">
+					<div class="ht-msg" v-for="item in hotCmsMsg">
+						&nbsp;· {{item.title}}
+						<div class="particular-ht-msg">
+							<h3>{{item.title}}</h3>
+							<p>{{item.msg}}</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="insert-footer">
+				<div v-show="showOne">
+					<i class="fa fa-hand-o-right"></i>
+					<span class="insert-footer-name">2099</span>
+					<span class="insert-footer-text"> 项优质技术项目正在寻求合作>></span>
+				</div>
+				<div v-show="showTwo">
+					<i class="fa fa-hand-o-right"></i>
+					<span class="insert-footer-name">6</span>
+					<span class="insert-footer-text">项行业活动正在报名>></span>
+				</div>
+				<div v-show="showThree">
+					<i class="fa fa-hand-o-right"></i>
+					<span class="insert-footer-text">查看更多</span>
+				</div>
+				
+			</div>
 		</div>
 		<!-- <div class="message">
 		</div> -->
@@ -218,6 +262,48 @@
   export default {
     data(){
       return {
+      	showOne:true,
+      	showTwo:false,
+      	showThree:false,
+      	hotTechnologyMsg:[{
+      		title:"可多次脱模的高性价比橡胶轮胎脱模剂",
+      		msg:"轮胎硫化、金属模具、硫化成型、多次脱模、胶囊"
+      	},{
+      		title:"重金属污染耕地修复用重金属稳定剂",
+      		msg:"聚谷氨酸、重金属稳定、生物硅、吸附材料、耕地修复"
+      	},{
+      		title:"有机硅助剂－流平剂",
+      		msg:null
+      	},{
+      		title:"【设备齐全】光伏电池检测服务",
+      		msg:"光伏电池、检测服务"
+      	}],
+      	hotActiveMsg:[{
+      		title:"与资本零距离｜创合汇“商学院好项目”第十期路演会",
+      		msg:"上海·徐汇 2018.12.09-2018.12.09"
+      	},{
+      		title:"【讲座】吴晓波带您解读《避免败局》",
+      		msg:"上海 2018.12.11-2018.12.13"
+      	},{
+      		title:"第二届平湖市科技企业投融资对接会",
+      		msg:"浙江·平湖 2018.12.01-2018.12.31"
+      	},{
+      		title:"让技术与市场来一场真正的对话丨迈科技公益大讲堂",
+      		msg:"迈科技微信群 2018.07.01-2018.12.31"
+      	}],
+      	hotCmsMsg:[{
+      		title:"12月3日，山西省领导一行人来访迈科技，双方通过交流、了解，达成初步合作意向。",
+      		msg:"12月3日，山西省领导一行人来访迈科技，双方通过交流、了解，达成初步合作意向。"
+      	},{
+      		title:"全球创业周丨技术转移+互联网模式初露数据力量，帮助技术“倾听”市场",
+      		msg:"感谢你们一路相伴，一路相助，见证迈科技的成长！"
+      	},{
+      		title:"四川丨迈科技受邀第二期四川省技术经纪人培训会嘉宾",
+      		msg:"助力四川技术转移，专业科技服务以四川为中心辐射整个西南地区。"
+      	},{
+      		title:"高效！“自助”技术对接，达成合作仅用2天！",
+      		msg:"徐州某企业通过迈科技平台联系技术方自主对接成功，目前双方正就建厂、引进新设备等事宜展开合作。"
+      	}],
         nav:[{
         	title:"找技术",
         	text:"2000+成熟技术项目",
@@ -317,64 +403,117 @@
       };
     },
     methods: {
-     
+     hotTechnology(){
+     	this.showOne = true;
+     	this.showTwo = false;
+     	this.showThree = false;
+     },
+     hotActive(){
+     	this.showOne = false;
+     	this.showTwo = true;
+     	this.showThree = false;
+     },
+     hotCms(){
+     	this.showOne = false;
+     	this.showTwo = false;
+     	this.showThree = true;
+     }
     }
   }
 </script>
 <style>
-	ul{
+	ul,ol{
 		list-style: none;
 	}
-	a{
-		color: #666;
-		text-decoration: none;
-	}
-	.bk-color-ccc{
+	.main .bk-color-ccc{
 		background-color:#F5F5F5
 	}
-	.right_top_float{
+	.main .insert{
 		padding: 0 15px;
 		width: 340px;
 		height: 280px;
 		background-color:rgba(0,0,0,80%);
 	}
-	.right_top_float > .header{
+	.main .insert > .header{
 		display: flex;
 		justify-content: space-between;
-		height: 49px;
+		height: 40px;
 		border-bottom: 1px solid #fff;
 	}
 
-	.right_top_float > .header div{
+	.main .insert > .header div{
 		cursor:pointer;
 		color: #fff;
-		height: 49px;
-		line-height: 50px;
+		height: 40px;
+		line-height: 40px;
 		text-align: center;
 		width: 70px;
 	}
-	.message{
+	.main .insert .ht-msg{
+		position: relative;
+		height: 50px;
+		line-height: 50px;	
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		/*background-color: pink;*/
+	}
+	.main .insert .ht-msg:hover .particular-ht-msg{
+		display: block;
+	}
+	.main .insert .ht-msg .particular-ht-msg{
+		cursor: pointer;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		line-height: 25px;
+		background-color: #fff;
+		display: none;
+	}
+	.main .insert .ht-msg .particular-ht-msg h3,p{
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.main .insert-footer{
+		cursor: pointer;
+		height: 40px;
+		line-height: 40px;
+		color:#fff;
+		font-size: 16px;
+		text-decoration: underline;
+	}
+	.main .insert-footer i{
+		margin:0 1em;
+	}
+	.main .insert-footer .insert-footer-name{
+		font-size:20px;
+		font-weight: bolder;
+	}
+	.main .message{
 		min-width: 1240px;
 		height: 50px;
 		background-color:#808080;
 	}
-	.message > .text{
+	.main .message > .text{
 		position: relative;
 		padding:0 20px;
 		height: 50px;
 		width: 450px;
 		margin:0 auto;
 	}
-	.message > .text span{
+	.main .message > .text span{
 		display: inline-block;
 		color: #fff;
 		height: 50px;
 		line-height: 50px;
 	}
-	.message > .text ul{
+	.main .message > .text ul{
 		display: none;
 	}
-	.message > .text .text-icon{
+	.main .message > .text .text-icon{
 		color: #fff;
 		position: absolute;
 		width:20px;
@@ -383,77 +522,77 @@
 		font-size: 20px;
 		left: -20px;
 	}
-	.nav{
+	.main .nav{
 		box-sizing: border-box;
 		min-width: 1240px;
 		height: 150px;
 		background-color: #F5F5F5;
 		padding: 20px 0;
 	}
-	.nav > ul{
+	.main .nav > ul{
 		display: flex;
 		justify-content: space-around;
 		width: 1240px;
 		height: 110px;
 		margin: 0 auto;
 	}
-	.nav > ul > li{
+	.main .nav > ul > li{
 		box-sizing: border-box;
 		width:240px;
 		background-color: #fff;
 		cursor: pointer;
 	}
-	.nav > ul > li:hover{
+	.main .nav > ul > li:hover{
 		box-shadow: 0px 0px 2px #333;
 	}
-	.nav .left{
+	.main .nav .left{
 		float: left;
 		height: 60px;
 		width: 140px;
 		margin: 25px 0 0 20px;
 	}
-	.nav .left > div{
+	.main .nav .left > div{
 		font-size: 20px;
 		font-weight: bold;
 		margin-bottom: 5px;
 	}
-	.nav .right{
+	.main .nav .right{
 		box-sizing: border-box;
 		height: 60px;
 		line-height: 50px;
 		width: 60px;
 		margin:25px 0 0 170px;
 	}
-	.nav .right > i{
+	.main .nav .right > i{
 		font-size: 48px;
 		color: #4BDCC6;
 	}
-	.content{
+	.main .content{
 		padding: 80px 0 40px 0;
 		width: 100%;
 	}
-	.content > .head{
+	.main .content > .head{
 		text-align: center;	
 	}
-	.content > .head h1{
+	.main .content > .head h1{
 		margin-bottom: 20px;
 	}
-	.content-nav{
+	.main .content-nav{
 		margin-top: 30px;
 	}
-	.content-nav ul{
+	.main .content-nav ul{
 		display: flex;
 		justify-content: center;
 	}
-	.content-nav span{
+	.main .content-nav span{
 		margin:0 .5em;
 	}
-	.body{
+	.main .body{
 		display: flex;
 		justify-content: space-around;
 		margin-bottom: 2em;
 	}
-	.shade{
+	.main .shade{
 		position: absolute;
 		background:rgba(0,0,0,0.6);
 		top: 0;
@@ -463,17 +602,17 @@
 		padding:80px 20px 0 20px;
 		display: none;
 	}
-	.shade .use,.shade .read{
+	.main .shade .use,.shade .read{
 		color: #fff;
 		font-weight: bolder;
 		font-size: 16px;
 		height:100px;
 	}
-	.shade .read{
+	.main .shade .read{
 		display: flex;
 		justify-content: space-between;
 	}
-	.shade .tel{
+	.main .shade .tel{
 		position: absolute;
 		right: 0;
 		left: 0;
@@ -485,7 +624,7 @@
 		font-size: 20px;
 		border-top:2px solid #fff;
 	}
-	.product{
+	.main .product{
 		position: relative;
 		cursor: pointer;
 		width: 280px;
@@ -494,37 +633,37 @@
 		padding-bottom: 10px;
 		border:1px solid #ccc;
 	}
-	.product img{
+	.main .product img{
 		width: 280px;
 		height: 160px;
 		margin-bottom: 10px;
 	}
-	.product .wape{
+	.main .product .wape{
 		padding: 0 1em;
 	}
-	.product h3{
+	.main .product h3{
 		font-size: 20px;
 		height: 55px;
 		margin-bottom: 10px;
 	}
-	.product:hover{
+	.main .product:hover{
 		box-shadow: 2px 2px 2px #ccc;
 	}
-	.product:hover .shade{
+	.main .product:hover .shade{
 		display: block;
 	}
-	.product:hover h3{
+	.main .product:hover h3{
 		color: #1E87ED;
 	}
-	.product-message{
+	.main .product-message{
 		display: flex;
 		justify-content: space-between;
 		margin-top: 10px;
 	}
-	.product-message > .site{
+	.main .product-message > .site{
 		font-size: 16px;
 	}
-	.product-message > .stage{
+	.main .product-message > .stage{
 		width: 64px;
 		height: 24px;
 		line-height: 24px;
@@ -533,7 +672,7 @@
 		background-color: #C6E8FE;
 		border-radius: 5px;
 	}
-	.footer > .foot-text{
+	.main .footer > .foot-text{
 		box-sizing: border-box;
 		height: 40px;
 		line-height: 40px;
@@ -545,22 +684,22 @@
 		margin-top:40px;
 		cursor: pointer;
 	}
-	.footer > .foot-text:hover{
+	.main .footer > .foot-text:hover{
 		color:#1F86EF; 
 		border:1px solid #1F86EF;
 	}
-	.body{
+	.main .body{
 		display: flex;
 		justify-content: center;
 		margin-bottom: 2em;
 	}
-	.counselor{
+	.main .counselor{
 		position: relative;
 		width: 305px;
 		height: 350px;
 		margin-top: 20px;
 	}
-	.counselor > .shade-counselor{
+	.main .counselor > .shade-counselor{
 		cursor: pointer;
 		position: absolute;
 		background:rgb(88,118,165);
@@ -571,40 +710,40 @@
 		padding:55px 50px;
 		display: none;
 	}
-	.counselor > .shade-counselor .msg,.particulars{
+	.main .counselor > .shade-counselor .msg,.particulars{
 		color: #fff;
 		height: 140px;
 		line-height: 2em;
 	}
-	.counselor > .shade-counselor .particulars{
+	.main .counselor > .shade-counselor .particulars{
 		font-size: 20px;
 		text-align: center;
 	}
-	.counselor:hover .shade-counselor{
+	.main .counselor:hover .shade-counselor{
 		display: block;
 	}
-	.counselor > .face{
+	.main .counselor > .face{
 		margin:0 auto;
 		border:1px solid #ccc;
 		padding: .5em;
 	}
-	.counselor > .face,.counselor > .face > img{
+	.main .counselor > .face,.counselor > .face > img{
 		width: 115px;
 		height: 115px;
 		border-radius: 50%;
 	}
-	h3.name{
+	.main h3.name{
 		font-size: 24px;
 		color: #333;
 		text-align: center;
 		margin:.3em 0;
 	}
-	p.position{
+	.main p.position{
 		font-size: 20px;
 		text-align: center;
 		margin:.3em 0;
 	}
-	.counselor .direction{
+	.main .counselor .direction{
 		display: flex;
 		/*text-align: left;*/
 		width: 305px;
@@ -612,7 +751,7 @@
 		padding: .5em;
 		flex-wrap:wrap;
 	}
-	.counselor .direction > span{
+	.main .counselor .direction > span{
 		overflow:hidden;
 		/*box-sizing: border-box;*/
 		text-align: center;
@@ -623,14 +762,14 @@
 		min-width: 4em;
 		padding:0 .3em;
 	}
-	.body-three{
+	.main .body-three{
 		display: flex;
 		width: 100%;
 		height: 360px;
 		margin-top:40px;
 		background: url("https://maikeji.cn/images/index/index-activity.jpg");
 	}
-	.body-three .active{
+	.main .body-three .active{
 		cursor:pointer;
 		position: relative;
 		flex: 1;
@@ -638,10 +777,10 @@
 		flex-direction: column;
 		justify-content: center;
 	}
-	.body-three .active:hover{
+	.main .body-three .active:hover{
 		background-color:rgba(68,129,186,0.8);
 	}
-	.body-three .active-msg{
+	.main .body-three .active-msg{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -651,14 +790,14 @@
 		height: 100px;
 		/*line-height: 120px;*/
 	}
-	.body-three .active:hover .active-msg{
+	.main .body-three .active:hover .active-msg{
 		position: relative;
 		top:-40px;
 	}
-	.active i{
+	.main .active i{
 		font-size: 28px;
 	}
-	.active .new-active{
+	.main .active .new-active{
 		position: absolute;
 		left: 60px;
 		bottom: 100px;
@@ -671,10 +810,10 @@
 		border:1px solid #fff;
 		display: none;
 	}
-	.body-three .active:hover .new-active{
+	.main .body-three .active:hover .new-active{
 		display: block;
 	}
-	.innovate{
+	.main .innovate{
 		position: relative;
 		width:300px;
 		height:335px;
@@ -682,36 +821,36 @@
 		padding-bottom: 10px;
 		/*border:1px solid #ccc;*/
 	}
-	.innovate .innovate-img{
+	.main .innovate .innovate-img{
 		overflow:hidden;
 	}
-	.innovate .innovate-img,.innovate-img img{
+	.main .innovate .innovate-img,.innovate-img img{
 		width: 295px;
 		height:200px;
 	} 
-	.innovate-img img:hover{
+	.main .innovate-img img:hover{
 		transform: scale(1.1);
 		transition-property:transform;
 		transition-duration: 0.3s;
 		/*transition-delay: 0;*/
 		/*transition-timing-function: linear;*/
 	}
-	.innovate-msg{
+	.main .innovate-msg{
 		cursor: pointer;
 		border:1px solid #ccc;
 	}
-	.innovate-msg:hover{
+	.main .innovate-msg:hover{
 		/*border: none;*/
 		box-shadow: 0 0 3px #ccc;
 	}
-	.innovate-title{
+	.main .innovate-title{
 		padding: .5em;
 		font-size: 18px;
 	}
-	.innovate-link > div{
+	.main .innovate-link > div{
 		margin-top: .5em;
 	}
-	.innovate-link > div:hover a{
+	.main .innovate-link > div:hover a{
 		color: #1F86EF;
 		text-decoration:underline;
 	}
