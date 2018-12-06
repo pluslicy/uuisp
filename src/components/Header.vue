@@ -25,7 +25,7 @@
             <span class="nav-activity-span" @click="toActivity">活动</span>
           </div>
           <div class="nav-message">
-            <span class="nav-message-span" @click="toMessage">咨询</span>
+            <span class="nav-message-span" @click="toMessage">资讯</span>
           </div>
         </div>
 
@@ -279,9 +279,7 @@ export default {
     flex:1;
     text-align: center;
   }
-  .header-nav-left>div:not(:first-child):hover{
-    font-weight: 700;
-  }
+
   /*  */
   .header-nav-left .nav-logo,
   .header-nav-left>div>span,
@@ -316,6 +314,10 @@ export default {
     white-space: nowrap;
     touch-action: manipulation;
     cursor: pointer;
+  }
+  /* hover样式 */
+  .header-nav-left>div:not(:first-child)>span:hover{
+    font-weight: 700 !important;
   }
   .header-nav-right>div:not(:last-child):hover{
     font-weight: 700;
