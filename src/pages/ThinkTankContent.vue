@@ -1,7 +1,7 @@
 <!--专家详细页面-->
 <template>
   <div class="thinkTankContent">
-    <div style="border:1px solid #ccc" class="top-pic">
+    <div  class="top-pic">
     	<div class="top-subnav">
     	<ul>
     		<a href=""><li>首页></li></a>
@@ -82,8 +82,87 @@
 		</div>
     </div>
     <div class="pageone">
-    	<div style="padding-left: 15px;font-size:16px;" class="server">
+    	<div style="padding-left: 15px;font-size:16px;margin-top:20px" class="server">
     		<b>专家推荐服务</b>
+    	</div>
+    	<div class="nide">
+    		10000+深度合作专家 提供专业咨询
+    	</div>
+    	<div class="insert-1">
+    		<input style="width:270px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="您的姓名">
+    	</div>
+    	<div class="insert-2">
+    		<input style="width:60px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="+86 ^">
+    		<input style="width:200px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;"" type="text" value="请输入你的手机号">
+    	</div>
+    	<div class="insert-3">
+    		<input style="width:180px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;"" type="text" value="请输入你的验证码">
+    		
+    			<input style="width:80px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;background-color:#2e96e6 " type="text" value="发送验证码">
+    		
+    	</div>
+    	<div class="insert-4">
+    		<input style="width:280px;height:140px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="请描述你的需求。">
+    	</div><br>
+    	<div class="telep">
+    		帮我联系
+    	</div><br>
+    	<div class="see">
+    		<ul>
+    			<li style="font-size:20px;color:#1f86ed;font-weight:bolder;">相关专家</li>
+    			<li style="color:#1f86ed">查看更多></li>
+    		</ul>
+    	</div><br><br>
+    	<div class="zhuangjia-list-1">
+    		<div class="number">
+    			
+    		</div>
+    		<div class="twtw">
+    			<img src="" alt="">
+    		</div>
+    	</div><br>
+    	<div class="loaders">
+    		<ul>
+    			<li>朱英国</li>
+    			<li>教授|武汉大学</li>
+    		</ul>
+    	</div><br>
+    	<div class="loaders-1">
+			<ul>
+				<li>水稻育种...</li>
+				<li>雄性不育...</li>
+			</ul>
+    	</div>
+    	<div class="loaders-3">
+    		
+    	</div>
+    	<div class="loaders-4">
+    		
+    	</div>
+    	<div class="loaders-2">
+    		<ul>
+    			<li>金良</li>
+    			<li>高级工程师</li>
+    			<li>重庆大学</li>
+    		</ul>
+    	</div>
+    	<div class="loaders-5">
+			<ul>
+				<li>植物遗传...</li>
+				<li>遗传发育...</li>
+			</ul>
+    	</div>
+    	<div class="easy">
+    		
+    	</div>
+    	<div class="easy-1">
+    		<img src="" alt="">
+    	</div>
+    	<div class="easy-2">
+    		<ul>
+    			<li>岳邦毅</li>
+    			
+    		</ul>
     	</div>
     </div>
   </div>
@@ -97,7 +176,7 @@
 	position: relative;
 }
 .top-pic{
-	width:1000px;
+	width:950px;
 
 }
 	.top-subnav>ul>a>li{
@@ -105,9 +184,9 @@
 		
 	}
 	.top-pic-1{
-		width:1000px;
+		width:950px;
 		height:200px;
-		background-color:orange;
+		background-color:lightblue;
 		position:relative;
 	}
 	.top-pic-2{
@@ -159,11 +238,154 @@
 	}
 	.pageone{
 		position:absolute;
-		border:1px solid red;
-		width:240px;
-		height:850px;
+		
+		width:290px;
+		height:2055px;
 		right:0;
 		top:40px;
 		background-color: white
+	}
+	.nide{
+		margin-top:10px;
+		margin-left:15px;
+		color:#99b3cd;
+		
+	}
+	.telep{
+		line-height:50px;
+		text-align:center;
+		color:white;
+		margin:0 auto;
+		background-color:#2e96e6;
+		height:50px;
+		width:280px;
+	}
+	.telep:hover{
+		cursor:pointer;
+	}
+	.see{
+		text-align:center;
+	}
+	.see>ul>li{
+		float:left;
+		width:140px;
+	} 
+	.see>ul>li:hover{
+		cursor:pointer; 
+	}
+	.zhuangjia-list-1{
+		position:relative;
+	}
+	.number{
+		width:30px;
+		height:30px;
+		background-color:#80bcf6;
+		border-radius:50%;
+		margin-left:30px;
+		margin-top:15px;
+	}
+	.twtw{
+		width:65px;
+		height:65px;
+		background-color:pink;
+		border-radius:50%;
+		left:80px;
+		top:-20px;
+		position:absolute;
+	}
+	.loaders{
+		position:absolute;
+		left:170px;
+		top:530px;
+		line-height:25px;
+		color:#80bcf6;
+	}
+	.loaders:hover{
+		cursor:pointer;
+	}
+	.loaders-1{
+		text-align:center;
+	}
+	.loaders-1>ul>li{
+		display:inline-block;
+		width:130px;
+		border:1px solid #80bcf6;
+		background-color:#f4f8fd;
+		border-radius:5px;
+	}
+	.loaders-1>ul>li:hover{
+		cursor:pointer;
+	}
+	.loaders-2{
+		text-align:center;
+		position:absolute;
+		left:170px;
+		top:660px;
+		line-height:25px;
+		color:#80bcf6;
+	} 
+	.loaders-2>ul>li:hover{
+		cursor:pointer;
+	}
+	.loaders-3{
+		width:30px;
+		height:30px;
+		background-color:#80bcf6;
+		border-radius:50%;
+		margin-left:30px;
+		margin-top:50px;
+	}
+	.loaders-4{
+		width:65px;
+		height:65px;
+		background-color:pink;
+		border-radius:50%;
+		left:80px;
+		top:670px;
+		position:absolute;
+
+	}
+	.loaders-5{
+		text-align:center;
+	}
+	.loaders-5>ul>li{
+		display:inline-block;
+		width:120px;
+		border:1px solid #80bcf6;
+		background-color:#f4f8fd;
+		border-radius:5px;
+		margin-left:10px;
+		margin-top:30px;
+	}
+	.loaders-5>ul>li:hover{
+		cursor:pointer;
+	}
+	.easy{
+		width:30px;
+		height:30px;
+		background-color:#80bcf6;
+		border-radius:50%;
+		margin-left:30px;
+		margin-top:50px;
+	}
+	.easy-1{
+		width:65px;
+		height:65px;
+		background-color:pink;
+		border-radius:50%;
+		left:80px;
+		top:800px;
+		position:absolute;
+	}
+	.easy-2{
+		text-align:center;
+		position:absolute;
+		left:170px;
+		top:820px;
+		line-height:25px;
+		color:#80bcf6;
+	}
+	.easy-2>ul>li:hover{
+		cursor:pointer;
 	}
 </style>

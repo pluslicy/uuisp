@@ -155,6 +155,7 @@
 	.list>ul>a>li{
 		display:inline-block;
 		width:105px;
+		padding-left:30px;
 
 	}
 	#item-first{
