@@ -117,34 +117,34 @@
 	}
 </script>
 <style scoped>
-    *, :after,:before{
+    .messageContent,*, :after,:before{
     	box-sizing: border-box;
 	    margin: 0;
     }
-    ul>li{
+    .messageContent ul>li{
     	list-style: none;
     }
-    table {
+    .messageContent table {
     	border-spacing: 0;
         border-collapse: collapse;
     }
-    td, th {
+    .messageContent, td, th {
 	    padding: 0;
 	    display: table-cell;
         vertical-align: inherit;
 	}
-	h1,h2,h3{
+	.messageContent h1,h2,h3{
 		 margin-top: 20px;
          margin-bottom: 10px;
 	}
-	button {
+	.messageContent button {
 		text-transform: none;
 	    overflow: visible;
 	}
-	p{
+	.messageContent p{
 		 margin: 0 0 10px;
 	}
-    a{
+    .messageContent a{
     	display: inline;
     	color: #337ab7;
 	    text-decoration: none;
@@ -155,7 +155,7 @@
     	line-height: 1.42857143;
         color: #333;
 	}
-	.holy-grail{
+	.messageContent,.holy-grail{
 	    margin: 0 auto;
 	    max-width: 1240px;
 	    width: 100%;
@@ -164,15 +164,15 @@
 	.messageContent .item-catalog-container{
 		margin-bottom: 50px;
 	}
-	.item-catalog-container{
+	.messageContent .item-catalog-container{
 	    margin-top: 30px;
 	    margin-bottom: 28px;
 	    width: 100%;
 	}
-	.item-catalog-container .catalog-item{
+	.messageContent .item-catalog-container .catalog-item{
 		display: inline-block;
 	}
-	.item-catalog-container .catalog-item a{
+	.messageContent .item-catalog-container .catalog-item a{
 		display: inline-block;
 		margin-left: 10px;
 	    margin-right: 5px;
@@ -211,10 +211,10 @@
 	    border-bottom: 1px solid #ddd;
 	    font-size: 16px;
 	}
-	.fr-view {
+	.messageContent .fr-view {
 	    text-indent: 0;
 	}
-	.fr-view strong {
+	.messageContent .fr-view strong {
 	    font-weight: 700;
 	}
 	.messageContent .side-layout-container .side-left .tag-container{
@@ -228,7 +228,7 @@
 	.messageContent .side-layout-container .side-left .tag-container>a{
 		display: inline-block;
 	}
-	.share-container{
+	.messageContent .share-container{
 		position: relative;
 	    display: -ms-inline-flexbox;
 	    display: inline-flex;
@@ -236,24 +236,24 @@
 	    align-items: center;
 	    min-width: 96px;
 	}
-	.pull-right {
+	.messageContent .pull-right {
 	    float: right!important;
 	}
-	.icon-weixin:before {
+	.messageContent .icon-weixin:before {
 	    content: "\E857";
 	}
-	.share-container .share-body {
+	.messageContent .share-container .share-body {
 	    left: -13px;
 	    width: 121px;
 	    min-width: 0;
 	    padding: 10px;
 	    z-index: 1;
 	}
-	.pull-right>.dropdown-menu {
+	.messageContent .pull-right>.dropdown-menu {
 	    right: 0;
 	    left: auto;
 	}
-	.dropdown-menu {
+	.messageContent .dropdown-menu {
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
@@ -273,7 +273,7 @@
 	    border-radius: 4px;
 	    box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	}
-	icon-weixin:hover .dropdown-menu{
+	.messageContent icon-weixin:hover .dropdown-menu{
 		display: block;
 	}
 	.messageContent .side-layout-container .side-left .btn-useful-container{
@@ -291,28 +291,28 @@
 	    font-size: 18px;
 	    letter-spacing: 1.2px;
 	}
-	.btn-primary-reverse{
+	.messageContent .btn-primary-reverse{
 		background-color: #fff;
 	    border-color: #1f86ed;
 	    border:1px solid #1f86ed;
 	    color: #1f86ed;
 	}
-	.btn-primary-reverse:hover {
+	.messageContent .btn-primary-reverse:hover {
 	    background-color: #1f86ed;
 	    border-color: #1f86ed;
 	    color: #fff;
 	}
-	.btn-primary, .btn-primary:focus {
+	.messageContent .btn-primary, .btn-primary:focus {
 	    background-color: #1f86ed;
 	    border-color: #1f86ed;
 	    color: #fff;
 	}
-	.btn-primary:hover{
+	.messageContent .btn-primary:hover{
 		color: #fff;
 	    background-color: #337ab7;
 	    border-color: #2e6da4;
 	}
-	.btn {
+	.messageContent .btn {
 	    display: inline-block;
 	    padding: 6px 12px;
 	    margin-bottom: 0;
@@ -337,7 +337,7 @@
 		margin: 5px auto;
 	    display: block;
 	    float: none;
-	    vertical-align: top;
+	    /*vertical-align: top;*/
 	}
 	.messageContent .side-layout-container .side-column-divider{
         width: 90px;
@@ -354,7 +354,10 @@
 	    line-height: 30px;
 	 }
 	  .messageContent .side-layout-container .side-right .relate-list-item{
-	  	
+        display: flex;
+	    padding-top: 8px;
+	    padding-bottom: 8px;
+	    border-bottom: 1px solid #ddd;
 	  }
 	  .messageContent .side-layout-container .side-right .relate-list-head .title{
 	  	font-size: 20px;
