@@ -2,7 +2,7 @@
 <template>
 	<div class="main">
 		<div class="insert">
-			<div class="header">
+			<div class="main-inster-header">
 					<div @click="hotTechnology">热门技术</div>
 					<div @click="hotActive">热门活动</div>
 					<div @click="hotCms">热门资讯</div>
@@ -40,7 +40,7 @@
 				<div v-show="showOne">
 					<i class="fa fa-hand-o-right"></i>
 					<span class="insert-footer-name">2099</span>
-					<span class="insert-footer-text"> 项优质技术项目正在寻求合作>></span>
+					<span class="insert-footer-text">项优质技术项目正在寻求合作>></span>
 				</div>
 				<div v-show="showTwo">
 					<i class="fa fa-hand-o-right"></i>
@@ -434,14 +434,14 @@
 		height: 280px;
 		background-color:rgba(0,0,0,80%);
 	}
-	.main .insert > .header{
+	.main .insert > .main-inster-header{
 		display: flex;
 		justify-content: space-between;
 		height: 40px;
 		border-bottom: 1px solid #fff;
 	}
 
-	.main .insert > .header div{
+	.main .insert > .main-inster-header div{
 		cursor:pointer;
 		color: #fff;
 		height: 40px;
@@ -485,6 +485,11 @@
 		font-size: 16px;
 		text-decoration: underline;
 	}
+	.main .insert-footer div{
+		overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+	}	
 	.main .insert-footer i{
 		margin:0 1em;
 	}
@@ -725,11 +730,14 @@
 	.main .counselor > .face{
 		margin:0 auto;
 		border:1px solid #ccc;
-		padding: .5em;
-	}
-	.main .counselor > .face,.counselor > .face > img{
+		padding: 5px;
 		width: 115px;
 		height: 115px;
+		border-radius: 50%;
+	}
+	.counselor > .face > img{
+		width: 103px;
+		height: 103px;
 		border-radius: 50%;
 	}
 	.main h3.name{
