@@ -121,7 +121,7 @@
     		有机工业废水如何处理  看看
     	</div><br>
     	<div class="top-8">
-    		<img style="width:240px;height:180px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+    		<img style="width:240px;height:165px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
     	</div>
     </div>
   </div>
@@ -156,6 +156,7 @@
 		display:inline-block;
 		width:105px;
 		padding-left:30px;
+        color:black;
 
 	}
 	#item-first{
@@ -202,6 +203,7 @@
 		left:330px;
 		top:0px;
 		line-height:45px;
+        color:black;
 }
 #one{
 		color:black;

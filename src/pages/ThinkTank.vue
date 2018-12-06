@@ -102,7 +102,7 @@
 				汇聚国内外顶尖高校和科研院所的优质技术力量
 			</div><br><br>
 			<div class="boot">
-				
+				<img style="width:1240px;height:600px" src="../assets/second.png" alt="">
 			</div>
 			<br><br>
 			<div class="look">
