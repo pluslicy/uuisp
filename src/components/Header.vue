@@ -126,6 +126,9 @@ export default {
     flex:1;
     text-align: center;
   }
+  .header-nav-left>div:not(:first-child):hover{
+    font-weight: 700;
+  }
   /* header-right */
   .header-wrapper .header-nav .header-nav-right{
     position: relative;
@@ -152,9 +155,12 @@ export default {
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     touch-action: manipulation;
     cursor: pointer;
+  }
+  .header-nav-right>div:not(:last-child):hover{
+    font-weight: 700;
   }
 </style>
 
