@@ -138,14 +138,14 @@
 }
 	.Activity .title{
 		text-align:center;
-		font-size:25px;
-		color:gold;
+		font-size:20px;
+		color:white;
 	}
 	
 	.Activity .text{
 		text-align:center;
 		font-size:15px;
-		color:gold;
+		color:white;
 	}
 	.list{
 		background-color:#ededed;

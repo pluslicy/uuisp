@@ -6,7 +6,7 @@
 				<h1>有问题&nbsp;&nbsp;找专家</h1>
 			</div><br>
 			<div class="fubiao">
-				<h2>Link   Technology   to   Industry</h2>
+				Link   Technology   to   Industry
 			</div><br>
 			<div class="input" style="text-align:center;vertical-align:middel;">
 				<input  style="width:610px;height:40px;font-size:18px; color:#ccc;" type="text" value="寻找你的专家顾问">
@@ -127,8 +127,9 @@
 	}
 	.content .fubiao{
 		text-align:center;
-		font-size:12px;
+		font-size:26px;
 		color:#a9dbfe;
+		font-weight:lighter;
 	}
 	.input i{
 		margin-left:-5px;
