@@ -82,28 +82,27 @@
 		</div>
     </div>
     <div class="pageone">
-    	<div style="padding-left: 15px;font-size:16px;margin-top:20px" class="server">
+    	<div style="padding-left: 15px;font-size:16px;margin-top:10px" class="server">
     		<b>专家推荐服务</b>
     	</div>
     	<div class="nide">
     		10000+深度合作专家 提供专业咨询
     	</div>
-    	<div class="insert-1">
-    		<input style="width:270px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="您的姓名">
-    	</div>
-    	<div class="insert-2">
-    		<input style="width:53px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="+86 ^">
-    		<input style="width:200px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;"" type="text" value="请输入你的手机号">
-    	</div>
-    	<div class="insert-3">
-    		<input style="width:170px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;"" type="text" value="请输入你的验证码">
-    		
-    			<input style="width:80px;height:30px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;background-color:#2e96e6 " type="text" value="发送验证码">
-    		
-    	</div>
-    	<div class="insert-4">
-    		<input style="width:280px;height:140px;margin-top:20px;margin-left:8px;color:#99b3cd;font-size:14px;" type="text" value="请描述你的需求。">
-    	</div><br>
+    	
+    		<input class="insert-1" type="text" value="您的姓名">
+    	
+    	
+    		<input class="insert-2"  type="text" value="+86 ^">
+    		<input class="insert-3"  type="text" value="请输入你的手机号">
+    	
+    	
+    		<input class="insert-4"  type="text" value="请输入你的验证码">
+    		<div class="test">
+    			获取验证码
+    		</div>
+    		<input class="insert-5" type="text" value="请描述你的需求">	
+    	
+    	
     	<div class="telep">
     		帮我联系
     	</div><br>
@@ -115,7 +114,7 @@
     	</div><br><br>
     	<div class="zhuangjia-list-1">
     		<div class="number">
-    			
+    			1
     		</div>
     		<div class="twtw">
     			<img style="width:65px;height:65px;border-radius:50%" src="https://res4.maikeji.cn/FkaZPt9VwXX9zk5soF9Kd8f7RQOn" alt="">
@@ -134,7 +133,7 @@
 			</ul>
     	</div>
     	<div class="loaders-3">
-    		
+    		2
     	</div>
     	<div class="loaders-4">
     		<img style="width:65px;height:65px;border-radius:50%"  src="https://res4.maikeji.cn/FmVPEqzp9_7jBZpBDt4to1jI3EEr" alt="">
@@ -153,7 +152,7 @@
 			</ul>
     	</div>
     	<div class="easy">
-    		
+    		3
     	</div>
     	<div class="easy-1">
     		<img style="width:65px;height:65px;border-radius:50%"  src="https://res4.maikeji.cn/FtGkY3HVJFAb6R6PK4tUzMZEd7Ai" alt="">
@@ -247,6 +246,55 @@
 		top:40px;
 		background-color: white
 	}
+
+	.insert-1{
+		position:absolute;
+		width:240px;
+		height:30px;
+		left:10px;
+		top:70px;
+		
+	}
+	.insert-2{
+		position:absolute;
+		width:60px;
+		height:30px;
+		left:10px;
+		top:120px;
+	}
+	.insert-3{
+		position:absolute;
+		width:170px;
+		height:30px;
+		left:80px;
+		top:120px;
+	}
+	.insert-4{
+		position:absolute;
+		width:170px;
+		height:30px;
+		left:10px;
+		top:170px;
+		
+	}
+	.test{
+		text-align:center;
+		position:absolute;
+		right:18px;
+		top:170px;
+		background-color:#2e96e6;
+		padding:8px;
+		color:white;
+		
+	}
+	.insert-5{
+		position:absolute;
+		width:260px;
+		height:130px;
+		left:10px;
+		top:230px;
+		
+	}
 	.nide{
 		margin-top:10px;
 		margin-left:15px;
@@ -254,13 +302,16 @@
 		
 	}
 	.telep{
+		position:absolute;
 		line-height:50px;
 		text-align:center;
 		color:white;
-		margin:0 auto;
+		left:15px;
 		background-color:#2e96e6;
 		height:50px;
-		width:280px;
+		width:260px;
+		top:380px;
+		border-radius:5px;
 	}
 	.telep:hover{
 		cursor:pointer;
@@ -271,20 +322,25 @@
 	.see>ul>li{
 		float:left;
 		width:140px;
+		margin-top:380px;
 	} 
 	.see>ul>li:hover{
 		cursor:pointer; 
 	}
-	.zhuangjia-list-1{
-		position:relative;
-	}
+	
 	.number{
+		position:absolute;
 		width:30px;
 		height:30px;
 		background-color:#80bcf6;
 		border-radius:50%;
-		margin-left:30px;
-		margin-top:15px;
+		top:530px;
+		left:30px;
+		text-align:center;
+		color:white;
+		line-height: 30px;
+		font-size:14px;
+		
 	}
 	.twtw{
 		width:65px;
@@ -292,13 +348,13 @@
 		background-color:pink;
 		border-radius:50%;
 		left:80px;
-		top:-20px;
+		top:510px;
 		position:absolute;
 	}
 	.loaders{
 		position:absolute;
 		left:170px;
-		top:530px;
+		top:520px;
 		line-height:25px;
 		color:#80bcf6;
 	}
@@ -307,6 +363,10 @@
 	}
 	.loaders-1{
 		text-align:center;
+		position:absolute;
+		top:610px;
+		left:10px;
+
 	}
 	.loaders-1>ul>li{
 		display:inline-block;
@@ -330,12 +390,18 @@
 		cursor:pointer;
 	}
 	.loaders-3{
+		position: absolute;
 		width:30px;
 		height:30px;
 		background-color:#80bcf6;
 		border-radius:50%;
-		margin-left:30px;
-		margin-top:50px;
+		
+		top:690px;
+		left:30px;
+		text-align:center;
+		color:white;
+		line-height: 30px;
+		font-size:14px;
 	}
 	.loaders-4{
 		width:65px;
@@ -346,9 +412,12 @@
 		top:670px;
 		position:absolute;
 
+
 	}
 	.loaders-5{
+		position:absolute;
 		text-align:center;
+		top:730px;
 	}
 	.loaders-5>ul>li{
 		display:inline-block;
@@ -367,8 +436,13 @@
 		height:30px;
 		background-color:#80bcf6;
 		border-radius:50%;
-		margin-left:30px;
-		margin-top:50px;
+		position:absolute;
+		top:820px;
+		left:30px;
+		text-align:center;
+		color:white;
+		line-height: 30px;
+		font-size:14px;
 	}
 	.easy-1{
 		width:65px;
@@ -378,6 +452,7 @@
 		left:80px;
 		top:800px;
 		position:absolute;
+
 	}
 	.easy-2{
 		text-align:center;
