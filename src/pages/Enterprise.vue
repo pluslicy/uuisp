@@ -587,6 +587,7 @@
 		position: relative;
 	}
 	.service-card-center p{
+		width: 100%;
 		display: inline-block;
 		font-size: 14px;
 		line-height: 20px;
