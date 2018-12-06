@@ -87,15 +87,15 @@
     		</div>
     	</div>
     	<div class="page">
-    		<span style="background-color:#1f86ed;color:white;">1</span>
-    		<span>2</span>
-    		<span>3</span>
-    		<span>4</span>
-    		<span>5</span>
-    		<span>6</span>
-    		<span>...</span>
-    		<span>27</span>
-    		<span>下一页</span>
+    		<em style="background-color:#1f86ed;color:whemte;">1</em>
+    		<em>2</em>
+    		<em>3</em>
+    		<em>4</em>
+    		<em>5</em>
+    		<em>6</em>
+    		<em>...</em>
+    		<em>27</em>
+    		<em>下一页</em>
     	</div>
     </div>
     <div class="pop">
@@ -103,25 +103,25 @@
     		活动回顾
     	</div><br>
     	<div class="top-2">
-    		<img style="width:260px;height:180px;" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
+    		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
     	</div><br>
     	<div class="top-3">
     		需求征集中，第三方招聘中...
     	</div><br>
     	<div class="top-4">
-    		<img style="width:260px;height:180px;" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
+    		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
     	</div><br>
     	<div class="top-5">
     		【公开课】|首届长三角洲科技交
     	</div><br>
     	<div class="top-6">
-    		<img style="width:260px;height:180px;"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
+    		<img style="width:240px;height:180px;"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
     	</div><br>
     	<div class="top-7">
     		有机工业废水如何处理  看看
     	</div><br>
     	<div class="top-8">
-    		<img style="width:260px;height:180px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+    		<img style="width:240px;height:180px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
     	</div>
     </div>
   </div>
@@ -134,7 +134,7 @@
 	position:relative;
 }
 .container{
-	width:1000px;
+	width:990px;
 }
 	.Activity .title{
 		text-align:center;
@@ -245,7 +245,7 @@
 	margin-left:500px;
 
 }
- span{
+ em{
 	font-size:18px;
 	color:#1f86ed;
 	padding-left:10px;
@@ -256,16 +256,16 @@
 	
 
 }
-span:hover{
+em:hover{
 	background-color:grey;
 	cursor:pointer;
 }
 .pop{
-	width:260px;
+	width:240px;
 	height:950px;
 	
 	position:absolute;
-	right:-25px;
+	right:0px;
 	top:100px;
 
 }
