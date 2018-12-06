@@ -47,9 +47,9 @@ a {
   color: #707070;
   text-decoration: none;
 }
-#app .content{
+/* #app .content{
   width: 1240px;
   margin: 0 auto;
-}
+} */
 /*... */
 </style>
