@@ -1,15 +1,15 @@
 <!-- 资讯 -->
 <template>
 	<div class="message">
-		<div class="message-container">
-			<div class="message-section-1 card" v-for = 'list in listItem'>
+		<div class="message-container" id="infoMessage">
+			<div class="message-section-1 card" v-for = 'list in listItem' :key="list">
 				<div class="title overflow-hidden">
 					{{list.one}}●<span class="emphasis">企业案例 </span>解读
 				</div>
 				<div class="list-container section-left" >
 					<ul class="list" >
 						  <li class="list-item" >
-							   <a href="/edu/articles/5be53b5c544f9b50f781da8a" class="" target="_blank" v-for = 'item in list.list'>
+							   <a href="/edu/articles/5be53b5c544f9b50f781da8a" class="" target="_blank" v-for = 'item in list.list' :key="item">
 								     <p class="title overflow-hidden">{{item.title}}</p>
 								     <p class="text overflow-hidden">{{item.content}}</p>
 							   </a>
@@ -30,10 +30,10 @@
 	</div>
 </template>
 <script>
-    const one = require("../assets/one.jpg");
-    const two = require('../assets/two.jpg');
-    const three = require('../assets/three.jpg');
-    const four = require('../assets/four.jpg');
+    const one = require("../assets/message/one.jpg");
+    const two = require('../assets/message/two.jpg');
+    const three = require('../assets/message/three.jpg');
+    const four = require('../assets/message/four.jpg');
 	export default{
 		data(){
             return {
@@ -148,6 +148,11 @@
 	    text-decoration: none;
     }
     .message{
+        margin: 0 auto;
+	    /*max-width: 1240px;*/
+	    /*width: 100%;*/
+	    /*background-color: red;*/
+	    /*box-sizing: border-box;*/
     	font-size: 14px;
 	    line-height: 1.42857143;
 	    color: #333;
@@ -160,25 +165,26 @@
 	    line-height: 1.42857143;
 	    color: #333;
     }
-	.message-container{
+	/*.message-container{
 		margin: 0 auto;
 	    max-width: 1240px;
 	    width: 100%;
-	    /*background-color: red;*/
+	    background-color: red;
 	    box-sizing: border-box;
-	}
-	.message .message-section-1{
+	}*/
+	#infoMessage .message-section-1{
 	    margin-top: 100px;
 	    padding: 64px 70px;
 	    height: 490px;
 	    position: relative;
-	    border: 3px solid #cecfcf;
+	    border: 1px solid #cecfcf;
 	}
-	.message .message-section-1:hover{
+	#infoMessage .message-section-1:hover{
 		/*cursor: pointer;*/
 		border-color: rgba(31,134,237,.5);
+        box-shadow: 0 0 12px #1f86ed;
 	}
-	.message .message-section-1>.title{
+	#infoMessage .message-section-1>.title{
 		position: absolute;
 	    left: 70px;
 	    top: -40px;
@@ -191,14 +197,14 @@
 	    font-size: 24px;
 	    text-align: center;
 	}
-	.message .message-section-1>.title:hover{
+	#infoMessage .message-section-1>.title:hover{
 		border-color: rgba(31,134,237,.5);
-        box-shadow: 0 0 12px #1f86ed;
+        box-shadow: 0 0 8px #1f86ed;
 	}
-	.message .message-section-1 .title .emphasis{
+	#infoMessage .message-section-1 .title .emphasis{
 		font-size: 30px;
 	}
-	.message .message-section-1 .list-container{
+	#infoMessage .message-section-1 .list-container{
 		box-sizing: border-box;
 		position: relative;
 	    padding: 18px;
@@ -207,7 +213,7 @@
 	    background-color: #f6f6f6;
 	    /*border: 1px solid red;*/
 	}
-	.message .message-section-1 .list-container .list-item .title{
+	#infoMessage .message-section-1 .list-container .list-item .title{
 		margin-bottom: 10px;
 	    padding-left: 6px;
 	    height: 20px;
@@ -216,26 +222,26 @@
 	    border-left: 2px solid #00b8db;
 	    color: #333;
 	}
-	.message .message-section-1 .list-container .list-item .title:hover{
+	#infoMessage .message-section-1 .list-container .list-item .title:hover{
 		cursor: pointer;
 		color: #1f86ed;
 		text-decoration:underline;
 	}
-	.message .message-section-1 .list-container .list-item .text{
+	#infoMessage .message-section-1 .list-container .list-item .text{
 		margin-bottom: 25px;
 	    width: 100%;
 	    font-size: 14px;
 	    color: #666;
 	}
-	.message .message-section-1 .list-container .list{
+	#infoMessage .message-section-1 .list-container .list{
 	    padding: 0;
 	}
-	.message .message-section-1 .list-container .list-caption{
+	#infoMessage .message-section-1 .list-container .list-caption{
 		position: absolute;
 	    right: 18px;
 	    bottom: 18px;
 	}
-	.message .btn{
+	#infoMessage .message-section-1 .list-container .list-caption .btn{
 	    display: inline-block;
 	    padding: 6px 12px;
 	    margin-bottom: 0;
@@ -256,26 +262,26 @@
 	    border: 1px solid transparent;
 	    border-radius: 4px;
 	}
-	.message .btn-primary:focus{
+	#infoMessage .btn-primary:focus{
         background-color: #1f86ed; */
 	    border-color: #1f86ed;
 	    color: #fff;
 	}
-	.message .btn-primary{
+	#infoMessage .btn-primary{
         color: #fff;
 	    background-color: #337ab7;
 	    border-color: #2e6da4;
 	}
-	.message .message-section-1 .section-left{
+	#infoMessage .message-section-1 .section-left{
 		float: left;
 	}
-	.message .message-section-1 .m-cover{
+	#infoMessage .message-section-1 .m-cover{
 		position: relative;
 	    width: 476px;
 	    height: 360px;
 	    background-color: #a0a0a0;
 	}
-	.message .m-cover{
+	#infoMessage .m-cover{
 		background-color: #1f86ed;
 	    background-size: cover;
 	    background-position: 50%;
@@ -284,7 +290,7 @@
 	.message .message-section-1 .section-right{
 		float: right;
 	}
-	.message .message-section-1  .m-cover-caption{
+	#infoMessage .message-section-1  .m-cover-caption{
         position: absolute;
 	    bottom: 0;
 	    padding: 0 20px;
