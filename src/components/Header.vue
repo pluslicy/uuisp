@@ -16,7 +16,7 @@
             <span class="nav-technology-span">技术</span>
           </div>
           <div class="nav-thinktank">
-            <span class="nav-thinktank-span">技术</span>
+            <span class="nav-thinktank-span">智库</span>
             </div>
           <div class="nav-activity">
             <span class="nav-activity-span">活动</span>
@@ -39,7 +39,9 @@
             <span class="nav-experts-span">我是专家</span>
           </div>
           <div class="nav-login">
-            <span class="nav-login-span">登录</span>
+            <span class="nav-login-span">
+              <i class="fa fa-user-circle-o" style="font-size:18px;"></i>&nbsp;登录
+            </span>
           </div>
           <div class="nav-release">
             <button>发布</button>
@@ -76,15 +78,16 @@ export default {
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
     color: #fff;
     width: 100%;
-    font-family: PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+    background-color: black; 
   }
   .header .header-wrapper{
     /* height: 450px; */
     margin: 0 auto;
     position: relative;
-    min-width: 1240px;
+    max-width: 1240px;
     width: 100%;
     background-color:  rgba(0, 0, 0, 0.7);
   }
@@ -129,6 +132,12 @@ export default {
   .header-nav-left>div:not(:first-child):hover{
     font-weight: 700;
   }
+  /*  */
+  .header-nav-left .nav-logo,
+  .header-nav-left>div>span,
+  .header-nav-right>div>span{
+    cursor:pointer;
+  }
   /* header-right */
   .header-wrapper .header-nav .header-nav-right{
     position: relative;
@@ -154,9 +163,8 @@ export default {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    white-space: nowrap;
-    /* vertical-align: middle; */
-    touch-action: manipulation;
+    /* white-space: nowrap;
+    touch-action: manipulation; */
     cursor: pointer;
   }
   .header-nav-right>div:not(:last-child):hover{
