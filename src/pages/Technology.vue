@@ -9,6 +9,34 @@
 			</div>
 		</div>
 		<div class="technology-first">
+			<div class="technology-first-carousel">
+				<ul>
+					<li>
+						<div class="tfc-technology">
+	    				<div>
+	    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
+	    				</div>
+	    				<p>可多次脱模的高性价比橡胶轮胎脱模剂</p>
+	    			</div>
+					</li>
+					<li>
+						<div class="tfc-technology">
+	    				<div>
+	    					<img src="https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq" alt="">
+	    				</div>
+	    				<p>重金属污染耕地修复用重金属稳定剂</p>
+	    			</div>
+					</li>
+					<li>
+						<div class="tfc-technology">
+	    				<div>
+	    					<img src="https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X" alt="">
+	    				</div>
+	    				<p>有机硅助剂－流平剂</p>
+	    			</div>
+					</li>
+				</ul>
+			</div>
 			<div class="screen">
 				<ul class="territory">
 					<li>所属领域</li>
@@ -61,6 +89,8 @@
 		<div class="technology-content ">
 			<div class="technology-nav">
 				<div>默认</div>
+				<span class="last-line"></span>
+
 				<div>关注度&nbsp;<i class="fa fa-angle-down"></i></div>
 				<div>发布时间&nbsp;<i class="fa fa-angle-down"></i></div>
 			</div>
@@ -263,22 +293,22 @@
 	div,span,li,p{
 		box-sizing: border-box;
 	}
-	.insert{
+	.technology .insert{
 		text-align: center;
 		background-color: #ccc;
 		padding: 1em	
 	}
-	.insert-text{
+	.technology .insert-text{
 		color: #fff;
 	}
-	.insert-input{
+	.technology .insert-input{
 		box-sizing: border-box;
 		/*padding: 0px 10px;*/
 		margin:3em auto;
 		width: 900px;
 		height: 50px;
 	}
-	.insert-input > input{
+	.technology .insert-input > input{
 		box-sizing: border-box;
 		padding: 0 2em;
 		margin:0;
@@ -288,7 +318,7 @@
 		line-height: 50px;
 		font-size: 18px;
 	}
-	.insert-input > .button{
+	.technology .insert-input > .button{
 		cursor:pointer;
 		float: right;
 		background-color:#156FB8;
@@ -300,23 +330,72 @@
 		width: 100px;
 		text-align: center;
 	}
-	.insert-input > .button:hover{
+	.technology .insert-input > .button:hover{
 		background-color: #286091;
 	}
-	.technology-first{
+	.technology .technology-first{
+		position: relative;
 		margin-top: 2em;
 	}
-	.screen{
+	.technology .technology-first >.technology-first-carousel{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 260px; 
+		height: 250px;
+		overflow: hidden;
+	}
+	.technology .technology-first >.technology-first-carousel li{
+		width: 260px; 
+		height: 250px;		
+	}
+	.technology .technology-first li .tfc-technology div{
+		width: 260px;
+		height: 140px;
+	}
+	.technology .technology-first li .tfc-technology div img{
+		width: 260px;
+		height: 140px;
+	}
+	.technology .technology-first li .tfc-technology p{
+		padding: 1em 0 1.5em 0;
+		border: 1px solid #eeeeee;
+		border-top: none;
+		text-align: center;
+	}
+	.technology .technology-first >.technology-first-carousel li .tfc-technology:hover{
+		cursor: pointer;
+		color: #1f86ed;
+		font-weight: bolder;
+		box-shadow: 0 0 5px #eee;
+	}
+/*轮播*/
+	.technology .technology-first >.technology-first-carousel ul{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 260px; 
+		height: 750px;
+		/*轮播*/
+		animation-name:technology-first-carousel;
+		animation-duration:6s;
+		animation-fill-mode: both;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(3);
+	}
+/*轮播结束*/
+	.technology .screen{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		padding: 0 2em;
-		height: 350px;
+		padding:15px 0 15px 30px ;
+		height:300px;
 		width:850px;
 		background-color: #FAFAFA;
-		border: 1px solid #ccc;
+		border: 1px solid #efefef;
 	}
-	.screen > ul > li{
+	.technology .screen > ul > li{
 		cursor:pointer;
 		float: left;
 		min-width: 4em;
@@ -325,42 +404,58 @@
 		text-align: left;
 		margin-left:1em;
 	}
-	.screen > ul > li:first-child{
+	.technology .screen > ul > li:first-child{
 		cursor:auto;
 		margin-left:0;
 		font-weight: bolder;
 		color: #333;
 	}
-	.screen > ul > li:nth-child(2){
+	.technology .screen > ul > li:nth-child(2){
 		text-align: center;
 		width:20px;
 		border: 1px solid #4DAFED;
 		background-color: #E3F1FF;
 		color:#0A539A
 	}
-	.technology-nav{
+	.technology .technology-nav{
+		position: relative;
 		margin-top: 1em;
 		padding: 1em 1em 0 1em;
-		border-bottom: 1px solid #ccc;
+		/*border-bottom: 1px solid #efefef;*/
 		overflow:hidden;
 	}
-	.technology-nav > div{
+	.technology .technology-nav > div{
 		cursor:pointer;
 		float: left;
-		width: 6em;
+		width: 100px;
 		height: 3em;
 		line-height: 3em;
 		text-align: center;
 		font-weight: bolder;
+		border:1px solid #efefef;
+		border-right:none;
 	}
-	.technology-nav > div:hover{
+	.technology .technology-nav > div:last-child{
+		border-right: 1px solid #efefef;
+	}
+	.technology .technology-nav > div:hover{
 		color: #1F86ED
 	}
-	.technology-nav > div:first-child{
+	.technology .technology-nav > div:first-child{
 		border-top:2px solid #1F86ED;
+		border-bottom:none;
 		color:#1F86ED;
 	}
-	.technology-body{
+	.technology .technology-nav > span.last-line{
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 314px;
+		right:14px;
+		height: 1px;
+		background-color: #efefef
+	}
+	.technology .technology-body{
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
@@ -368,7 +463,7 @@
 		margin-bottom: 2em;
 		padding: 0 2em 7em 2em;
 	}
-	.shade{
+	.technology .shade{
 		position: absolute;
 		background:rgba(0,0,0,0.6);
 		top: 0;
@@ -379,17 +474,17 @@
 		padding:80px 20px 0 20px;
 		display: none;
 	}
-	.shade .use,.shade .read{
+	.technology .shade .use,.shade .read{
 		color: #fff;
 		font-weight: bolder;
 		font-size: 16px;
 		height:100px;
 	}
-	.shade .read{
+	.technology .shade .read{
 		display: flex;
 		justify-content: space-between;
 	}
-	.shade .tel{
+	.technology .shade .tel{
 		position: absolute;
 		right: 0;
 		left: 0;
@@ -401,7 +496,7 @@
 		font-size: 20px;
 		border-top:2px solid #fff;
 	}
-	.product{
+	.technology .product{
 		position: relative;
 		cursor: pointer;
 		width: 280px;
@@ -410,40 +505,40 @@
 		padding-bottom: 10px;
 		border:1px solid #ccc;
 	}
-	.product img{
+	.technology .product img{
 		width: 278px;
 		height: 160px;
 		margin-bottom: 10px;
 	}
-	.product .wape{
+	.technology .product .wape{
 		padding: 0 1em;
 	}
-	.product h3{
+	.technology .product h3{
 		font-size: 20px;
 		height: 55px;
 		margin-bottom: 10px;
 	}
-	.product:hover{
+	.technology .product:hover{
 		box-shadow: 2px 2px 2px #ccc;
 	}
-	.product:hover .shade{
+	.technology .product:hover .shade{
 		display: block;
 	}
-	.product:hover h3{
+	.technology .product:hover h3{
 		color: #1E87ED;
 	}
-	.product-message{
+	.technology .product-message{
 		display: flex;
 		justify-content: space-between;
 		margin-top: 10px;
 	}
-	.product-message > .site{
+	.technology .product-message > .site{
 		position: absolute;
 		bottom: 10px;
 		left: 10px;
 		font-size: 16px;
 	}
-	.product-message > .stage{
+	.technology .product-message > .stage{
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
@@ -455,12 +550,12 @@
 		background-color: #C6E8FE;
 		border-radius: 5px;
 	}
-	.product-paging{
+	.technology .product-paging{
 		position: absolute;
 		bottom: 0;
 		right: 4em;
 	}
-	.product-paging li{
+	.technology .product-paging li{
 		float: left;
 		margin-right:1em;
 		width: 3em;
@@ -472,22 +567,22 @@
 		border:2px solid #D6D6D6;
 		color: #1F86ED;
 	}
-	.product-paging li:last-child{
+	.technology .product-paging li:last-child{
 		width: 5em
 	}
-	.product-paging li:first-child{
+	.technology .product-paging li:first-child{
 		color: #fff;
 		background-color: #1F86ED;
 		border: none;
 	}
-	.product-paging li:first-child ~ li{
+	.technology .product-paging li:first-child ~ li{
 		cursor:pointer;
 	}
-	.product-paging li:first-child ~ li:hover{
+	.technology .product-paging li:first-child ~ li:hover{
 		background-color: #EFEFEF;
 		color: #23527C
 	}
-	.technology-recommend{
+	.technology .technology-recommend{
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
@@ -495,7 +590,7 @@
 		margin-bottom: 2em;
 		padding: 2em;
 	}
-	.recommend-title{
+	.technology .recommend-title{
 		position: absolute;
 		top: 0;
 		left: 2em;
@@ -507,14 +602,14 @@
 		border-right: 5px solid #f7b52d;
 		margin-bottom: 2em;
 	}
-	.recommend-product{
+	.technology .recommend-product{
 		/*overflow: hidden;*/
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content:left;
 	}
-	.recommend-logo{
+	.technology .recommend-logo{
 		position: absolute;
 		left: 1.5em;
 		height: 4em;
@@ -527,7 +622,7 @@
 		background-color: rgba(211,95,0,0.8);
 		color: #fff;
 	}
-	.service-title{
+	.technology .service-title{
 		width: 9em;
 		text-align: center;
 		color: #1f86ed;
@@ -536,22 +631,22 @@
 		border-right: 5px solid #f7b52d;
 		margin-bottom: 2em;
 	}
-	.service-content{
+	.technology .service-content{
 		position: relative;
 		padding: 5em 175px 0 175px;
 		height: 240px;
 		background:url(https://maikeji.cn/images/recommend/technologies-list.gif);
 	}
-	.service-content > h1{
+	.technology .service-content > h1{
 		font-size: 36px;
 		color: #fff;
 	}
-	.service-content > p{
+	.technology .service-content > p{
 		margin-top: 10px;
 		font-size: 24px;
 		color: #fff;
 	}
-	.service-content > div.find-btn{
+	.technology .service-content > div.find-btn{
 		cursor: pointer;
 		background-color: #ffd648;
 		color: #333;
@@ -564,7 +659,7 @@
 		margin:1em 0;
 		border-radius: 50px;
 	}
-	.service-img{
+	.technology .service-img{
 		position: absolute;
 		top:2em;
 		right: 275px;
@@ -575,12 +670,12 @@
 		border-radius: 50%;
 
 	}
-	.service-img > img{
+	.technology .service-img > img{
 		width: 190px;
 		height: 190px;
 		border-radius: 50%;
 	}
-	.service-msg{
+	.technology .service-msg{
 		position: absolute;
 		top: 3em;
 		right: 175px;
@@ -589,4 +684,12 @@
 		font-size: 10px;
 		color: #fff;
 	}
+	@keyframes technology-first-carousel{
+			0%{
+				top:0px;
+			}
+			100%{
+				top:-750px;
+			}
+		}
 </style>

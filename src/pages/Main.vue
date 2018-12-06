@@ -548,7 +548,7 @@ text-overflow: ellipsis;
 		cursor: pointer;
 	}
 	.main .nav > ul > li:hover{
-		box-shadow: 0px 0px 2px #333;
+		box-shadow: 0px 0px 5px #ccc;
 	}
 	.main .nav .left{
 		float: left;
@@ -557,7 +557,7 @@ text-overflow: ellipsis;
 		margin: 25px 0 0 20px;
 	}
 	.main .nav .left > div{
-		font-size: 20px;
+		font-size: 24px;
 		font-weight: bold;
 		margin-bottom: 5px;
 	}
