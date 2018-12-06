@@ -593,6 +593,7 @@
 		line-height: 20px;
 		color: #8a8c8d;
 		margin-bottom: 5px;
+		
 
 	}
 
