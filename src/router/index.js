@@ -9,6 +9,9 @@ import Technology from '@/pages/Technology'
 import TechnologyContent from '@/pages/TechnologyContent'
 import ThinkTank from '@/pages/ThinkTank'
 import ThinkTankContent from '@/pages/ThinkTankContent'
+import Enterprise from '@/pages/Enterprise'
+import Professor from '@/pages/Professor'
+import RegionalCooperation from '@/pages/RegionalCooperation'
 
 Vue.use(Router)
 
@@ -19,6 +22,7 @@ export default new Router({
       name: 'Main',
       component: Main
     },{
+      // 活动
       path: '/activity',
       name: 'Activity',
       component: Activity
@@ -27,6 +31,7 @@ export default new Router({
       name: 'ActivityContent',
       component: ActivityContent,
     },{
+      // 资讯
       path: '/message',
       name: 'Message',
       component: Message
@@ -35,6 +40,7 @@ export default new Router({
       name: 'MessageContent',
       component: MessageContent,
     },{
+      // 技术
       path: '/technology',
       name: 'Technology',
       component: Technology
@@ -43,6 +49,7 @@ export default new Router({
       name: 'TechnologyContent',
       component: TechnologyContent,
     },{
+      // 智库
       path: '/thinkTank',
       name: 'ThinkTank',
       component: ThinkTank
@@ -50,6 +57,21 @@ export default new Router({
       path: '/thinkTank/content',
       name: 'ThinkTankContent',
       component: ThinkTankContent,
+    },{
+      // 企业服务
+      path: '/enterprise',
+      name: 'Enterprise',
+      component: Enterprise
+    },{
+      // 我是专家
+      path: '/professor',
+      name: 'Professor',
+      component: Professor
+    },{
+      // 区域合作
+      path: '/regional',
+      name: 'RegionalCooperation',
+      component: RegionalCooperation
     }
   ]
 })

@@ -3,7 +3,9 @@
     <!-- 头部 -->
     <Header></Header>
     <!-- 体部 -->
-    <router-view/>
+    <div class="content">
+      <router-view/>
+    </div>
     <!-- 底部 -->
     <Footer></Footer>
   </div>
@@ -45,7 +47,7 @@ a {
   color: #707070;
   text-decoration: none;
 }
-#app {
+#app .content{
   width: 1240px;
   margin: 0 auto;
 }
