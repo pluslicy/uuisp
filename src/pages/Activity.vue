@@ -271,15 +271,15 @@
 
 }
  em{
-	font-size:18px;
-	color:#1f86ed;
-	padding-left:10px;
-	padding-right:10px;
-    border-bottom-color: rgb(221, 221, 221);
+	font-size:16px;
+	color:#1f86ed; 
+	padding-left:14px;
+    padding-right:14px;
+    padding-top:8px;
+    padding-bottom:8px;
+    border:2px solid #d6d6d6;
 	border-radius:2px;
-
-	
-
+    line-height:10px;
 }
 em:hover{
     background-color: rgb(238, 238, 238);
