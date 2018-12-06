@@ -8,21 +8,21 @@
       <div class="header-nav">
 
         <div class="header-nav-left">
-          <div class="nav-logo"></div>
+          <div class="nav-logo" @click="toMain"></div>
           <div class="nav-main">
-            <span class="nav-main-span">首页</span>  
+            <span class="nav-main-span" @click="toMain">首页</span>  
           </div>
           <div class="nav-technology">
-            <span class="nav-technology-span">技术</span>
+            <span class="nav-technology-span" @click="toTechnology">技术</span>
           </div>
           <div class="nav-thinktank">
-            <span class="nav-thinktank-span">智库</span>
+            <span class="nav-thinktank-span" @click="toThinktank">智库</span>
             </div>
           <div class="nav-activity">
-            <span class="nav-activity-span">活动</span>
+            <span class="nav-activity-span" @click="toActivity">活动</span>
           </div>
           <div class="nav-message">
-            <span class="nav-message-span">咨询</span>
+            <span class="nav-message-span" @click="toMessage">咨询</span>
           </div>
         </div>
 
@@ -30,13 +30,13 @@
 
         <div class="header-nav-right">
           <div class="nav-service">
-            <span class="nav-service-span">企业服务</span>
+            <span class="nav-service-span"><a href="http://127.0.0.1:8080/#/enterprise" target="_blank">企业服务</a></span>
           </div>
           <div class="nav-cooperation">
-            <span class="nav-cooperation-span">区域合作</span>
+            <span class="nav-cooperation-span"><a href="http://127.0.0.1:8080/#/regional" target="_blank">区域合作</a></span>
           </div>
           <div class="nav-experts">
-            <span class="nav-experts-span">我是专家</span>
+            <span class="nav-experts-span"><a href="http://127.0.0.1:8080/#/professor" target="_blank">我是专家</a></span>
           </div>
           <div class="nav-login">
             <span class="nav-login-span">
@@ -70,6 +70,23 @@ export default {
       let navs = document.getElementsByClassName('nav-main-span')[0].setAttribute('style','border-bottom:2px solid #fff;font-weight:700;padding:2px;');
     }
   },
+  methods:{
+    toMain(){
+      this.$router.push('/')
+    },
+    toTechnology(){
+      this.$router.push('/technology')
+    },
+    toThinktank(){
+      this.$router.push('/thinkTank')
+    },
+    toActivity(){
+      this.$router.push('/activity')
+    },
+    toMessage(){
+      this.$router.push('/message')
+    },
+  },
 }
 </script>
 
@@ -82,6 +99,9 @@ export default {
     color: #fff;
     width: 100%;
     background-color: black; 
+  }
+  a{
+    color: #fff;
   }
   .header .header-wrapper{
     /* height: 450px; */
@@ -163,8 +183,8 @@ export default {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    /* white-space: nowrap;
-    touch-action: manipulation; */
+    white-space: nowrap;
+    touch-action: manipulation;
     cursor: pointer;
   }
   .header-nav-right>div:not(:last-child):hover{
