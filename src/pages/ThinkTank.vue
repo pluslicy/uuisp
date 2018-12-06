@@ -2,12 +2,14 @@
 <template>
 	<div class="ThinkTank">
 		<div class="content" style="border:1px solid #ccc">
+			<div class="warperrr">
 			<div class="biaoti">
 				<h1>有问题&nbsp;&nbsp;找专家</h1>
 			</div><br>
 			<div class="fubiao">
 				Link   Technology   to   Industry
 			</div><br>
+			</div>
 			<div class="input" style="text-align:center;vertical-align:middel;">
 				<input  style="width:610px;height:40px;font-size:18px; color:#ccc;" type="text" value="寻找你的专家顾问">
 				<i>搜&nbsp;&nbsp;&nbsp;&nbsp;索</i>
@@ -37,7 +39,9 @@
 							<li><i style="border:1px solid white; padding:10px">新型药物</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">呼吸性疾病</i></li>
 						</ul>
 					</div>
+					<
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa" alt="">
+						
 					<div style="width:300px;height:80px;background-color: white" class="name">
 						<ul>
 							<li><b>钱峰</b> 研究员</li>
@@ -116,9 +120,19 @@
 	
 </script>
 <style>
+.ThinkTank{
+	width:1240px;
+	margin:0 auto;
+}
 .content{
 	position:relative;
 	background-color:#ebe9ea;
+}
+.warperrr{
+	position:absolute;
+	top:-200px;
+	z-index:1000;
+	left:40%;
 }
 	.content .biaoti{
 		text-align:center;
@@ -130,6 +144,12 @@
 		font-size:26px;
 		color:#a9dbfe;
 		font-weight:lighter;
+	}
+	.input{
+		position:absolute;
+		top:-100px;
+		z-index:1000;
+		left:310px;
 	}
 	.input i{
 		margin-left:-5px;
@@ -163,32 +183,44 @@
 		color:#156fb8;
 		cursor:pointer;
 	}
-
+	.pic{
+		position:relative;
+	}
+	
+	
+.pic .pic-1{
+	position:absolute;
+		left:-15px;
+		
+}
 	.pic .pic-2{
 		position:absolute;
-		left:310px;
-		top:510px;
+		left:312px;
+		
 
 	}
 	.pic .pic-3{
 		position:absolute;
-		left:620px;
-		top:510px;
+		left:626px;
+		
 	}
 	.pic .pic-4{
 		position:absolute;
-		left:930px;
-		top:510px;
+		left:940px;
+		
+
 	}
 	.name{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
+		margin-left:15px;
 	}
 	.name-1{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
+
 	}
 	.name-2{
 		text-align:center;
@@ -204,12 +236,14 @@
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
+		margin-top:-3px;
+
 	}
 	.pic-1{
 		position:relative;
 	}
 	.model{
-
+		left:15px;
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -260,6 +294,7 @@
 		height:410px;
 		background:rgba(0,0,0,0.5);
 		display:none;
+
 	}
 	.pic-4:hover .model-4{
 		display:block;
@@ -269,6 +304,8 @@
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
+		margin-top:500px;
+		text-decoration:underline;
 	}
 	.help{
 		text-align:center;
@@ -288,8 +325,12 @@
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
+		text-decoration:underline;
+
 	}
 	.look:hover{
 		cursor:pointer;
+		
+
 	}
 </style>

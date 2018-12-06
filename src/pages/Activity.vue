@@ -1,12 +1,14 @@
 <template>
   <div class="Activity">
     <div class="container">
+        <div class="warrperr">
     	<div class="title">
     		<h1>行业热门活动</h1>
     	</div>
     	<div class="text">
     		<h2>汇聚各大产业最新、 最热、 最前沿 的盛会</h2>
     	</div>
+    </div>
     	<div class="list">
     		<ul>
     			<a id="item-first" href=""><li>活动类型</li></a>
@@ -32,8 +34,9 @@
     				<a href=""><button>我要报名</button></a>
     			</ul>
     		</div>
-    		 <div class="clear"></div>
+    		 
     	</div><br>
+        <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-2">
     		<div class="nav-2-1">
     			<img style="width:310px;height:180px" src="https://res4.maikeji.cn/FvB-7IMYN14zo1DbhfrOwVwx5IgD" alt="">
@@ -47,6 +50,7 @@
     			</ul>
     		</div>
     	</div><br>
+        <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-3">
     		<div class="nav-3-1">
     			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/FhQtJGLFWeMtBaA9uiCZYasWDsYD" alt="">
@@ -60,6 +64,7 @@
     			</ul>
     		</div>
     	</div><br>
+        <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-4">
     		<div class="nav-4-1">
     			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/Fhk0j9OoOT8IaQsP2pzjodCyS_0Q" alt="">
@@ -73,6 +78,7 @@
     			</ul>
     		</div>
     	</div><br>
+        <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-5">
     		<div class="nav-5-1">
     			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/Fk1kiY55VQDnvqHwxjfnOj8hm2Wm" alt="">
@@ -87,7 +93,7 @@
     		</div>
     	</div>
     	<div class="page">
-    		<em style="background-color:#1f86ed;color:whemte;">1</em>
+    		<em style="background-color:#1f86ed;color:white;">1</em>
     		<em>2</em>
     		<em>3</em>
     		<em>4</em>
@@ -98,30 +104,30 @@
     		<em>下一页</em>
     	</div>
     </div>
-    <div class="pop">
+    <div class="pop" style="border:1px solid #ccc">
     	<div class="top-1">
     		活动回顾
     	</div><br>
     	<div class="top-2">
     		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
-    	</div><br>
+    	</div>
     	<div class="top-3">
     		需求征集中，第三方招聘中...
     	</div><br>
     	<div class="top-4">
     		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
-    	</div><br>
+    	</div>
     	<div class="top-5">
-    		【公开课】|首届长三角洲科技交
-    	</div><br>
+    		【公开课】|首届长三角洲
+    	</div>
     	<div class="top-6">
     		<img style="width:240px;height:180px;"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
-    	</div><br>
+    	</div>
     	<div class="top-7">
     		有机工业废水如何处理  看看
-    	</div><br>
+    	</div>
     	<div class="top-8">
-    		<img style="width:240px;height:165px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+    		<img style="width:240px;height:173px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
     	</div>
     </div>
   </div>
@@ -132,14 +138,25 @@
 <style>
 .Activity{
 	position:relative;
+    width:1240px;
+    margin:0 auto;
 }
 .container{
 	width:990px;
+    position:relative;
 }
+.warrperr{
+    position:absolute;
+    top:-250px;
+    z-index:1000;
+    left:40%;
+}
+
 	.Activity .title{
 		text-align:center;
 		font-size:20px;
 		color:white;
+
 	}
 	
 	.Activity .text{
@@ -194,6 +211,7 @@
   a button:hover{
 	background-color: rgb(40, 96, 144);
 	color:white;
+    cursor:pointer;
  }
  .nav-2{
  	position:relative;
@@ -235,6 +253,10 @@
 		color:black;
 		font-size:18px;
 }
+#four{
+        color:black;
+        font-size:18px;
+}
 .nav-5{
 	position:relative;
 }
@@ -253,14 +275,14 @@
 	color:#1f86ed;
 	padding-left:10px;
 	padding-right:10px;
-	border:2px solid #d6d6d6;
+    border-bottom-color: rgb(221, 221, 221);
 	border-radius:2px;
 
 	
 
 }
 em:hover{
-	background-color:grey;
+    background-color: rgb(238, 238, 238);
 	cursor:pointer;
 }
 .pop{
@@ -269,12 +291,12 @@ em:hover{
 	
 	position:absolute;
 	right:0px;
-	top:100px;
+	top:16px;
 
 }
 
 .top-1{
-	margin-top:-3px;
+	margin-top:-16px;
 	text-align:center;
 	line-height:50px;
 	font-size:18px;

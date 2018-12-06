@@ -87,6 +87,8 @@
 </script>
 <style>
 .activityContent{
+	margin:0 auto;
+	width:1240px;
 	background-color:#eeeeee;
 	height:1590px;
 }

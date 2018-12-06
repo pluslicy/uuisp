@@ -172,8 +172,10 @@
 </script>
 <style>
 .thinkTankContent{
+	width:1240px;
 	background-color:#eeeeee;
 	position: relative;
+	margin:0 auto;
 }
 .top-pic{
 	width:950px;
