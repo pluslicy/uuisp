@@ -3,8 +3,11 @@
   2018年12月5日15:37:05 编辑主体内容
 -->
 <template>
-  <div class="header">
-    <div class="header-wrapper">
+  <div class="header header-img">
+    <div class="bg-one" :style='"height:"+high'></div>
+    <div class="bg-two" :style='"height:"+high'></div>
+    <div class="bg-three" :style='"height:"+high'></div>
+    <div class="header-wrapper" :style='"height:"+high'>
       <div class="header-nav">
 
         <div class="header-nav-left">
@@ -49,9 +52,8 @@
         </div>
 
       </div>
-
-      <div class="header-content"></div>
     </div>
+    <!-- <div :style='"height:"+high'></div> -->
   </div>
 </template>
 
@@ -59,16 +61,22 @@
 export default {
   data() {
     return{
-      defaultNav:0,
+      _path:'/',
+      high:'',
     }
   },
   created() {
-    
+    this.high = '450px';
   },
-  mounted() {
-    if(this.defaultNav == 0){
-      let navs = document.getElementsByClassName('nav-main-span')[0].setAttribute('style','border-bottom:2px solid #fff;font-weight:700;padding:2px;');
+  watch:{
+    $route(to,from){
+      this._path = to.path;
+      this.listenPath();
     }
+  },
+  mounted() {      
+    this._path = '/'
+    this.listenPath();
   },
   methods:{
     toMain(){
@@ -86,21 +94,141 @@ export default {
     toMessage(){
       this.$router.push('/message')
     },
+    // 监听导航变化
+    listenPath(){
+      let border = {"border-bottom":"2px solid #fff","font-weight":"700","padding":"3px"};
+      let bordernone = {"border-bottom":"none","font-weight":"500","padding":"3px"}
+      if(this._path == '/'){
+        this.play1();
+        $('.nav-main-span').eq(0).css(border)
+        $('.nav-technology-span').eq(0).css(bordernone)
+        $('.nav-thinktank-span').eq(0).css(bordernone)
+        $('.nav-activity-span').eq(0).css(bordernone)
+        $('.nav-message-span').eq(0).css(bordernone)
+        this.high = '450px'
+        $('.bg-one').eq(0).css("background-image","url(https://maikeji.cn/images/index/banner1.jpg)")
+        $('.bg-two').eq(0).css("background-image","url(https://maikeji.cn/images/index/banner2.jpg)")
+        $('.bg-three').eq(0).css("background-image","url(https://maikeji.cn/images/index/banner3.jpg)")
+      }else if(this._path == '/technology'){
+        $('.nav-technology-span').eq(0).css(border)
+        $('.nav-main-span').eq(0).css(bordernone)
+        $('.nav-thinktank-span').eq(0).css(bordernone)
+        $('.nav-activity-span').eq(0).css(bordernone)
+        $('.nav-message-span').eq(0).css(bordernone)
+        this.high = '450px'
+        $('.bg-one,.bg-two,.bg-three').css("background-image","url(https://maikeji.cn/images/bg-header-technologies.jpg)")
+      }else if(this._path == '/thinkTank'){
+        $('.nav-thinktank-span').eq(0).css(border)
+        $('.nav-main-span').eq(0).css(bordernone)
+        $('.nav-technology-span').eq(0).css(bordernone)
+        $('.nav-activity-span').eq(0).css(bordernone)
+        $('.nav-message-span').eq(0).css(bordernone)
+        this.high = '550px'
+        $('.bg-one,.bg-two,.bg-three').css("background-image","url(https://maikeji.cn/images/bg-header-experts.jpg)")
+      }else if(this._path == '/activity'){
+        $('.nav-activity-span').eq(0).css(border)
+        $('.nav-main-span').eq(0).css(bordernone)
+        $('.nav-technology-span').eq(0).css(bordernone)
+        $('.nav-thinktank-span').eq(0).css(bordernone)
+        $('.nav-message-span').eq(0).css(bordernone)
+        this.high = '450px'
+        $('.bg-one,.bg-two,.bg-three').css("background-image","url(https://maikeji.cn/images/bg-header-activities.jpg)")
+      }else if(this._path == '/message'){
+        $('.nav-message-span').eq(0).css(border)
+        $('.nav-main-span').eq(0).css(bordernone)
+        $('.nav-technology-span').eq(0).css(bordernone)
+        $('.nav-thinktank-span').eq(0).css(bordernone)
+        $('.nav-activity-span').eq(0).css(bordernone)
+        this.high = '450px'
+        $('.bg-one,.bg-two,.bg-three').css("background-image","url(https://maikeji.cn/images/bg-header-edu.jpg)")
+      };
+    },
+    // 首页轮播
+    play1(){
+      // console.log("11")
+      if(this._path !== '/'){
+        $('.bg-one,.bg-two,.bg-three').css("opacity","1");
+        return
+      }
+      var that = this;
+      $('.bg-one').animate({opacity:0},5000)
+      $('.bg-two').animate({opacity:1},5000,function(){
+        that.play2()
+      })
+    },
+    play2(){
+      // console.log("22")
+      if(this._path !== '/'){
+        $('.bg-one,.bg-two,.bg-three').css("opacity","1");
+        return
+      }
+      var that = this;
+      $('.bg-two').animate({opacity:0},5000)
+      $('.bg-three').animate({opacity:1},5000,function(){
+        that.play3();
+      })
+    },
+    play3(){
+      // console.log("33")
+      if(this._path !== '/'){
+        $('.bg-one,.bg-two,.bg-three').css("opacity","1");
+        return
+      }
+      var that = this;
+      $('.bg-three').animate({opacity:0},5000)
+      $('.bg-one').animate({opacity:1},5000,function(){
+        that.play1();
+      })
+    },
   },
 }
 </script>
 
 <style>
-  .header{
+  .header-img{
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
     font-family: PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
     color: #fff;
     width: 100%;
-    background-color: black; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
   }
-  a{
+  .bg-one{
+    width: 100%;
+    background-image: url(https://maikeji.cn/images/index/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    z-index: 3;
+  }
+  .bg-two{
+    width: 100%;
+    background-image: url(https://maikeji.cn/images/index/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    z-index: 2;
+  }
+  .bg-three{
+    width: 100%;
+    background-image: url(https://maikeji.cn/images/index/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    z-index: 1;
+  }
+  .header-content{
+    position: relative;
+  }
+  .header-nav-right a{
     color: #fff;
   }
   .header .header-wrapper{
@@ -109,12 +237,14 @@ export default {
     position: relative;
     max-width: 1240px;
     width: 100%;
-    background-color:  rgba(0, 0, 0, 0.7);
+    background-color:  rgba(0, 0, 0, 0);
+    /* background-image: url(); */
   }
   .header-wrapper .header-nav{
     display: flex;
-    position: relative;
+    position:absolute;
     width: 100%;
+    z-index: 4;
   }
   .header-wrapper .header-nav>div{
     height: 70px;
@@ -137,7 +267,7 @@ export default {
   }
   .header-wrapper .header-nav .header-nav-left .nav-logo{
     /* background-color: rgba(0,0,0,0); */
-    background: url(https://maikeji.cn/images/header/logo.png);
+    background-image: url(https://maikeji.cn/images/header/logo.png);
     background-repeat: no-repeat;
     width: 50px;
     background-position:center; 
