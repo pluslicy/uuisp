@@ -2,174 +2,177 @@
 <template>
 	<div class="technology">
 		<div class="insert">
-			<h1 class="insert-text">汇聚全球技术 助力企业升级</h1>
-			<div class="insert-input">
-				<input type="text" placeholder="请输入想要的技术项目">
-				<div class="button">搜   索</div>
+				<h1 class="insert-text">汇聚全球技术 助力企业升级</h1>
+				<div class="insert-input">
+					<input type="text" placeholder="请输入想要的技术项目">
+					<div class="button">搜   索</div>
+				</div>
 			</div>
-		</div>
-		<div class="technology-first">
-			<div class="technology-first-carousel">
-				<ul>
-					<li>
-						<div class="tfc-technology">
-	    				<div>
-	    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
-	    				</div>
-	    				<p>可多次脱模的高性价比橡胶轮胎脱模剂</p>
-	    			</div>
-					</li>
-					<li>
-						<div class="tfc-technology">
-	    				<div>
-	    					<img src="https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq" alt="">
-	    				</div>
-	    				<p>重金属污染耕地修复用重金属稳定剂</p>
-	    			</div>
-					</li>
-					<li>
-						<div class="tfc-technology">
-	    				<div>
-	    					<img src="https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X" alt="">
-	    				</div>
-	    				<p>有机硅助剂－流平剂</p>
-	    			</div>
-					</li>
-				</ul>
+		<div class="technology-warp">
+			
+			<div class="technology-first">
+				<div class="technology-first-carousel">
+					<ul>
+						<li>
+							<div class="tfc-technology">
+		    				<div>
+		    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
+		    				</div>
+		    				<p>可多次脱模的高性价比橡胶轮胎脱模剂</p>
+		    			</div>
+						</li>
+						<li>
+							<div class="tfc-technology">
+		    				<div>
+		    					<img src="https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq" alt="">
+		    				</div>
+		    				<p>重金属污染耕地修复用重金属稳定剂</p>
+		    			</div>
+						</li>
+						<li>
+							<div class="tfc-technology">
+		    				<div>
+		    					<img src="https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X" alt="">
+		    				</div>
+		    				<p>有机硅助剂－流平剂</p>
+		    			</div>
+						</li>
+					</ul>
+				</div>
+				<div class="screen">
+					<ul class="territory">
+						<li>所属领域</li>
+						<li>不限</li>
+						<li>能源电力</li>
+						<li>环境工程</li>
+						<li>化学化工</li>
+						<li>科技材料</li>
+						<li>生农医药</li>
+						<li>机械电子</li>
+					</ul>
+					<ul class="territory">
+						<li>应用行业</li>
+						<li>不限</li>
+						<li>环保行业</li>
+						<li>化工新材料行业</li>
+						<li>IT|通信|电子|互联网</li>
+						<li>生产|加工|制造</li>
+						<li>能源|电力</li>
+						<li>其它</li>
+					</ul>
+					<ul class="territory">
+						<li>成熟度</li>
+						<li>不限</li>
+						<li>小试</li>
+						<li>生试</li>
+						<li>中试</li>
+					</ul>
+					<ul class="territory">
+						<li>来源地</li>
+						<li>不限</li>
+						<li>中国</li>
+						<li>中国(香港)</li>
+						<li>中国(台湾)</li>
+						<li>美国</li>
+						<li>德国</li>
+						<li>英国</li>
+						<li>日本</li>
+						<li>俄罗斯</li>
+					</ul>
+					<ul class="territory">
+						<li>合作标签</li>
+						<li>不限</li>
+						<li>股权融资合作</li>
+						<li>市场渠道合作</li>
+						<li>落地孵化合作</li>
+					</ul>
+				</div>
 			</div>
-			<div class="screen">
-				<ul class="territory">
-					<li>所属领域</li>
-					<li>不限</li>
-					<li>能源电力</li>
-					<li>环境工程</li>
-					<li>化学化工</li>
-					<li>科技材料</li>
-					<li>生农医药</li>
-					<li>机械电子</li>
-				</ul>
-				<ul class="territory">
-					<li>应用行业</li>
-					<li>不限</li>
-					<li>环保行业</li>
-					<li>化工新材料行业</li>
-					<li>IT|通信|电子|互联网</li>
-					<li>生产|加工|制造</li>
-					<li>能源|电力</li>
-					<li>其它</li>
-				</ul>
-				<ul class="territory">
-					<li>成熟度</li>
-					<li>不限</li>
-					<li>小试</li>
-					<li>生试</li>
-					<li>中试</li>
-				</ul>
-				<ul class="territory">
-					<li>来源地</li>
-					<li>不限</li>
-					<li>中国</li>
-					<li>中国(香港)</li>
-					<li>中国(台湾)</li>
-					<li>美国</li>
-					<li>德国</li>
-					<li>英国</li>
-					<li>日本</li>
-					<li>俄罗斯</li>
-				</ul>
-				<ul class="territory">
-					<li>合作标签</li>
-					<li>不限</li>
-					<li>股权融资合作</li>
-					<li>市场渠道合作</li>
-					<li>落地孵化合作</li>
-				</ul>
-			</div>
-		</div>
-		<div class="technology-content ">
-			<div class="technology-nav">
-				<div>默认</div>
-				<span class="last-line"></span>
+			<div class="technology-content ">
+				<div class="technology-nav">
+					<div>默认</div>
+					<span class="last-line"></span>
 
-				<div>关注度&nbsp;<i class="fa fa-angle-down"></i></div>
-				<div>发布时间&nbsp;<i class="fa fa-angle-down"></i></div>
+					<div>关注度&nbsp;<i class="fa fa-angle-down"></i></div>
+					<div>发布时间&nbsp;<i class="fa fa-angle-down"></i></div>
+				</div>
+				<div class="technology-body">
+					<div class="product" v-for="item in product">
+						<div class="shade">
+								<div class="tel">
+									<i class="fa fa-phone"></i>&nbsp;联系技术方
+								</div>
+								<div class="use">
+									适用于:{{item.use}}
+								</div>
+								<div class="read">
+									<div class="readtime">浏览量:{{item.readtime}}</div>
+									<div class="infotime">咨询量:{{item.infotime}}</div>
+								</div>
+							</div>
+							<img :src="item.image" alt="">
+							<div class="wape">
+								<div class="presentation">
+								<h3>{{item.title}}</h3>
+								<p>{{item.description}}</p>
+							</div>
+							<div class="product-message">
+								<div class="site">{{item.site}}</div>
+								<div class="stage">{{item.stage}}</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-paging">
+						<ul>
+							<li v-for="item in 7">{{item}}</li>
+							<li>...</li>
+							<li>下一页</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div class="technology-body">
-				<div class="product" v-for="item in product">
-					<div class="shade">
-							<div class="tel">
-								<i class="fa fa-phone"></i>&nbsp;联系技术方
-							</div>
-							<div class="use">
-								适用于:{{item.use}}
-							</div>
-							<div class="read">
-								<div class="readtime">浏览量:{{item.readtime}}</div>
-								<div class="infotime">咨询量:{{item.infotime}}</div>
-							</div>
+			<div class="technology-recommend">
+				<div class="recommend-title">迈科技推荐</div>
+				<div class="recommend-product">
+					<div class="product" v-for="item in recommendProduct">
+						<div class="recommend-logo">推荐技术</div>
+						<div class="shade">
+								<div class="tel">
+									<i class="fa fa-phone"></i>&nbsp;联系技术方
+								</div>
+								<div class="use">
+									适用于:{{item.use}}
+								</div>
+								<div class="read">
+									<div class="readtime">浏览量:{{item.readtime}}</div>
+									<div class="infotime">咨询量:{{item.infotime}}</div>
+								</div>
 						</div>
 						<img :src="item.image" alt="">
 						<div class="wape">
 							<div class="presentation">
-							<h3>{{item.title}}</h3>
-							<p>{{item.description}}</p>
-						</div>
-						<div class="product-message">
-							<div class="site">{{item.site}}</div>
-							<div class="stage">{{item.stage}}</div>
-						</div>
-					</div>
-				</div>
-				<div class="product-paging">
-					<ul>
-						<li v-for="item in 7">{{item}}</li>
-						<li>...</li>
-						<li>下一页</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="technology-recommend">
-			<div class="recommend-title">迈科技推荐</div>
-			<div class="recommend-product">
-				<div class="product" v-for="item in recommendProduct">
-					<div class="recommend-logo">推荐技术</div>
-					<div class="shade">
-							<div class="tel">
-								<i class="fa fa-phone"></i>&nbsp;联系技术方
+								<h3>{{item.title}}</h3>
+								<p>{{item.description}}</p>
 							</div>
-							<div class="use">
-								适用于:{{item.use}}
-							</div>
-							<div class="read">
-								<div class="readtime">浏览量:{{item.readtime}}</div>
-								<div class="infotime">咨询量:{{item.infotime}}</div>
+							<div class="product-message">
+								<div class="site">{{item.site}}</div>
+								<div class="stage">{{item.stage}}</div>
 							</div>
 					</div>
-					<img :src="item.image" alt="">
-					<div class="wape">
-						<div class="presentation">
-							<h3>{{item.title}}</h3>
-							<p>{{item.description}}</p>
-						</div>
-						<div class="product-message">
-							<div class="site">{{item.site}}</div>
-							<div class="stage">{{item.stage}}</div>
-						</div>
-				</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="related-service">
-			<div class="service-title">相关服务推荐</div>
-			<div class="service-content">
-				<h1>寻找技术资源，实现创新升级</h1>
-				<p>用我的专业，换你省心省力</p>
-				<div class="find-btn">帮我找</div>
-				<div class="service-img">
-					<img src="https://maikeji.cn/images/recommend/technologies-list-image.jpg" alt="">
+			<div class="related-service">
+				<div class="service-title">相关服务推荐</div>
+				<div class="service-content">
+					<h1>寻找技术资源，实现创新升级</h1>
+					<p>用我的专业，换你省心省力</p>
+					<div class="find-btn">帮我找</div>
+					<div class="service-img">
+						<img src="https://maikeji.cn/images/recommend/technologies-list-image.jpg" alt="">
+					</div>
+					<div class="service-msg">可多次脱模的高性价比橡胶轮胎脱模剂</div>
 				</div>
-				<div class="service-msg">可多次脱模的高性价比橡胶轮胎脱模剂</div>
 			</div>
 		</div>
 	</div>
@@ -293,9 +296,17 @@
 	div,span,li,p{
 		box-sizing: border-box;
 	}
+	.technology .technology-warp{
+		width: 1240px;
+		margin:0 auto;
+	}
 	.technology .insert{
+		position: absolute;
+		z-index: 100;
+		top:100px;
+		width: 100%;
 		text-align: center;
-		background-color: #ccc;
+		/*background-color: #ccc;*/
 		padding: 1em	
 	}
 	.technology .insert-text{
@@ -503,10 +514,10 @@
 		height: 315px;
 		margin: 20px 1em 0 0;
 		padding-bottom: 10px;
-		border:1px solid #ccc;
+		border:1px solid #eee;
 	}
 	.technology .product img{
-		width: 278px;
+		width: 100%;
 		height: 160px;
 		margin-bottom: 10px;
 	}
@@ -519,7 +530,7 @@
 		margin-bottom: 10px;
 	}
 	.technology .product:hover{
-		box-shadow: 2px 2px 2px #ccc;
+		box-shadow: 2px 2px 2px #efefef;
 	}
 	.technology .product:hover .shade{
 		display: block;

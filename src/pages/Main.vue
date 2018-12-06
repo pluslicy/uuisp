@@ -1,57 +1,61 @@
 <!-- 首页 -->
 <template>
 	<div class="main">
-		<div class="insert">
-			<div class="main-inster-header">
-					<div @click="hotTechnology">热门技术</div>
-					<div @click="hotActive">热门活动</div>
-					<div @click="hotCms">热门资讯</div>
+		<div class="insert-warp">
+			<div class="main-warp">
+				<div class="insert">
+				<div class="main-inster-header">
+						<div @click="hotTechnology">热门技术</div>
+						<div @click="hotActive">热门活动</div>
+						<div @click="hotCms">热门资讯</div>
+				</div>
+				<div class="contanter">
+					<div class="hot-mas" v-show="showOne">
+						<div class="ht-msg" v-for="item in hotTechnologyMsg">
+							&nbsp;· {{item.title}}
+							<div class="particular-ht-msg">
+								<h3>{{item.title}}</h3>
+								<p>{{item.msg}}</p>
+							</div>
+						</div>	
+					</div>
+					<div class="hot-mas" v-show="showTwo">
+						<div class="ht-msg" v-for="item in hotActiveMsg">
+							&nbsp;· {{item.title}}
+							<div class="particular-ht-msg">
+								<h3>{{item.title}}</h3>
+								<p>{{item.msg}}</p>
+							</div>
+						</div>	
+					</div>
+					<div class="hot-mas" v-show="showThree">
+						<div class="ht-msg" v-for="item in hotCmsMsg">
+							&nbsp;· {{item.title}}
+							<div class="particular-ht-msg">
+								<h3>{{item.title}}</h3>
+								<p>{{item.msg}}</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="insert-footer">
+					<div v-show="showOne">
+						<i class="fa fa-hand-o-right"></i>
+						<span class="insert-footer-name">2099</span>
+						<span class="insert-footer-text">项优质技术项目正在寻求合作>></span>
+					</div>
+					<div v-show="showTwo">
+						<i class="fa fa-hand-o-right"></i>
+						<span class="insert-footer-name">6</span>
+						<span class="insert-footer-text">项行业活动正在报名>></span>
+					</div>
+					<div v-show="showThree">
+						<i class="fa fa-hand-o-right"></i>
+						<span class="insert-footer-text">查看更多</span>
+					</div>
+					
+				</div>
 			</div>
-			<div class="contanter">
-				<div class="hot-mas" v-show="showOne">
-					<div class="ht-msg" v-for="item in hotTechnologyMsg">
-						&nbsp;· {{item.title}}
-						<div class="particular-ht-msg">
-							<h3>{{item.title}}</h3>
-							<p>{{item.msg}}</p>
-						</div>
-					</div>	
-				</div>
-				<div class="hot-mas" v-show="showTwo">
-					<div class="ht-msg" v-for="item in hotActiveMsg">
-						&nbsp;· {{item.title}}
-						<div class="particular-ht-msg">
-							<h3>{{item.title}}</h3>
-							<p>{{item.msg}}</p>
-						</div>
-					</div>	
-				</div>
-				<div class="hot-mas" v-show="showThree">
-					<div class="ht-msg" v-for="item in hotCmsMsg">
-						&nbsp;· {{item.title}}
-						<div class="particular-ht-msg">
-							<h3>{{item.title}}</h3>
-							<p>{{item.msg}}</p>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="insert-footer">
-				<div v-show="showOne">
-					<i class="fa fa-hand-o-right"></i>
-					<span class="insert-footer-name">2099</span>
-					<span class="insert-footer-text">项优质技术项目正在寻求合作>></span>
-				</div>
-				<div v-show="showTwo">
-					<i class="fa fa-hand-o-right"></i>
-					<span class="insert-footer-name">6</span>
-					<span class="insert-footer-text">项行业活动正在报名>></span>
-				</div>
-				<div v-show="showThree">
-					<i class="fa fa-hand-o-right"></i>
-					<span class="insert-footer-text">查看更多</span>
-				</div>
-				
 			</div>
 		</div>
 		<!-- <div class="message">
@@ -174,7 +178,9 @@
 					</ul>
 				</div>
 			</div>
-			<div class="body-three">
+			<div class="main-bk bk-color-ccc">
+				<div class="main-warp">
+				<div class="body-three">
 				<div class="active">
 					<div class="active-msg">
 						<div class="active-msg-img">
@@ -220,6 +226,8 @@
 					</div>
 					<div class="new-active">查看最新活动</div>
 				</div>
+			</div>
+			</div>
 			</div>
 		</div>
 		<div class="content">
@@ -425,23 +433,37 @@
 	ul,ol{
 		list-style: none;
 	}
+	.main .main-warp{
+		width: 1240px;
+		margin:0 auto;
+	}
 	.main .bk-color-ccc{
 		background-color:#F5F5F5
 	}
 	.main .insert{
+		float: right;
 		padding: 0 15px;
 		width: 340px;
 		height: 280px;
 		background-color:rgba(0,0,0,80%);
+		margin:auto;
 	}
-	.main .insert > .main-inster-header{
+	.main .insert-warp{
+		position: absolute;
+		z-index: 100;
+		top:95px;
+		/*right: 100px;*/
+		width: 100%;
+		/*text-align: right;*/
+	}
+	.main .insert .main-inster-header{
 		display: flex;
 		justify-content: space-between;
 		height: 40px;
 		border-bottom: 1px solid #fff;
 	}
 
-	.main .insert > .main-inster-header div{
+	.main .insert .main-inster-header div{
 		cursor:pointer;
 		color: #fff;
 		height: 40px;
@@ -548,7 +570,7 @@ text-overflow: ellipsis;
 		cursor: pointer;
 	}
 	.main .nav > ul > li:hover{
-		box-shadow: 0px 0px 5px #ccc;
+		box-shadow: 0px 0px 5px #efefef;
 	}
 	.main .nav .left{
 		float: left;
@@ -636,10 +658,10 @@ text-overflow: ellipsis;
 		height: 315px;
 		margin: 20px 1em 0 0;
 		padding-bottom: 10px;
-		border:1px solid #ccc;
+		border:1px solid #efefef;
 	}
 	.main .product img{
-		width: 280px;
+		width: 278px;
 		height: 160px;
 		margin-bottom: 10px;
 	}
@@ -652,7 +674,7 @@ text-overflow: ellipsis;
 		margin-bottom: 10px;
 	}
 	.main .product:hover{
-		box-shadow: 2px 2px 2px #ccc;
+		box-shadow: 2px 2px 2px #efefef;
 	}
 	.main .product:hover .shade{
 		display: block;
@@ -729,7 +751,7 @@ text-overflow: ellipsis;
 	}
 	.main .counselor > .face{
 		margin:0 auto;
-		border:1px solid #ccc;
+		border:1px solid #eee;
 		padding: 5px;
 		width: 115px;
 		height: 115px;
@@ -833,7 +855,7 @@ text-overflow: ellipsis;
 		overflow:hidden;
 	}
 	.main .innovate .innovate-img,.innovate-img img{
-		width: 295px;
+		width: 100%;
 		height:200px;
 	} 
 	.main .innovate-img img:hover{
@@ -845,11 +867,11 @@ text-overflow: ellipsis;
 	}
 	.main .innovate-msg{
 		cursor: pointer;
-		border:1px solid #ccc;
+		border:1px solid #eee;
 	}
 	.main .innovate-msg:hover{
 		/*border: none;*/
-		box-shadow: 0 0 3px #ccc;
+		box-shadow: 0 0 3px #efefef;
 	}
 	.main .innovate-title{
 		padding: .5em;

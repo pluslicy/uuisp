@@ -233,12 +233,12 @@
     		</div>
     		<div class="tpt-right-recommend">
 	    		<div class="tpt-rr-title">迈科技推荐</div> 
-    			<div class="trr-rr-technology">
-    				<div>
-    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
-    				</div>
-    				<p>可多次脱模的高性价比橡胶轮胎脱模剂</p>
-    			</div> 
+	    			<div class="trr-rr-technology">
+	    				<div>
+	    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
+	    				</div>
+	    				<p>可多次脱模的高性价比橡胶轮胎脱模剂</p>
+	    			</div> 
     			<div class="trr-rr-technology">
     				<div>
     					<img src="https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq" alt="">
@@ -281,12 +281,17 @@
 		padding-bottom: 50px;
 	}
 	.technologyContent > .technology-head-nav{
+		width: 1240px;
+		margin:0 auto;
 		height: 80px;
 		padding: 30px 0;
 	}
 	.technologyContent > .technology-head-nav > span{
 		margin-right: 0.5em;
 		cursor: pointer;
+	}
+	.technologyContent > .technology-head-nav > span:hover{
+		color: #1E87ED;
 	}
 	.technologyContent > .technology-head-nav > i{
 		margin-right: 0.5em;
