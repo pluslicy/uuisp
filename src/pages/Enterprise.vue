@@ -311,6 +311,7 @@
 <style scoped>
 	.enterprise{
 		text-align: center;
+		width: 1240px;
 	}
 	/*轮播图*/
 	.service-photo-wall-wrap{
@@ -593,7 +594,7 @@
 		line-height: 20px;
 		color: #8a8c8d;
 		margin-bottom: 5px;
-		
+
 
 	}
 
