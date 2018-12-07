@@ -80,6 +80,32 @@
     		报名参加
     	</div>
     </div>
+     <div class="pop">
+    	<div class="top-1">
+    		正在报名
+    	</div>
+    	<div class="top-2">
+    		<img style="width:315px;height:180px; margin-left:-40px" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
+    	</div>
+    	<div class="top-3">
+    		需求征集中，第三方招聘中...
+    	</div>
+    	<div class="top-4">
+    		<img style="width:315px;height:180px; margin-left:-40px" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
+    	</div>
+    	<div class="top-5">
+    		【公开课】|首届长三角洲
+    	</div>
+    	<div class="top-6">
+    		<img style="width:315px;height:180px; margin-left:-40px"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
+    	</div>
+    	<div class="top-7">
+    		有机工业废水如何处理  看看
+    	</div><br>
+    	<div class="top-8">
+    		<img style="width:315px;height:180px; margin-left:-40px" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+    	</div>
+    </div>
   </div>
 </template>
 <script>
@@ -89,11 +115,17 @@
 .activityContent{
 	margin:0 auto;
 	width:1240px;
-	background-color:#eeeeee;
+	background-color:#eee;
 	height:1590px;
+	position:relative;
 }
 .activity-1{
 	background-color:white;
+
+}
+.nat{
+	margin-top:1.5em;
+	margin-left:1.5em;
 }
 
 	.nat>ul>a>li{
@@ -181,4 +213,56 @@
 		cursor:pointer;
 		background-color: rgb(40, 96, 144);
 	}
+	.activityContent .pop{
+	width:240px;
+	height:950px;
+	
+	position:absolute;
+	right:35px;
+	top:335px;
+
+}
+
+.activityContent .top-1{
+	margin-top:-16px;
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	
+
+}
+.top-2{
+	margin-top:20px;
+}
+
+.activityContent .top-3{
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	background-color:grey;
+	color:white;
+	margin-top:20px;
+}
+.top-4{
+		margin-top:20px;
+}
+.activityContent .top-5{
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	background-color:grey;
+	color:white;
+	margin-top:20px;
+}
+.top-6{
+	margin-top:20px;
+}
+.activityContent .top-7{
+	text-align:center;
+	line-height:50px;
+	font-size:18px;
+	background-color:grey;
+	color:white;
+	margin-top:20px;
+}
 </style>

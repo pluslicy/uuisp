@@ -36,7 +36,7 @@
 				<div class="pic-1">
 					<div class="model">
 						<ul>
-							<li><i style="border:1px solid white; padding:10px">新型药物</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">呼吸性疾病</i></li>
+							<li @click="changePageOne"><i style="border:1px solid white; padding:10px">新型药物</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">呼吸性疾病</i></li>
 
 						</ul>
 						
@@ -119,7 +119,18 @@
 	</div>
 </template>
 <script>
-	
+	export default{
+		data(){
+			return{
+
+			}
+		},
+		methods:{
+			 changePageOne (){
+                this.$router.push('/thinkTank/content')
+        },
+		}
+	}
 </script>
 <style>
  .ThinkTank{

@@ -31,7 +31,9 @@
     				<li id="filter">与资本零距离|创合会"商学院好项目"第十期路演会</li>
     				<li>活动时间：2018.12.09-2018.12.09</li>
     				<li>简介：迈科技 创合会强强联合，携手百家投资机构，助力创业者精准对接，实现创业梦想</li>
-    				<a href=""><button>我要报名</button></a>
+    				<!-- <a href=""> -->
+                        <button  @click="changePage">我要报名</button>
+                    <!-- </a> -->
     			</ul>
     		</div>
     		 
@@ -133,7 +135,19 @@
   </div>
 </template>
 <script>
-	
+	export default{
+        data(){
+            return{
+
+            }
+        },
+        methods:{
+            changePage (){
+                this.$router.push('/activity/content')
+        },
+            }
+        }
+    
 </script>
 <style>
 .Activity{
@@ -172,8 +186,8 @@
 	.container .list>ul>a>li{
 
 		display:inline-block;
-		width:70px;
-		padding-left:30px;
+		width:100px;
+		
         color:black;
 
 	}
@@ -269,6 +283,7 @@
 }
 .container .page {
 	margin-left:500px;
+    margin-bottom:1.5em;
 
 }
 .container em{
@@ -282,8 +297,8 @@
 	border-radius:2px;
     line-height:10px;
 }
-.containerem:hover{
-    background-color: rgb(238, 238, 238);
+.container:hover{
+   
 	cursor:pointer;
 }
 .pop{

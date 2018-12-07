@@ -75,7 +75,7 @@
     	</div><br><br>
 		<div class="an">
 			<ul>
-				<li style="">新型药物</li>
+				<li>新型药物</li>
 				<li>呼吸性疾病发病机理与分子机制</li>
 				<li>高同量药物</li>
 			</ul>
@@ -92,7 +92,7 @@
     		<input class="insert-1" type="text" value="您的姓名">
     	
     	
-    		<input class="insert-2"  type="text" value="+86 ^">
+    		<input class="insert-2"  type="text" value="  +86 ^">
     		<input class="insert-3"  type="text" value="请输入你的手机号">
     	
     	
@@ -172,9 +172,10 @@
 <style>
 .thinkTankContent{
 	width:1240px;
-	background-color:#eeeeee;
+	
 	position: relative;
 	margin:0 auto;
+
 }
 .top-pic{
 	width:950px;
@@ -182,12 +183,13 @@
 }
 	.top-subnav>ul>a>li{
 		display: inline-block;
+		margin-top:0.3em;
 		
 	}
 	.top-pic-1{
 		width:950px;
 		height:200px;
-		background-color:lightblue;
+		background-color:white;
 		position:relative;
 	}
 	.top-pic-2{
@@ -223,19 +225,23 @@
 		font-size:16px;
 	}
 	.an{
+		color:#627fc1;
 		text-align: center;
+		margin-bottom:1.5em;
 	}
 	.an>ul>li{
 		display:inline-block;
 		width:200px;
 		border:1px solid #1f86ed;
-		border-radius: 10px;
+		border-radius: 5px;
 		padding-top:5px;
 		padding-bottom:5px;
+		background-color: rgb(244, 248, 253);
 
 	}
 	.an>ul>li:hover{
 		cursor:pointer; 
+		background-color:;
 	}
 	.pageone{
 		position:absolute;
@@ -253,6 +259,7 @@
 		height:30px;
 		left:10px;
 		top:70px;
+		color: rgb(204, 204, 204);
 		
 	}
 	.insert-2{
@@ -261,6 +268,7 @@
 		height:30px;
 		left:10px;
 		top:120px;
+		color:#555555;
 	}
 	.insert-3{
 		position:absolute;
@@ -268,6 +276,7 @@
 		height:30px;
 		left:80px;
 		top:120px;
+		color: rgb(204, 204, 204);
 	}
 	.insert-4{
 		position:absolute;
@@ -275,6 +284,7 @@
 		height:30px;
 		left:10px;
 		top:170px;
+		color: rgb(204, 204, 204);
 		
 	}
 	.test{
@@ -293,6 +303,7 @@
 		height:130px;
 		left:10px;
 		top:230px;
+		color: rgb(204, 204, 204);
 		
 	}
 	.nide{
