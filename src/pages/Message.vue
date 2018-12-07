@@ -17,7 +17,7 @@
 				<div class="list-container section-left" >
 					<ul class="list" >
 						  <li class="list-item" >
-							   <a class=""  v-for = 'item in l.list' :key="item" >
+							   <a class=""  v-for = 'item in l.listInfo' :key="item" >
 								     <p class="title overflow-hidden" @click="info">{{item.title}}</p>
 								     <p class="text overflow-hidden">{{item.content}}</p>
 							   </a>
@@ -49,7 +49,7 @@
                	   one:'转型',
            	   	   two:'行业新闻',
                    three:'解读',
-                   list:[{
+                   listInfo:[{
 	               	   title:'媒体聚焦 | 上海市政总院：专业服务平台助力创新发展',
 	               	   content:'媒体聚焦 | 上海市政总院：专业服务平台助力创新发展。'
 	               },{
@@ -71,7 +71,7 @@
                    one:'讲堂',
            	   	   two:'前沿资讯',
                    three:'指导',
-                   list:[{
+                   listInfo:[{
 	               	   title:'国土部：将实行激励政策，鼓励合理开发利用城市地下空间',
 	               	   content:'地下交通 | 马斯克又来了！打造地下交通系统解决城市拥堵问题'
 	               },{
@@ -93,7 +93,7 @@
                	   one:'洞悉',
            	   	   two:'行业观察',
                    three:'观察',
-                   list:[{
+                   listInfo:[{
 	               	   title:'中共中央国务院印发《关于进一步 加强城市规划建设管理工作的若干意见》',
 	               	   content:'地下空间 | 朱颖：地下空间与交通的相互促进与发展'
 	               },{
@@ -111,32 +111,7 @@
 		               backgroundImage:"url("+three+")"
 		           },
 	               imgText:"地下空间与交通的相互促进与发展——朱颖"
-               },
-			//    {
-            //        one:'动态',
-           	//    	   two:'迈科技新闻',
-            //        three:'一览',
-            //        list:[{
-	        //        	   title:'高效！“自助”技术对接，达成合作仅用2天！',
-	        //        	   content:'徐州某企业通过迈科技平台联系技术方自主对接成功，目前双方正就建厂、引进新设备等事宜展开合作。'
-	        //        },{
-	        //        	   title:'【迈科技】以市场为导向，专业科技服务让成果“转”更快',
-	        //        	   content:'在迈科技的服务下，项目打开了新的应用场景市场，目前已经完成小试、中试的应用，技术产品在多家知名企业使用，获得阶段性进展。'
-	        //        },{
-	        //        	   title:'【迈科技】德清丨精准匹配，企业对接中科院技术降本增效',
-	        //        	   content:'9月20日，迈科技为德清县当地企业对接了中国科学院长春应用化学研究院高分子物理与化学国家重点实验室。'
-	        //        },{
-	        //        	   title:'一块化妆镜如何靠技术升级迎接这个“美颜时代”？',
-	        //        	   content:'化妆镜都技术升级了，你呢？'
-	        //        }],
-	        //        arrImg:four,
-	        //        bgImg:{
-		    //            backgroundImage:"url("+four+")"
-		    //        },
-	        //        imgText:"长治市副市长石建旺、山西省发改委副主任尚日红等领导一行来访迈科技"
-            //    }
-			   ],
-	           
+               }],  
             }
 		},
 		methods:{
