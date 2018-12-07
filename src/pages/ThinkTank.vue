@@ -8,7 +8,7 @@
 			</div><br>
 			<div class="fubiao">
 				Link   Technology   to   Industry
-			</div><br>
+			</div><br><br>
 			</div>
 			<div class="input" style="text-align:center;vertical-align:middel;">
 				<input  style="width:610px;height:40px;font-size:18px; color:#ccc;" type="text" value="寻找你的专家顾问">
@@ -37,7 +37,9 @@
 					<div class="model">
 						<ul>
 							<li><i style="border:1px solid white; padding:10px">新型药物</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">呼吸性疾病</i></li>
+
 						</ul>
+						
 					</div>
 					<
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa" alt="">
@@ -105,9 +107,9 @@
 			<div class="toget">
 				汇聚国内外顶尖高校和科研院所的优质技术力量
 			</div><br><br>
-			<div class="boot">
-				<img style="width:1240px;height:600px" src="../assets/second.png" alt="">
-			</div>
+			<a href=""><div class="boot">
+				<img style="width:1240px;height:600px" src="../assets/think/second.png" alt="">
+			</div></a>
 			<br><br>
 			<div class="look">
 				查看更多合作机构
@@ -120,7 +122,7 @@
 	
 </script>
 <style>
-.ThinkTank{
+ .ThinkTank{
 	width:1240px;
 	margin:0 auto;
 }
@@ -128,9 +130,9 @@
 	position:relative;
 	background-color:#ebe9ea;
 }
-.warperrr{
+.content .warperrr{
 	position:absolute;
-	top:-200px;
+	top:-300px;
 	z-index:1000;
 	left:40%;
 }
@@ -145,104 +147,104 @@
 		color:#a9dbfe;
 		font-weight:lighter;
 	}
-	.input{
+	.content .input{
 		position:absolute;
-		top:-100px;
+		top:-150px;
 		z-index:1000;
 		left:310px;
 	}
-	.input i{
+	.content .input i{
 		margin-left:-5px;
 		background-color:#156fb8;
 		padding:12px 13px 12px 20px;
 		color:white;
 		font-size:18px;
 	}
-	.input i:hover{
+	.content .input i:hover{
 		cursor:pointer;
 		background-color:#395a77;
 	}
-	.zhuanjia {
+	.content .zhuanjia {
 		text-align:center;
 		
 	}
-	.zhuanjia i{
+	.content .zhuanjia i{
 		font-weight: lighter;
 		font-size:40px;
 		color:#333333;
 	}
-	.title-1{
+	.content .title-1{
 		text-align:center;
 		color:#333333;
 	}
-	.title-2{
+	.content .title-2{
 		text-align:center;
 		font-size:30px;
 	}
-	.title-2 i:hover{
+	.content .title-2 i:hover{
 		color:#156fb8;
 		cursor:pointer;
 	}
-	.pic{
+	.content .pic{
 		position:relative;
 	}
 	
 	
-.pic .pic-1{
+.content .pic .pic-1{
 	position:absolute;
 		left:-15px;
 		
 }
-	.pic .pic-2{
+	.content .pic .pic-2{
 		position:absolute;
 		left:312px;
 		
 
 	}
-	.pic .pic-3{
+	.content .pic .pic-3{
 		position:absolute;
 		left:626px;
 		
 	}
-	.pic .pic-4{
+	.content .pic .pic-4{
 		position:absolute;
 		left:940px;
 		
 
 	}
-	.name{
+	.content .name{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 		margin-left:15px;
 	}
-	.name-1{
+	.content .name-1{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 
 	}
-	.name-2{
+	.content .name-2{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 	}
-	.name-3{
+	.content .name-3{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 	}
-	.name-4{
+	.content .name-4{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 		margin-top:-3px;
 
 	}
-	.pic-1{
+	.content .pic-1{
 		position:relative;
 	}
-	.model{
+	.content .model{
 		left:15px;
 		color:white;
 		line-height:410px;
@@ -253,11 +255,11 @@
 		background:rgba(0,0,0,0.5);
 		 display:none; 
 	}
-	.pic-1:hover .model{
+	.content .pic-1:hover .model{
 		display:block;
 		cursor:pointer;
 	}
-	.model-1{
+	.content .model-1{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -267,11 +269,11 @@
 		background:rgba(0,0,0,0.5);
 		display:none;
 	}
-	.pic-2:hover .model-1{
+	.content .pic-2:hover .model-1{
 		display:block;
 		cursor:pointer;
 	}
-	.model-3{
+	.content .model-3{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -281,11 +283,11 @@
 		background:rgba(0,0,0,0.5);
 		display:none;
 	}
-	.pic-3:hover .model-3{
+	.content .pic-3:hover .model-3{
 		display:block;
 		cursor:pointer;
 	}
-	.model-4{
+	.content .model-4{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -296,41 +298,43 @@
 		display:none;
 
 	}
-	.pic-4:hover .model-4{
+	.content .pic-4:hover .model-4{
 		display:block;
 		cursor:pointer;
 	}
-	.morethan{
+	.content .morethan{
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
 		margin-top:500px;
 		text-decoration:underline;
 	}
-	.help{
+	.content .help{
 		text-align:center;
 		font-size:40px;
 		color:#333333;
 	}
-	.toget{
+	.content .toget{
 		text-align:center;
 		color:black;
 	}
-	.boot{
+	.content .boot{
 		width:1240px;
 		height:600px;
 		background-color: lightblue;
 	}
-	.look{
+	
+	.content .look{
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
 		text-decoration:underline;
 
 	}
-	.look:hover{
+	.content .look:hover{
 		cursor:pointer;
 		
 
 	}
+	
 </style>

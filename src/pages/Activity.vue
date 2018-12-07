@@ -145,62 +145,63 @@
 	width:990px;
     position:relative;
 }
-.warrperr{
+.container .warrperr{
     position:absolute;
     top:-250px;
     z-index:1000;
     left:40%;
 }
 
-	.Activity .title{
+	.container .title{
 		text-align:center;
 		font-size:20px;
 		color:white;
 
 	}
 	
-	.Activity .text{
+	.container .text{
 		text-align:center;
 		font-size:15px;
 		color:white;
 	}
-	.list{
+	.container .list{
 		background-color:#ededed;
 		height:50px;
 		line-height: 50px;
 	}
-	.list>ul>a>li{
+	.container .list>ul>a>li{
+
 		display:inline-block;
-		width:105px;
+		width:70px;
 		padding-left:30px;
         color:black;
 
 	}
-	#item-first{
+	.container #item-first{
 		
 		font-weight:bolder;
 	}
-	#item-second span{
+	.container #item-second span{
 		background-color:lightblue;
 		padding:5px 20px 5px 20px;
 		border:1px solid #4dafed;
 	}
-	.nav-1{
+	.container .nav-1{
 		position:relative;
 	}
 	
 	
-	.nav-1-2{
+	.container .nav-1-2{
 		position:absolute;
 		left:330px;
 		top:0px;
 		line-height:45px;
 	}
-	#filter{
+	.container #filter{
 		color:black;
 		font-size:18px;
 	}
-	button{
+	 .container button{
 		width:100px;
 		height:40px;
 		border-radius:10px;
@@ -208,69 +209,69 @@
 		color:white;
 		font-size:15px;
 	}
-  a button:hover{
+  .container a button:hover{
 	background-color: rgb(40, 96, 144);
 	color:white;
     cursor:pointer;
  }
- .nav-2{
+ .container .nav-2{
  	position:relative;
  }
-.nav-2-2{
+.container .nav-2-2{
 		position:absolute;
 		left:330px;
 		top:0px;
 		line-height:45px;
         color:black;
 }
-#one{
+.container #one{
 		color:black;
 		font-size:18px;
 }
-.nav-3{
+.container .nav-3{
 	position:relative;
 }
-.nav-3-2{
+.container .nav-3-2{
 		position:absolute;
 		left:330px;
 		top:0px;
 		line-height:45px;
 }
-.nav-4{
+.container .nav-4{
 	position:relative;
 }
-.nav-4-2{
+.container .nav-4-2{
 		position:absolute;
 		left:330px;
 		top:0px;
 		line-height:45px;	
 }
-#two{
+.container #two{
 		color:black;
 		font-size:18px;
 }
-#three{
+.container #three{
 		color:black;
 		font-size:18px;
 }
-#four{
+.container #four{
         color:black;
         font-size:18px;
 }
-.nav-5{
+.container .nav-5{
 	position:relative;
 }
-.nav-5-2{
+.container .nav-5-2{
 		position:absolute;
 		left:330px;
 		top:0px;
 		line-height:45px;	
 }
-.page {
+.container .page {
 	margin-left:500px;
 
 }
- em{
+.container em{
 	font-size:16px;
 	color:#1f86ed; 
 	padding-left:14px;
@@ -281,7 +282,7 @@
 	border-radius:2px;
     line-height:10px;
 }
-em:hover{
+.containerem:hover{
     background-color: rgb(238, 238, 238);
 	cursor:pointer;
 }
