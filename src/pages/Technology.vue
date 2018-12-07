@@ -296,6 +296,9 @@
 	div,span,li,p{
 		box-sizing: border-box;
 	}
+	.technology{
+		position: relative;
+	}
 	.technology .technology-warp{
 		width: 1240px;
 		margin:0 auto;
@@ -303,7 +306,7 @@
 	.technology .insert{
 		position: absolute;
 		z-index: 100;
-		top:100px;
+		top:-350px;
 		width: 100%;
 		text-align: center;
 		/*background-color: #ccc;*/

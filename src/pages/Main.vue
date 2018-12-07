@@ -5,9 +5,9 @@
 			<div class="main-warp">
 				<div class="insert">
 				<div class="main-inster-header">
-						<div @click="hotTechnology">热门技术</div>
-						<div @click="hotActive">热门活动</div>
-						<div @click="hotCms">热门资讯</div>
+						<div class="mih-hot-tec" @click="hotTechnology">热门技术</div>
+						<div class="mih-hot-act" @click="hotActive">热门活动</div>
+						<div class="mih-hot-cms" @click="hotCms">热门资讯</div>
 				</div>
 				<div class="contanter">
 					<div class="hot-mas" v-show="showOne">
@@ -62,13 +62,52 @@
 		</div> -->
 		<div class="nav">
 			<ul>
-				<li v-for="item in nav">
+				<li @click="toTechnology">
 					<div class="left">
 						<div class="title">
-							{{item.title}}
+							找技术
 						</div>
 						<p class="text">
-							{{item.text}}
+							2000+成熟技术项目 
+						</p>
+					</div>
+					<div class="right">
+						<i class="fa fa-bars"></i>
+					</div>
+				</li>
+				<li @click="toThinkTank">
+					<div class="left">
+						<div class="title">
+							问专家
+						</div>
+						<p class="text">
+							10000+深度合作专家
+						</p>
+					</div>
+					<div class="right">
+						<i class="fa fa-bars"></i>
+					</div>
+				</li>
+				<li @click="toActivity">
+					<div class="left">
+						<div class="title">
+							报活动
+						</div>
+						<p class="text">
+							10000+行业精英共同交流
+						</p>
+					</div>
+					<div class="right">
+						<i class="fa fa-bars"></i>
+					</div>
+				</li>
+				<li @click="toMessage">
+					<div class="left">
+						<div class="title">
+							学创新
+						</div>
+						<p class="text">
+							探讨企业创新发展
 						</p>
 					</div>
 					<div class="right">
@@ -83,13 +122,13 @@
 				<p>2000+成熟技术项目正在推广中</p>
 				<div class="content-nav">
 					<ul>
-						<li><a href="">化学化工</a><span>/</span></li>
-						<li><a href="">能源电力</a><span>/</span></li>
-						<li><a href="">环境工程</a><span>/</span></li>
-						<li><a href="">材料科技</a><span>/</span></li>
-						<li><a href="">生农医药</a><span>/</span></li>
-						<li><a href="">机械电子</a><span>/</span></li>
-						<li><a href="">全部></a></li>
+						<li class="list-nav active-nav" @click="changeListNav(1)"><span>化学化工</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(2)"><span>能源电力</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(3)"><span>环境工程</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(4)"><span>材料科技</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(5)"><span>生农医药</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(6)"><span>机械电子</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(7)"><span>全部></span></li>
 					</ul>
 				</div>
 			</div>
@@ -132,10 +171,10 @@
 				<p>10000+合作技术方 更有全网专家信息可检索</p>
 				<div class="content-nav">
 					<ul>
-						<li><a href="">医药科学</a><span>/</span></li>
-						<li><a href="">化学化工</a><span>/</span></li>
-						<li><a href="">工程技术</a><span>/</span></li>
-						<li><a href="">农业科学</a></li>
+						<li class="list-nav active-nav" @click="changeListNav(8)"><span>医药科学</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(9)"><span>化学化工</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(10)"><span>工程技术</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(11)"><span>农业科学</span></li>
 					</ul>
 				</div>
 			</div>
@@ -168,13 +207,13 @@
 				<h1>行业热门活动 技术交流盛会</h1>
 				<div class="content-nav">
 					<ul>
-						<li><a href="">化学化工</a><span>/</span></li>
-						<li><a href="">能源电力</a><span>/</span></li>
-						<li><a href="">环境工程</a><span>/</span></li>
-						<li><a href="">材料科技</a><span>/</span></li>
-						<li><a href="">生农医药</a><span>/</span></li>
-						<li><a href="">机械电子</a><span>/</span></li>
-						<li><a href="">全部></a></li>
+						<li class="list-nav active-nav" @click="changeListNav(12)"><span>化学化工</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(13)"><span>能源电力</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(14)"><span>环境工程</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(15)"><span>材料科技</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(16)"><span>生农医药</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(17)"><span>机械电子</span></li><i>/</i>
+						<li class="list-nav" @click="changeListNav(18)">全部></li>
 					</ul>
 				</div>
 			</div>
@@ -312,19 +351,6 @@
       		title:"高效！“自助”技术对接，达成合作仅用2天！",
       		msg:"徐州某企业通过迈科技平台联系技术方自主对接成功，目前双方正就建厂、引进新设备等事宜展开合作。"
       	}],
-        nav:[{
-        	title:"找技术",
-        	text:"2000+成熟技术项目",
-        },{
-        	title:"问专家",
-        	text:"10000+深度合作专家",
-        },{
-        	title:"报活动",
-        	text:"行业精英共同交流",
-        },{
-        	title:"学创新",
-        	text:"探讨企业创新发展",
-        }],
         product:[{
         	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
         	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
@@ -411,27 +437,75 @@
       };
     },
     methods: {
+    	// 技术路由
+    	toTechnology(){
+    		this.$router.push('/technology')
+    	},
+    	// 专家路由
+    	toThinkTank(){
+      	this.$router.push('/thinkTank')
+    	},
+    	// 活动路由
+    	toActivity(){
+	      this.$router.push('/activity')
+    	},
+    	// 资讯路由
+    	toMessage(){
+	      this.$router.push('/message')
+    	},
+		  // 列表导航点击样式
+    	changeListNav(n){
+	    	$(".list-nav").eq(n-1).addClass("active-nav").siblings().removeClass("active-nav");
+	    },
      hotTechnology(){
      	this.showOne = true;
      	this.showTwo = false;
      	this.showThree = false;
+     	this.mainInsterNav();
      },
      hotActive(){
      	this.showOne = false;
      	this.showTwo = true;
      	this.showThree = false;
+     	this.mainInsterNav();
      },
      hotCms(){
      	this.showOne = false;
      	this.showTwo = false;
      	this.showThree = true;
-     }
-    }
+     	this.mainInsterNav();
+     },
+     // '插入'导航点击样式
+	    mainInsterNav(){
+	     	let on = {"border-bottom":"2px solid #fff","font-weight":"700"};
+	     	let off = {"border-bottom":"none","font-weight":"500"};
+	     	if(this.showOne){
+	     		$('.mih-hot-tec').eq(0).css(on)
+	     		$('.mih-hot-act').eq(0).css(off)
+	     		$('.mih-hot-cms').eq(0).css(off)
+	     	}else if(this.showTwo){
+	     		$('.mih-hot-tec').eq(0).css(off)
+	     		$('.mih-hot-act').eq(0).css(on)
+	     		$('.mih-hot-cms').eq(0).css(off)
+	     	}else{
+	     		$('.mih-hot-tec').eq(0).css(off)
+	     		$('.mih-hot-act').eq(0).css(off)
+	     		$('.mih-hot-cms').eq(0).css(on)
+	     	}
+		  },
+    },
+    
   }
 </script>
 <style>
-	ul,ol{
-		list-style: none;
+	/*导航活动样式*/
+	.main .active-nav{
+		color: #1f94f1;
+		text-decoration: underline;
+	}
+	/*导航活动样式结束*/
+	.main{
+		position: relative;
 	}
 	.main .main-warp{
 		width: 1240px;
@@ -451,7 +525,7 @@
 	.main .insert-warp{
 		position: absolute;
 		z-index: 100;
-		top:95px;
+		top:-350px;
 		/*right: 100px;*/
 		width: 100%;
 		/*text-align: right;*/
@@ -470,6 +544,10 @@
 		line-height: 40px;
 		text-align: center;
 		width: 70px;
+	}
+	.main .insert .main-inster-header .mih-hot-tec{
+		border-bottom:2px solid #fff;
+		font-weight:700;
 	}
 	.main .insert .ht-msg{
 		position: relative;
@@ -613,6 +691,11 @@ text-overflow: ellipsis;
 	}
 	.main .content-nav span{
 		margin:0 .5em;
+	}
+	.main .content-nav span:hover{
+		cursor:pointer;
+		color: #1f94f1;
+		text-decoration: underline;
 	}
 	.main .body{
 		display: flex;
