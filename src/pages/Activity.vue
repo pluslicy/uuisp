@@ -19,7 +19,7 @@
     			<a href=""><li>培训讲座</li></a>
     			<a href=""><li>走访考察</li></a>
     			<a href=""><li>线上分享</li></a>
-    			<a href=""><li>其他</li></a>
+    			
     		</ul>
     	</div><br>
     	<div class="nav-1">
@@ -183,9 +183,10 @@
 		height:50px;
 		line-height: 50px;
 
+
 	}
 	.container .list>ul>a>li{
-        
+        margin-left:15px;
 		display:inline-block;
 		width:100px;
 		
