@@ -13,29 +13,29 @@
       	  	 	<td class="side-left">
       	  	 		<h2 class="title">{{title}}</h2>
       	  	 		<p class="preamble">{{preamble}}</p>
-      	  	 		<div class="m-cover" :style="infoImg"></div>
+      	  	 	    <div class="m-cover" :style="infoImg"></div> 
       	  	 		<div class="details fr-view">
-      	  	 			<p>徐州某环保科技有限公司主营水性涂料，为了谋求新发展，公司提出了拓展产品线和业务的的要求。公司负责人梁总也为此一直寻找优质的技术项目，最后通过搜索找到了迈科技。</p>
-      	  	 			<p>maikeji.cn上汇聚大量的技术信息资源，梁总根据自身企业所在领域进行筛选后，很快找到了自己“心仪”的项目——
+      	  	 			<p>交通拥堵停车难、雨洪内涝“城市看海”、管线事故“拉链路”……伴随着城市的发展，一系列影响市民生活的“城市病”也随之而来，而地上“问题”的背后，实际是地下空间建设尚待完善的短板。</p>
+      	  	 			<p>在我国建立资源节约型环境友好型社会的大背景下，在
       	  	 			   <a href="https://www.maikeji.cn/technologies/5abf0674263ee31e66393603" rel="noopener noreferrer" target="_blank">
-	      	  	 			   <span style="color: rgb(184, 49, 47);"> <strong>“低成本高质量的水性工业防腐涂料工艺（点击即可查看）” </strong></span>
-      	  	 			   </a>。该项目系技术方自主上传，一直在迈科技平台进行推广，接受企业的合作咨询。
+	      	  	 			   <span style="color: rgb(184, 49, 47);"> <strong>“上海面向2040建设卓越的全球城市” </strong></span>
+      	  	 			   </a>的目标下，在这个城市治理已经告别“头痛医头脚痛医脚”的时代，探讨如何充分开发利用地下空间已经迫在眉睫。
       	  	 			 </p>
-      	  	 			 <p><br></p>
+      	  	 			  <p><br></p>
       	  	 			 <p><img src="../assets/message/five.jpg" alt="" style="width: 723px;" class="fr-view fr-dib"></p>
-      	  	 			 <p>该技术工艺十分符合油改水企业，可以提供水免除锈三合一涂料，针对目前水性工业漆一些弊端进行了技术改良，并且相比同类产品能有效降低生产成本30%。</p>
+      	  	 			 <p>今年年底前，国内首个城市地下基础设施技术服务平台将正式发布，这一公共服务平台是上海市科委面向全市开放的创新服务举措</p>
       	  	 			 <p><br></p>
-      	  	 			 <p><strong><span style="color: rgb(0, 0, 0); font-size: 18px;"><strong><span style="color: rgb(0, 0, 0); font-size: 18px;">短短2天，</span></strong>从电话咨询到实地考察</span></strong></p>
-      	  	 			 <p>6月2日，梁总电话联系技术方，进行了初步接触。</p>
-      	  	 			 <p>6月4日，迈科技技术创新经理对咨询服务进行跟进服务，梁总告诉迈科技，他在咨询后迅速去了技术方工厂进行实地调研。通过考察其认为该项目风险小，且有量产案例，十分看好，并且技术方也表示可以帮助建厂，双方一拍即合，达成初步合作意向。</p>
+      	  	 			 <p><strong><span style="color: rgb(0, 0, 0); font-size: 18px;"><strong><span style="color: rgb(0, 0, 0); font-size: 18px;">前期由上海市政工，</span></strong>程设计研究总院（集团）有限公司</span></strong></p>
+      	  	 			 <p>（下称市政总院）牵头承建并提供技术支持和承担主要运营工作。</p>
+      	  	 			 <p>组建“平台”一方面有助于推动相关地下基础设施的发展，另一方面也是落实国家相关政策的需要。近年来，国家新型城镇化规划(2014－2020年)提出建设“集约紧凑型”城市开发模式；</p>
       	  	 			 <p><img src="../assets/message/six.jpg" alt="" style="width: 723px;" class="fr-view fr-dib"></p>
       	  	 			 <p style="text-align: center;"><span style="font-size: 12px;">迈科技运维后台记录，对部分保密信息进行遮盖处理</span></p>
       	  	 			 <p><br></p>
-      	  	 			 <p><strong><span style="font-size: 18px; color: rgb(0, 0, 0);">合作建厂，项目确认启动</span></strong></p>
-      	  	 			 <p>今年11月，迈科技服务回访，“技术方的工程师就在我们这儿呢，刚刚聊完。”梁总对项目表示十分有信心，并告知迈科技目前双方正积极就建厂、引进新设备等事宜做进一步的确认。</p>
+      	  	 			 <p><strong><span style="font-size: 18px; color: rgb(0, 0, 0);">乌鲁木齐高铁站南广场地下空间工程</span></strong></p>
+      	  	 			 <p>市政总院有责任在行业内发挥与地位相匹配的积极作用，坚持履行引领行业责任，引领行业的发展。</p>
       	  	 			 <p><br></p>
       	  	 			 <p><img src="../assets/message/sevent.jpg" alt="" style="width: 723px;" class="fr-view fr-dib"></p>
-      	  	 			 <p>迈科技充分发挥出平台“自助式”的服务优势，maikeji.cn在其中不仅仅通过信息展示，帮助技术方推广项目，更提供了一种让技术双方对接更简单的方式，解决技术需求方找项目遇到的“3W”问题——</p>
+      	  	 			 <p>这也完全符合“十三五”时期，市政总院提出的将以“互联网+技术创新服务”为导向，整合集成上下游技术资源，为公共基础设施开发提供关键技术研发服务，为行业内企业技术创新提供支撑服务，提升企业和行业服务能级，营造和谐的共生环境。</p>
       	  	 			 <p><strong>哪里找项目（Where）？</strong></p>
                          <p>迈科技平台，多渠道送达。</p>
                          <p>PC网站maikeji.cn、每日更新公众号（微信搜索迈科技）、全国首个技术对接小程序（迈科技精选）</p>
@@ -46,9 +46,9 @@
                          <p>点击即可直接联系技术方。</p>
                          <p>欢迎来电咨询，提供定制创新服务。</p>
                          <p><br></p>
-      	  	 			 <p><img src="../assets/message/eight.jpg" alt="" style="width: 723px;" class="fr-view fr-dib"></p>
+      	  	 			 <p><img src="../assets/message/eight.jpg" alt="" style="width: 723px;" class="fr-view fr-dib"></p> 
 
-      	  	 		</div> 
+      	  	 		</div>   
       	  	 		<div class="tag-container">
       	  	 			<a href="/edu/articles?text=%E8%BF%88%E7%A7%91%E6%8A%80%E6%A1%88%E4%BE%8B" class="">
       	  	 			   <span class="m-icon"><i class="fa fa-tag"></i></span><span class="tag">迈科技案例</span>
@@ -85,24 +85,22 @@
 							</li>
 						</ul>
 					</div>				 
-      	  	 	</td>
+      	  	 	</td> 
       	  	 	<td class="side-column-divider"></td>
-      	  	 	<td class="side-right">
-      	  	 		 <ul class="relate-list" v-for = 'ri in column' :key="ri">
-      	  	 			<!-- 栏目浏览头部信息 -->
-      	  	 			<li class="relate-list-head">
+      	  	 	<td class="side-right"> 
+      	  	 		  <ul class="relate-list" v-for = 'ri in column' :key="ri"> 
+      	  	 			  <li class="relate-list-head">
       	  	 				<span class="title">{{ri.title}}</span>
-      	  	 				<a href="#" class="link-more">{{more}}</a>
-      	  	 			</li>
+      	  	 				<a class="link-more">{{more}}</a>
+      	  	 			</li> 
       	  	 			<li>
-      	  	 			    <!-- 栏目浏览下的的具体内容 -->
-      	  	 				<a href="#" class="relate-list-item" v-for = 's in ri.text' :key="s">
+      	  	 				<a  class="relate-list-item" v-for = 's in ri.text' :key="s">
       	  	 					<i class="prefix"></i>
-      	  	 					<p class="text">{{s}}</p>
+      	  	 				    <p class="textP">{{s}}</p>      
       	  	 				</a>
-      	  	 			</li>
-      	  	 		</ul> 
-      	  	 	</td>
+      	  	 			</li>  
+      	  	 		</ul>  
+      	  	 	</td> 
       	  	 </tr>
       	  </tbody>
       </table>
@@ -119,8 +117,8 @@
                 infoImg:{
 	               backgroundImage:"url("+one+")"
 	            },
-				title:'高效！“自助”技术对接，达成合作仅用2天！',
-				preamble:'导言：徐州某企业通过迈科技平台联系技术方自主对接成功，目前双方正就建厂、引进新设备等事宜展开合作。',
+				title:'媒体聚焦 | 上海市政总院：专业服务平台助力创新发展',
+				preamble:'发布日期：2016-12-01   资讯来源：解放日报   浏览次数：1869 ',
 				otherInfo:[{
 					otherImg:{
 						backgroundImage:"url("+three+")",
@@ -145,7 +143,7 @@
 	}
 </script>
 <style scoped>
-    #infoPage,*, :after,:before{
+    #infoPage *, :after,:before{
     	box-sizing: border-box;
 	    margin: 0;
     }
@@ -153,12 +151,18 @@
     	list-style: none;
     }
      #infoPage table {
-    	border-spacing: 0;
-        border-collapse: collapse;
+        border-spacing: 0;
+        border-collapse: collapse; 
     }
+	 #infoPage tr,tbody{
+	    display: table-row;
+		vertical-align: inherit;
+		border-color: inherit;
+	 }
      #infoPage td, th {
 	    padding: 0;
 	    display: table-cell;
+	    vertical-align: inherit;
 	}
 	 #infoPage h1,h2,h3{
 		 margin-top: 20px;
@@ -168,9 +172,9 @@
 		text-transform: none;
 	    overflow: visible;
 	}
-	 #infoPage p{
+	  #infoPage p{
 		 margin: 0 0 10px;
-	}
+	} 
      #infoPage a{
     	display: inline;
     	color: #707070;
@@ -186,100 +190,103 @@
 	    width: 100%;
         box-sizing: border-box;
 	}
-	 #infoPage,.messageContent .item-catalog-container{
+	 #infoPage .item-catalog-container{
 		margin-bottom: 50px;
 	}
-	 #infoPage,.messageContent .item-catalog-container{
+     #infoPage .item-catalog-container{
 	    padding-top:30px;
 		padding-left:10px;
 	    margin-bottom: 35px;
 	    width: 100%;
 	}
-	.messageContent .item-catalog-container .catalog-item{
+	 #infoPage .item-catalog-container .catalog-item{
 		display: inline-block;
 	}
-	.messageContent .item-catalog-container .catalog-item a{
+	 #infoPage .item-catalog-container .catalog-item a{
 		display: inline-block;
 		/* margin-left: 10px; */
 	    margin-right: 5px;
 	    font-size: 14px;
 	    color: #707070;
 	}
-	.messageContent .side-layout-container .side-left{
-        width: 794px;
+	 #infoPage .side-layout-container .side-left{
+        width: 794px;  
+		/* border: 2px solid red;  */
+        vertical-align: top;
+		/* padding-right:90px; */
 	}
-	.side-layout-container .side-left{
-       vertical-align: top;
-	}
-	.messageContent .side-layout-container .side-left .title{
+	 #infoPage .side-layout-container .side-left .title{
 		margin-top: 0;
 	    font-size: 28px;
 	    font-weight: 700;
 	    color: #333;
 	}
-	.messageContent .side-layout-container .side-left .preamble{
+	 #infoPage .side-layout-container .side-left .preamble{
 		margin-top: 38px;
 	    margin-bottom: 38px;
 	    font-size: 18px;
 	    color: #999;
 	}
-	.messageContent .side-layout-container .side-left .m-cover{
+	 #infoPage .side-layout-container .side-left .m-cover{
 		margin-bottom: 46px;
 	    height: 490px;
-	    background-color: #ebe9ea;
+	    background-color: #fff;
 	    background-size: cover;
 	    background-position: 50%;
 	    background-repeat: no-repeat;
 	}
-	.messageContent .side-layout-container .side-left .details{
+	 #infoPage .side-layout-container .side-left .details{
 		margin-bottom: 25px;
 	    padding-bottom: 70px;
 	    border-bottom: 1px solid #ddd;
 	    font-size: 16px;
 	}
-	.messageContent .fr-view {
+	 #infoPage .side-layout-container .side-left .details p{
+		 width: 794px;   
+	 }
+	 /* #infoPage .fr-view {
 	    text-indent: 0;
 	}
-	.messageContent .fr-view strong {
+	 #infoPage .fr-view strong {
 	    font-weight: 700;
-	}
-	.messageContent .side-layout-container .side-left .tag-container{
+	} */
+	 #infoPage .side-layout-container .side-left .tag-container{
 		height: 28px;
         line-height: 28px;
         /* border: 1px solid blue; */
 	}
-	.messageContent .side-layout-container .side-left .func-btn-container{
+	 #infoPage .side-layout-container .side-left .func-btn-container{
 		float: right;
 		width: 40px;
 		margin-right: 20px;
 	}
-	.messageContent .side-layout-container .side-left .func-btn-container .favorite-icon-button{
+	 #infoPage .side-layout-container .side-left .func-btn-container .favorite-icon-button{
 		padding: 0;
 		width: 24px;
 		height: 24px;
 		border: none;
 		background-color: transparent;
 	}
-	.messageContent .side-layout-container .side-left .func-btn-container .fa-star-o{
+	 #infoPage .side-layout-container .side-left .func-btn-container .fa-star-o{
 	    color: #1f86ed;
 		font-size: 18px;
 	}
-	.messageContent .side-layout-container .side-left .tag-container>a:first-child{
+	 #infoPage .side-layout-container .side-left .tag-container>a:first-child{
 		margin-left: 0;
 	}
-	.messageContent .side-layout-container .side-left .tag-container>a{
+	 #infoPage .side-layout-container .side-left .tag-container>a{
 		display: inline-block;
 	    margin-left: 12px;
 	}
 	
-	.messageContent .side-layout-container .side-left .tag-container .m-icon {
+	 #infoPage .side-layout-container .side-left .tag-container .m-icon {
 	    margin-right: 7px;
         color: #a9a9a9; 
 	} 
-	.messageContent .side-layout-container .side-left .tag-container .m-icon .fa-weixin{
+	 #infoPage .side-layout-container .side-left .tag-container .m-icon .fa-weixin{
 		color: #3aa838;
 	}
-	.messageContent .share-container{
+	 #infoPage .share-container{
 		position: relative;
 	    display: -ms-inline-flexbox;
 	    display: inline-flex;
@@ -287,27 +294,27 @@
 	    align-items: center;
 	    min-width: 96px;
 	}
-	.messageContent .pull-right {
+	 #infoPage .pull-right {
 	    float: right!important;
 	}
-	.messageContent .icon-weixin:before {
+	 #infoPage .icon-weixin:before {
 	    content: "\E857";
 	}
-	.messageContent .share-container:hover>.dropdown-menu{
+	 #infoPage .share-container:hover>.dropdown-menu{
 		display: block;
 	}
-	.messageContent .share-container .share-body {
+	 #infoPage .share-container .share-body {
 	    left: -13px;
 	    width: 121px;
 	    min-width: 0;
 	    padding: 10px;
 	    z-index: 1;
 	}
-	.messageContent .pull-right>.dropdown-menu {
+	 #infoPage .pull-right>.dropdown-menu {
 	    right: 0;
 	    left: auto;
 	}
-	.messageContent .dropdown-menu {
+	 #infoPage .dropdown-menu {
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
@@ -327,53 +334,53 @@
 	    border-radius: 4px;
 	    box-shadow: 0 6px 12px rgba(0,0,0,.175); 
 	} 
-	.messageContent .dropdown-menu .qrcode-caption{
+	 #infoPage .dropdown-menu .qrcode-caption{
         margin-top: 5px;
 		margin-bottom: 0;
 		width: 100%;
 		text-align: center;
 		font-size: 12px;
 	}
-	.messageContent .fa-weixin:hover .dropdown-menu{
+	 #infoPage .fa-weixin:hover .dropdown-menu{
 		display: block;
 	}
-	.messageContent .side-layout-container .side-left .btn-useful-container{
+	 #infoPage .side-layout-container .side-left .btn-useful-container{
 	    margin-top: 50px;
         text-align: center;
 	}
-	.messageContent .side-layout-container .side-left .consult-edu-modal-outer{
+	 #infoPage .side-layout-container .side-left .consult-edu-modal-outer{
 		margin-left: 50px;
         display: inline-block;
 	}
-	.messageContent .side-layout-container .side-left .btn-useful{
+	 #infoPage .side-layout-container .side-left .btn-useful{
 		width: 150px;
 	    height: 50px;
 	    line-height: 35px;
 	    font-size: 18px;
 	    letter-spacing: 1.2px;
 	}
-	.messageContent .btn-primary-reverse{
+	 #infoPage .btn-primary-reverse{
 		background-color: #fff;
 	    border-color: #1f86ed;
 	    border:1px solid #1f86ed;
 	    color: #1f86ed;
 	}
-	.messageContent .btn-primary-reverse:hover {
+	 #infoPage .btn-primary-reverse:hover {
 	    background-color: #1f86ed;
 	    border-color: #204d74;
 	    color: #fff;
 	}
-	.messageContent .btn-primary, .btn-primary:focus {
+	 #infoPage .btn-primary, .btn-primary:focus {
 	    background-color: #1f86ed;
 	    border-color: #1f86ed;
 	    color: #fff;
 	}
-	.messageContent .btn-primary:hover{
+	 #infoPage .btn-primary:hover{
 		color: #fff;
 	    background-color: #337ab7;
 	    border-color: #2e6da4;
 	}
-	.messageContent .btn {
+	 #infoPage .btn {
 	    display: inline-block;
 	    padding: 6px 12px;
 	    margin-bottom: 0;
@@ -394,33 +401,33 @@
 	    border: 1px solid  #1f86ed;
 	    border-radius: 4px;
 	}
-	.messageContent .side-layout-container .side-left .fr-view img.fr-dib{
+	 #infoPage .side-layout-container .side-left .fr-view img.fr-dib{
 		margin: 5px auto;
 	    display: block;
 	    float: none;
 	    /*vertical-align: top;*/
 	}
-	.messageContent .side-layout-container .side-left .other-list{
+	 #infoPage .side-layout-container .side-left .other-list{
 		display: flex;
 		justify-content: space-between;
 	}
-	.messageContent .side-layout-container .side-left .other-list-container{
+	 #infoPage .side-layout-container .side-left .other-list-container{
 		margin-top: 30px;
 	}
-	.messageContent .side-layout-container .side-left .other-list-container .subtitle{
+	 #infoPage .side-layout-container .side-left .other-list-container .subtitle{
 		margin-bottom: 15px;
 		color: #333;
 		font-weight: 700;
 		font-size:18px;
 	}
-	.messageContent .side-layout-container .side-left  .other-list-item{
+	 #infoPage .side-layout-container .side-left  .other-list-item{
 		width: 250px;
 	} 
-	.messageContent .side-layout-container .side-left  .other-list-item .m-cover{
+	 #infoPage .side-layout-container .side-left  .other-list-item .m-cover{
 		margin-bottom: 5px;
 		height: 140px;		
 	}
-	 .messageContent .side-layout-container .side-left  .other-list-item .title{
+	  #infoPage .side-layout-container .side-left  .other-list-item .title{
 		font-size: 14px;
 		color: #333;
 		display: block;
@@ -428,41 +435,42 @@
 	    margin: 0 0 10px;
 		/* border:1px solid red;  */
 	} 
-	.messageContent .side-layout-container .side-column-divider{
-        width: 90px;
-        /* background:red; */
+	 #infoPage .side-layout-container td.side-column-divider{
+        width: 90px;  
+    	box-sizing: border-box;	
+		/* background-color: red;	 */
 	}
-    .messageContent .side-layout-container .side-right{
-        width: 356px;
+     #infoPage .side-layout-container .side-right{
+        width: 356px; 
         max-width: 356px;
         vertical-align: top;
 	}
-	 .messageContent .side-layout-container .side-right .relate-list{
+	  #infoPage .side-layout-container .side-right .relate-list{
 	 	margin-bottom: 80px;
 	 }
-	 .messageContent .side-layout-container .side-right .relate-list-head{
+	  #infoPage .side-layout-container .side-right .relate-list-head{
 	 	margin-bottom: 20px;
 	    height: 30px;
 	    line-height: 30px;
 	 }
-	  .messageContent .side-layout-container .side-right .relate-list-item{
+	   #infoPage .side-layout-container .side-right .relate-list-item{
         display: flex;
 	    padding-top: 8px;
 	    padding-bottom: 8px;
 	    border-bottom: 1px solid #ddd;
 	  }
-	  .messageContent .side-layout-container .side-right .relate-list-head .title{
+	   #infoPage .side-layout-container .side-right .relate-list-head .title{
 	  	font-size: 20px;
 	    font-weight: 700;
 	    color: #333;
 	 }
-	 .messageContent .side-layout-container .side-right .relate-list-head .link-more{
+	  #infoPage .side-layout-container .side-right .relate-list-head .link-more{
 	  	float: right;
 	    color: #1f86ed;
 	    font-size: 16px;
 	    display: block;
 	 }
-	 #infoPage .side-layout-container .relate-list-item .prefix{
+	 #infoPage .side-layout-container .side-right .relate-list-item>.prefix{
         margin-top: 11px;
 	    margin-right: 8px;
 	    width: 8px;
@@ -470,4 +478,14 @@
 	    border-radius: 8px;
 	    background-color: #1f86ed;
 	 }
+	 #infoPage .side-layout-container .side-right .relate-list-item>.textP{
+		display: block;
+	    flex-grow: 1;
+		margin-bottom: 0;
+		width: 326px;
+		line-height: 1.8;
+		font-size: 14px;
+		color: #666;
+		word-break: break-all; 
+	  }
 </style>
