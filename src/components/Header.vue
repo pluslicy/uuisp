@@ -130,12 +130,13 @@ export default {
     // 滚动函数区
     handleScroll () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+// 这里有问题↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
       if(this._path == '/enterprise' || this._path == '/professor' || this._path == '/regional'){
-        alert('1')
         scrollTop = 450;
         $('.header-wrapper').css("display","none")
         $('.header-fix').css("display","block")
       }
+// 这里有问题↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
       if(scrollTop >= 450){
         $('.header-fix').css("display","block")
       }else if(scrollTop < 450){
