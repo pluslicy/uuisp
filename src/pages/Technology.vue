@@ -97,7 +97,7 @@
 					<div>发布时间&nbsp;<i class="fa fa-angle-down"></i></div>
 				</div>
 				<div class="technology-body">
-					<div class="product" v-for="item in product">
+					<div class="product" v-for="item in product" @click="toTechnologyContant">
 						<div class="shade">
 								<div class="tel">
 									<i class="fa fa-phone"></i>&nbsp;联系技术方
@@ -134,7 +134,7 @@
 			<div class="technology-recommend">
 				<div class="recommend-title">迈科技推荐</div>
 				<div class="recommend-product">
-					<div class="product" v-for="item in recommendProduct">
+					<div class="product" v-for="item in recommendProduct" @click="toTechnologyContant">
 						<div class="recommend-logo">推荐技术</div>
 						<div class="shade">
 								<div class="tel">
@@ -285,7 +285,10 @@
 			}
 		},
 		methods:{
-			
+			// 跳转详情页
+			toTechnologyContant(){
+    		this.$router.push('/technology/content')
+    	},
 		}
 	}
 </script>
@@ -298,6 +301,7 @@
 	}
 	.technology{
 		position: relative;
+		background-color: #fff;
 	}
 	.technology .technology-warp{
 		width: 1240px;

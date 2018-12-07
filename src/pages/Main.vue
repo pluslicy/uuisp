@@ -13,7 +13,7 @@
 					<div class="hot-mas" v-show="showOne">
 						<div class="ht-msg" v-for="item in hotTechnologyMsg">
 							&nbsp;· {{item.title}}
-							<div class="particular-ht-msg">
+							<div class="particular-ht-msg" @click="toTechnologyContant">
 								<h3>{{item.title}}</h3>
 								<p>{{item.msg}}</p>
 							</div>
@@ -22,14 +22,14 @@
 					<div class="hot-mas" v-show="showTwo">
 						<div class="ht-msg" v-for="item in hotActiveMsg">
 							&nbsp;· {{item.title}}
-							<div class="particular-ht-msg">
+							<div class="particular-ht-msg" @click="toActivityContent">
 								<h3>{{item.title}}</h3>
 								<p>{{item.msg}}</p>
 							</div>
 						</div>	
 					</div>
 					<div class="hot-mas" v-show="showThree">
-						<div class="ht-msg" v-for="item in hotCmsMsg">
+						<div class="ht-msg" v-for="item in hotCmsMsg" @click="toMessageContent">
 							&nbsp;· {{item.title}}
 							<div class="particular-ht-msg">
 								<h3>{{item.title}}</h3>
@@ -133,7 +133,7 @@
 				</div>
 			</div>
 			<div class="body">
-					<div class="product" v-for="item in product">
+					<div class="product" v-for="item in product" @click="toTechnologyContant">
 						<div class="shade">
 							<div class="tel">
 								<i class="fa fa-phone"></i>&nbsp;联系技术方
@@ -160,7 +160,7 @@
 						</div>
 			</div>
 			<div class="footer">
-				<div class="foot-text">
+				<div class="foot-text" @click="toTechnology">
 					查看更多化学化工技术
 				</div>
 			</div>
@@ -179,7 +179,7 @@
 				</div>
 			</div>
 			<div class="body">
-				<div class="counselor" v-for="item in counselor">
+				<div class="counselor" v-for="item in counselor" @click="toThinkTankContent">
 					<div class="shade-counselor">
 						<div class="msg">{{item.msg}}</div>
 						<div class="particulars">
@@ -220,7 +220,7 @@
 			<div class="main-bk bk-color-ccc">
 				<div class="main-warp">
 				<div class="body-three">
-				<div class="active">
+				<div class="active" @click="toActivity">
 					<div class="active-msg">
 						<div class="active-msg-img">
 							<i class="fa fa-share-alt"></i>
@@ -276,7 +276,7 @@
 			</div>
 			<div class="body">
 				<div class="innovate" v-for="item in innovate">
-					<div class="innovate-msg">
+					<div class="innovate-msg" @click="toMessageContent">
 						<div class="innovate-img">
 							<img :src="item.img" alt="">
 						</div>
@@ -441,17 +441,29 @@
     	toTechnology(){
     		this.$router.push('/technology')
     	},
+    	toTechnologyContant(){
+    		this.$router.push('/technology/content')
+    	},
     	// 专家路由
     	toThinkTank(){
       	this.$router.push('/thinkTank')
+    	},
+    	toThinkTankContent(){
+      	this.$router.push('/thinkTank/content')
     	},
     	// 活动路由
     	toActivity(){
 	      this.$router.push('/activity')
     	},
+    	toActivityContent(){
+	      this.$router.push('/activity/content')
+    	},
     	// 资讯路由
     	toMessage(){
 	      this.$router.push('/message')
+    	},
+    	toMessageContent(){
+	      this.$router.push('/message/content')
     	},
 		  // 列表导航点击样式
     	changeListNav(n){
