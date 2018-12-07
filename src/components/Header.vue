@@ -53,7 +53,52 @@
 
       </div>
     </div>
-    <!-- <div :style='"height:"+high'></div> -->
+    <div class="header-fix">
+      <div class="header-nav">
+
+        <div class="header-nav-left">
+          <div class="nav-logo" @click="toMain"></div>
+          <div class="nav-main">
+            <span class="nav-main-span" @click="toMain">首页</span>  
+          </div>
+          <div class="nav-technology">
+            <span class="nav-technology-span" @click="toTechnology">就业成果</span>
+          </div>
+          <div class="nav-thinktank">
+            <span class="nav-thinktank-span" @click="toThinktank">专家团队</span>
+            </div>
+          <div class="nav-activity">
+            <span class="nav-activity-span" @click="toActivity">培训交流</span>
+          </div>
+          <div class="nav-message">
+            <span class="nav-message-span" @click="toMessage">行业资讯</span>
+          </div>
+        </div>
+
+        <div class="header-nav-position"></div>
+
+        <div class="header-nav-right">
+          <div class="nav-service">
+            <span class="nav-service-span"><a href="http://127.0.0.1:8080/#/enterprise" target="_blank">企业服务</a></span>
+          </div>
+          <div class="nav-cooperation">
+            <span class="nav-cooperation-span"><a href="http://127.0.0.1:8080/#/regional" target="_blank">区域合作</a></span>
+          </div>
+          <div class="nav-experts">
+            <span class="nav-experts-span"><a href="http://127.0.0.1:8080/#/professor" target="_blank">我是专家</a></span>
+          </div>
+          <div class="nav-login">
+            <!-- <span class="nav-login-span">
+              <i class="fa fa-user-circle-o" style="font-size:18px;"></i>&nbsp;登录
+            </span> -->
+          </div>
+          <div class="nav-release">
+            <!-- <div>发布</div> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -63,9 +108,11 @@ export default {
     return{
       _path:'/',
       high:'',
+      scrollTop:0,
     }
   },
   created() {
+    var that = this;
     this.high = '450px';
   },
   watch:{
@@ -77,8 +124,25 @@ export default {
   mounted() {      
     this._path = '/'
     this.listenPath();
+    window.addEventListener('scroll', this.handleScroll);
   },
   methods:{
+    // 滚动函数区
+    handleScroll () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if(this._path == '/enterprise' || this._path == '/professor' || this._path == '/regional'){
+        alert('1')
+        scrollTop = 450;
+        $('.header-wrapper').css("display","none")
+        $('.header-fix').css("display","block")
+      }
+      if(scrollTop >= 450){
+        $('.header-fix').css("display","block")
+      }else if(scrollTop < 450){
+        $('.header-fix').css("display","none")
+      }
+    },
+    // 滚动结束
     toMain(){
       this.$router.push('/')
     },
@@ -143,6 +207,7 @@ export default {
         $('.bg-one,.bg-two,.bg-three').css("background-image","url(https://maikeji.cn/images/bg-header-edu.jpg)")
       };
     },
+    isHeader(){},
     // 首页轮播
     play1(){
       // console.log("11")
@@ -267,7 +332,7 @@ export default {
   }
   .header-wrapper .header-nav .header-nav-left .nav-logo{
     /* background-color: rgba(0,0,0,0); */
-    background-image: url(https://maikeji.cn/images/header/logo.png);
+    /* background-image: url(https://maikeji.cn/images/header/logo.png); */
     background-repeat: no-repeat;
     width: 50px;
     background-position:center; 
@@ -322,5 +387,76 @@ export default {
   .header-nav-right>div:not(:last-child):hover{
     font-weight: 700;
   }
+  /* header-fix */
+  .header-fix{
+    height: 72px;
+    background: #2c2c2c;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+  }
+  .header-fix .header-nav{
+    max-width: 1240px;
+    display: flex;
+    position:absolute;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+  }
+  .header-fix .header-nav>div{
+    height: 70px;
+  }
+  .header-fix .header-nav .header-nav-left{
+    flex: 492px;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    display: flex;
+  }
+  .header-fix .header-nav .header-nav-position{
+    flex: 340px;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+  }
+  .header-fix .header-nav .header-nav-right{
+    flex: 408px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header-fix .header-nav .header-nav-left .nav-logo{
+    /* background-color: rgba(0,0,0,0); */
+    /* background-image: url(https://maikeji.cn/images/header/logo.png); */
+    background-repeat: no-repeat;
+    width: 50px;
+    background-position:center; 
+    margin-right:40px; 
+  }
+  .header-fix .header-nav .header-nav-left>div:not(:first-child){
+    background:  rgba(255, 255, 255, 0);
+    line-height: 70px;
+    flex:1;
+    text-align: center;
+  }
+  .header-nav-left .nav-logo,
+  .header-nav-left>div>span,
+  .header-nav-right>div>span{
+    cursor:pointer;
+  }
+  .header-fix .header-nav .header-nav-right{
+    position: relative;
+    display: flex;
+  }
+  .header-fix .header-nav .header-nav-right>div:not(:last-child){
+    background:  rgba(255, 255, 255, 0);
+    line-height: 70px;
+    flex:1;
+    text-align: center;
+  }
+  
 </style>
 
