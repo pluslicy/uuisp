@@ -17,7 +17,7 @@
 			<br>
 			<br>
 			<div class="zhuanjia">
-				<i>入&nbsp;&nbsp;驻&nbsp;&nbsp;专&nbsp;&nbsp;家</i>
+				<i>入&nbsp;驻&nbsp;专&nbsp;家</i>
 			</div><br>
 			<br>
 			<br>
@@ -136,13 +136,14 @@
  .ThinkTank{
 	width:1240px;
 	margin:0 auto;
+	background-color:#ebe9ea;
 }
 i{
 	font-style:normal;
 }
 .content{
 	position:relative;
-	background-color:#ebe9ea;
+	
 }
 .content .warperrr{
 	position:absolute;
@@ -193,7 +194,8 @@ i{
 	}
 	.content .title-2{
 		text-align:center;
-		font-size:30px;
+		font-size:28px;
+		font-weight:bolder;
 	}
 	.content .title-2 i:hover{
 		color:#156fb8;
