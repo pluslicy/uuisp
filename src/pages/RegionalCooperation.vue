@@ -148,9 +148,93 @@
         </li>
       </ul>
     </div>
-    <!-- 现有合作站点 -->
+    <!-- 合作站申请 -->
     <section>
-      123
+      <div class="station-conditions-container">
+        <div class="station-content-container">
+          <div class="station-title-bar">
+            <span>合作站申请条件</span>
+            <span>
+              <hr>
+              <span>Application conditions for cooperation station</span>
+              <hr>
+            </span>
+          </div>
+          <ul class="station-conditions">
+            <li>
+              <div class="station-conditions-circle">
+                <img src="../assets/regional/circle.png" alt="">
+                <span>1</span>
+              </div>
+              <p>
+                有地区企业资源。
+              </p>
+            </li>
+            <li>
+              <div class="station-conditions-circle">
+                <img src="../assets/regional/circle.png" alt="">
+                <span>2</span>
+              </div>
+              <p>
+                有地区企业资源。
+              </p>
+            </li>
+            <li>
+              <div class="station-conditions-circle">
+                <img src="../assets/regional/circle.png" alt="">
+                <span>3</span>
+              </div>
+              <p>
+                有地区企业资源。
+              </p>
+            </li>
+            <li>
+              <div class="station-conditions-circle">
+                <img src="../assets/regional/circle.png" alt="">
+                <span>4</span>
+              </div>
+              <p>
+                有地区企业资源。
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="station-call">
+          <div>合作热线</div>
+          <div>400-000-1786</div>
+          <div>周一至周五 9：30 - 18：30</div>
+          <div>总部地址：上海市浦东新区祥科路58号炬芯研发大楼A栋4楼</div>
+        </div>
+        <div class="station-title-bar">
+          <span>在线申请</span>
+          <span>
+            <hr>
+            <span>online application</span>
+            <hr>
+          </span>
+        </div>
+        <div class="station-form" >
+          <div>
+            <div>
+              <label>姓名&nbsp;&nbsp;</label>
+              <input type="text" placeholder="请输入您的姓名">
+              <!-- <div class="warn">请填写您的姓名</div> -->
+              <label>手机</label>
+              <span class="tel">
+                +86
+              </span>
+              <input type="text" placeholder="请输入您的手机号">
+              <label>验证码</label>
+              <input type="text" placeholder="请输入您的验证码"> 
+              <button type="button" class="m-btn btn-primary btn-send-code">发送验证码</button>
+            </div>
+          </div>
+          <div>
+              <label class="note">留言内容</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="请输入您的留言内容"></textarea>
+            </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -169,7 +253,9 @@
   }
 </script>
 <style scoped>
-
+  .regional{
+    font-family: PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+  }
   /*迈科技合作站*/
   .regional .station-banner{
     height: 840px;
@@ -542,6 +628,238 @@
     background-position: top;
     height:2500px; 
   }
- 
-    
+  .regional .station-conditions-container{
+    height: 520px;
+    /*padding-top: 45px;*/
+  }
+  .regional .station-conditions-container .station-content-container{
+    width: 1240px;
+    margin: 0 auto;
+  }
+  .regional .station-conditions-container .station-title-bar{
+    text-align: center;
+    height: 100px;
+  }
+  .regional .station-conditions{
+    height: 250px;
+    margin-top: 35px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+  }
+  .regional .station-conditions>li{
+    /*height: 110px;*/
+    width: 600px;
+    padding: 8px;
+    border-radius: 60px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  .regional .station-conditions>li .station-conditions-circle{
+    float: left;
+    position: relative;
+    width: 93px;
+    height: 93px;
+  }
+  .regional .station-conditions>li .station-conditions-circle>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  .regional .station-conditions>li:nth-of-type(2) .station-conditions-circle>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+  .regional .station-conditions>li:nth-of-type(3) .station-conditions-circle>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
+  }
+  .regional .station-conditions>li:nth-of-type(4) .station-conditions-circle>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(270deg);
+  }
+  .regional .station-conditions>li .station-conditions-circle>span{
+    position: absolute;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1f86ed;
+    left: 35%;
+    top: 10%;
+  }
+  .regional .station-conditions>li>p{
+    float: left;
+    margin-left: 30px;
+    margin-top: 16px;
+    width: 440px;
+    color: #666;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .regional .station-conditions-container .station-call{
+    width:1240px;
+    margin:80px auto;
+    height: 340px;
+    padding-left: 150px;
+    padding-top: 55px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #828282;
+    border-radius: 7px;
+    background-image: url("../assets/regional/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: 630px 0;
+  }
+
+  .regional .station-conditions-container .station-call{
+
+  }
+  .regional .station-conditions-container .station-call div:first-of-type {
+    height: 45px;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .regional .station-conditions-container .station-call div:nth-of-type(2) {
+    height: 70px;
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0087f1;
+  }
+  .regional .station-conditions-container .station-call div:nth-of-type(3) {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 35px;
+  }
+  .regional .station-conditions-container .station-call div:nth-of-type(4) {
+    font-size: 16px;
+    color: #666;
+  }
+  .regional .station-conditions-container .station-title-bar{
+    text-align: center;
+    height: 100px;
+  }
+  .regional .station-conditions-container .station-title-bar{
+    text-align: center;
+    height: 100px;
+  }
+  .regional .station-conditions-container .station-title-bar>span:first-of-type {
+    font-size: 36px;
+    color: #000;
+  }
+  .regional .station-conditions-container .station-title-bar>span:nth-of-type(2) {
+    color: #000;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+  }
+  .regional .station-conditions-container .station-title-bar>span:nth-of-type(2) hr{
+    width: 40px;
+    margin:20px 15px 20px 15px;
+    border: 0;
+    border-top: 1px solid #000;
+  }
+  .regional .station-conditions-container .station-title-bar>span:nth-of-type(2) span{
+    color: #1f86ed;
+    font-size: 18px;
+    line-height: 40px;
+
+  }
+  .regional .station-conditions-container .station-form{
+    width:1240px;
+    margin:0 auto;
+    height: 500px;
+    margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .regional .station-conditions-container .station-form>div:first-of-type{
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+  }
+  label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    margin-left:15px;
+  }
+  label:nth-of-type(2){
+    margin-left:80px;
+  }
+  label:nth-of-type(3){
+    margin-left:50px;
+  }
+  .regional .station-conditions-container .station-form>div:first-of-type input{
+    width: 246px;
+    height: 50px;
+    padding: 0 20px;
+    font-size:16px;
+  }
+  .regional .station-conditions-container .station-form>div:first-of-type input:nth-of-type(2){
+    width: 128px;
+  }
+  .regional  .tel{
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 70px;
+    margin-right: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size:16px;
+  }
+  .regional .station-conditions-container .station-form>div:first-of-type input:nth-of-type(3){
+    width:148px;
+  }
+  .btn-send-code {
+    width: 128px;
+    min-width: 128px;
+    background-color: #1f86ed;
+    height: 54px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+    border: 1px solid #1f86ed;
+    margin-left:-6px;
+    color:#fff;
+    transform: translateY(2px);
+  }
+  .btn-send-code:focus {
+    background-color: #1f86ed;
+    border-color: #1f86ed;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .station-form .note{
+    margin-top:40px;
+  }
+  .regional .station-conditions-container  textarea {
+    display: block;
+    width: 1210px;
+    height: 175px;
+    padding: 15px;
+    font-size:16px;
+  }
+
 </style>
