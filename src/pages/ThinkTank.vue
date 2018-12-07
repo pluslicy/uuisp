@@ -94,9 +94,9 @@
 					</div>
 				</div>
 			</div><br><br><br>
-			<a href=""><div class="morethan">
+			<div class="morethan">
 				查看更多医药科学类专家
-			</div></a><br>
+			</div><br>
 			<br>
 			<br>
 			<div class="help">
@@ -136,6 +136,9 @@
  .ThinkTank{
 	width:1240px;
 	margin:0 auto;
+}
+i{
+	font-style:normal;
 }
 .content{
 	position:relative;
@@ -342,10 +345,6 @@
 		text-decoration:underline;
 
 	}
-	.content .look:hover{
-		cursor:pointer;
-		
-
-	}
+	
 	
 </style>

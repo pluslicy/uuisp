@@ -4,9 +4,9 @@
     <div  class="top-pic">
     	<div class="top-subnav">
     	<ul>
-    		<a href=""><li>首页></li></a>
-    		<a href=""><li>智库></li></a>
-    		<a href=""><li>专家详情></li></a>
+    		<li @click="changeMain">首页></li>
+    		<li @click="changeOne">智库></li>
+    		<li>专家详情></li>
     	</ul>
     	</div><br>
     	<div class="top-pic-1">
@@ -167,7 +167,21 @@
   </div>
 </template>
 <script>
-	
+	export default{
+		data(){
+			return{
+
+			}
+		},
+		methods:{
+			changeOne(){
+				this.$router.push('/thinkTank')
+			},
+			changeMain(){
+				this.$router.push('/')
+			}
+		}
+	}
 </script>
 <style>
 .thinkTankContent{
@@ -181,10 +195,13 @@
 	width:950px;
 
 }
-	.top-subnav>ul>a>li{
+	.top-subnav>ul>li{
 		display: inline-block;
-		margin-top:0.3em;
+		margin-top:1.2em;
 		
+	}
+	.top-subnav>ul>li{
+		cursor:pointer;
 	}
 	.top-pic-1{
 		width:950px;
@@ -249,7 +266,7 @@
 		width:290px;
 		height:2055px;
 		right:0;
-		top:40px;
+		top:55px;
 		background-color: white
 	}
 

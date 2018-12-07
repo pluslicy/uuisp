@@ -1,12 +1,13 @@
 <!--活动详细页面-->
 <template>
+	
   <div class="activityContent">
     <div  class="activity-1">
     	<div class="nat">
     		<ul>
-    			<a style="color:black" href=""><li>首页 ></li></a>
-    			<a style="color:black" href=""><li>活动 ></li></a>
-    			<a style="color:black" href=""><li>活动详情 ></li></a>
+    			 <li @click="changeMain">首页></li>
+    			<li @click="changeActive">活动></li>
+    			<li>活动详情></li>
     		</ul>
     	</div>
     	<div class="rout">
@@ -32,25 +33,25 @@
     	</div><hr>
     	<div class="card-2">
     		<ul>
-    			<a style="color:#1f86ed;font-size:30px;" href=""><li>活动详情</li></a>
-    			<a style="color:black;font-weight: bolder;"  href=""><li>一、活动概况</li></a>
-    			<a style="color:black;" href=""><li><span style="color:black;font-weight: bolder;">活动时间</span>：2018年12月（拟）</li></a>
-    			<a style="color:black;" href=""><li><span style="color:black;font-weight: bolder;">活动地点</span>：浙江平湖圣雷克大酒店</li></a>
-    			<a style="color:black;" href=""><li><span style="color:black;font-weight: bolder;">活动规模</span>：100人左右</li></a>
+    			<a style="color:#1f86ed;font-size:20px;font-weight:bolder;" href=""><li>活动详情</li></a>
+    			<a style="color: rgb(51, 51, 51);;font-weight: bolder;"  href=""><li>一、活动概况</li></a>
+    			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动时间</span>：2018年12月（拟）</li></a>
+    			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动地点</span>：浙江平湖圣雷克大酒店</li></a>
+    			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动规模</span>：100人左右</li></a>
     		</ul>
     	</div><br>
     	<div class="card-3">
     		<ul>
     			<li>二、组织机构</li>
-    			<li><span style="color:black;font-weight: bolder;">主办单位：</span>平湖市科技局、平湖市财政局、平湖市金融办</li>
-    			<li><span style="color:black;font-weight: bolder;">承办单位：</span>绿合投资、招商银行平湖支行</li>
-    			<li><span style="color:black;font-weight: bolder;">协办单位：</span>中国高新区科技金融信息服务平台、平湖科协或青企协、平湖工商联（拟）</li>
-    			<li><span style="color:black;font-weight: bolder;">支持单位：</span>深圳证券信息有限公司、迈科技</li>
+    			<li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">主办单位：</span>平湖市科技局、平湖市财政局、平湖市金融办</li>
+    			<li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">承办单位：</span>绿合投资、招商银行平湖支行</li>
+    			<li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">协办单位：</span>中国高新区科技金融信息服务平台、平湖科协或青企协、平湖工商联（拟）</li>
+    			<li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">支持单位：</span>深圳证券信息有限公司、迈科技</li>
     		</ul>
     	</div><br>
     	<div class="card-4">
     		<ul>
-    			<li style="color:black;font-weight: bolder;" >三、论坛议程</li>
+    			<li style="color: rgb(51, 51, 51);;font-weight: bolder;" >三、论坛议程</li>
     			<li>1、14:00-14:05</li>
     			<li>主持人开场</li>
     			<li>2、14:05-14:10 </li>
@@ -65,13 +66,13 @@
     	</div><br>
     	<div class="card-5">
     		<ul>
-    			<li style="color:black;font-weight: bolder;">四、参会机构</li>
+    			<li style="color: rgb(51, 51, 51);;font-weight: bolder;">四、参会机构</li>
     			<li>组织部（人才办）、发改局、科技局、经信局、人社局、财政局、金融办相关负责人，各镇街道科技助理员、路演企业代表、其他投资机构、平湖企业家等。</li>
     		</ul>
     	</div><br>
     	<div class="card-6">
     		<ul>
-    			<li style="color:black;font-weight: bolder;">五、拟邀点评机构</li>
+    			<li style="color: rgb(51, 51, 51);;font-weight: bolder;">五、拟邀点评机构</li>
     			<li>亚商资本、金沙江联合资本、红杉资本、华睿投资等</li>
     			<li>点击下方报名按钮，将会有工作人员与您联系。</li>
     		</ul>
@@ -85,59 +86,79 @@
     		正在报名
     	</div>
     	<div class="top-2">
-    		<img style="width:315px;height:180px; margin-left:-40px" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
+    		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
     	</div>
     	<div class="top-3">
     		需求征集中，第三方招聘中...
     	</div>
     	<div class="top-4">
-    		<img style="width:315px;height:180px; margin-left:-40px" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
+    		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FkMmpPsTZit5R3ThgUm8LTOL2qpU" alt="">
     	</div>
     	<div class="top-5">
     		【公开课】|首届长三角洲
     	</div>
     	<div class="top-6">
-    		<img style="width:315px;height:180px; margin-left:-40px"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
+    		<img style="width:240px;height:180px;"  src="https://res4.maikeji.cn/FoPw9hs-MHTkKhurchvgU0XmaXec" alt="">
     	</div>
     	<div class="top-7">
     		有机工业废水如何处理  看看
     	</div><br>
     	<div class="top-8">
-    		<img style="width:315px;height:180px; margin-left:-40px" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
+    		<img style="width:240px;height:180px;" src="https://www.maikeji.cn/images/wx-qrcode.jpg" alt="">
     	</div>
     </div>
   </div>
+  
 </template>
 <script>
-	
+	export default{
+		data(){
+			return{
+
+			}
+		},
+		methods:{
+			changeMain(){
+				this.$router.push('/')
+			},
+			changeActive(){
+				this.$router.push('/activity')
+			}
+		}
+	}
 </script>
 <style>
+
 .activityContent{
 	margin:0 auto;
 	width:1240px;
-	background-color:#eee;
-	height:1590px;
+	background-color:;
+	height:1600px;
 	position:relative;
+
+
 }
 .activity-1{
 	background-color:white;
 
+
 }
 .nat{
 	margin-top:1.5em;
-	margin-left:1.5em;
+	margin-left:2.5em;
 }
 
-	.nat>ul>a>li{
+	.nat>ul>li{
 		display:inline-block;
-		width:80px;
+		margin-right:13px;
+
 	}
-	.nat>ul>a>li:hover{
+	.nat>ul>li:hover{
 		color:#1f86ed;
 		cursor:pointer;
 	}
 	.rout{
-		width:1240px;
+		width:100%;
 		height:300px;
 		background-color: white;
 		position:relative;
@@ -149,12 +170,13 @@
 		line-height:65px;
 	}
 	button{
-		width:100px;
-		height:40px;
-		border-radius:10px;
+		width:110px;
+		height:35px;
+		border-radius:4px;
 		background-color:#1f86ed;
 		color:white;
-		font-size:15px;
+		font-size:14px;
+        border: 1px solid #1f86ed;
 	}
     button:hover{
 	 background-color: rgb(40, 96, 144);
@@ -165,14 +187,35 @@
 		width:925px;
 		height:1276px;
 		background-color:white;
+
 	}
+	.card-1{
+		margin-left:20px;
+	}
+	.card-2{
+		margin-left:20px;
+	}
+	.card-3{
+		margin-left:20px;
+	}
+	.card-4{
+		margin-left:20px;
+	}
+	.card-5{
+		margin-left:20px;
+	}
+	.card-6{
+		margin-left:20px;
+	}
+
 	.card-1>ul>li{
 
 		line-height:50px;
 	}
 	.card-1>ul>li:first-child{
-		font-size:30px;
+		font-size:20px;
 		color:#1f86ed;
+		font-weight:bolder;
 	}
 	.card-1>ul>li:nth-child(2){
 		color: rgb(51, 51, 51);
@@ -184,7 +227,7 @@
 		line-height: 40px
 	}
 	.card-3>ul>li:first-child{
-		color:black;
+		color: rgb(51, 51, 51);
 		font-weight: bolder;
 	}
 	.card-4>ul>li{
@@ -202,6 +245,7 @@
 		background-color:#1f86ed;
 		border-radius: 5px;
 		margin-top:70px;
+		margin-left:20px;
 	}
 	.last-btn{
 		text-align:center;
@@ -216,7 +260,7 @@
 	.activityContent .pop{
 	width:240px;
 	height:950px;
-	
+		
 	position:absolute;
 	right:35px;
 	top:335px;

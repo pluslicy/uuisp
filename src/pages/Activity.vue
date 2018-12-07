@@ -182,9 +182,10 @@
 		background-color:#ededed;
 		height:50px;
 		line-height: 50px;
+
 	}
 	.container .list>ul>a>li{
-
+        
 		display:inline-block;
 		width:100px;
 		
@@ -216,12 +217,13 @@
 		font-size:18px;
 	}
 	 .container button{
-		width:100px;
-		height:40px;
-		border-radius:10px;
+		width:110px;
+		height:35px;
+		border-radius:4px;
 		background-color:#1f86ed;
 		color:white;
-		font-size:15px;
+		font-size:14px;
+        border: 1px solid #1f86ed;
 	}
   .container a button:hover{
 	background-color: rgb(40, 96, 144);
