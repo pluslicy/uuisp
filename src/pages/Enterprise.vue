@@ -4,11 +4,11 @@
       <section class="service-section">
       	<!--第一部分 ：一大核心-->
 		<div class="oneCore">
-			<div class="oneText">
-				<div class="coservice">Core Service</div>
-				<div class="chCore">一大核心</div>
-				<div class="span"></div>
-				<div class="title">提升技术实力</div>
+			<div class="oneText wow bounceInUp">
+				<div class="coservice fadeInLeft animated">Core Service</div>
+				<div class="chCore fadeInRight animated">一大核心</div>
+				<div class="span fadeInRight animated"></div>
+				<div class="title fadeInLeft animated">提升技术实力</div>
 			</div>
 			<ul class="service-card">
 				<li class="fadeInRightBig" style="animation-delay: 0s;">
@@ -89,10 +89,10 @@
 		<!--第二部分：两大配套-->
 		<div class="twoSet">
 			<div class="twoSetTitle">
-				<div class="coservice">Supporting service</div>
-				<div class="chCore">两大配套</div>
-				<div class="span"></div>
-				<div class="title">梳理品牌形象</div>
+				<div class="coservice fadeInLeft animated">Supporting service</div>
+				<div class="chCore fadeInRight animated">两大配套</div>
+				<div class="span fadeInRight animated"></div>
+				<div class="title fadeInLeft animated">梳理品牌形象</div>
 			</div>
 			<ul class="service-card">
 				<li class="fadeInRightBig">
@@ -144,7 +144,7 @@
 					</div>
 				</li>
 			</ul>
-			<div class="title-wraper">
+			<div class="title-wraper zoomIn animated">
 				<div class="service-section-sub-title">政策咨询服务</div>
 			</div>
 			<ul class="service-card">
@@ -221,10 +221,10 @@
 		<!--第三部分：年会会员-->
 		<div class="threeMember">
 			<div class="threeTitle">
-				<div class="coservice">Annual fee member</div>
-				<div class="chCore">年费会员</div>
-				<div class="span"></div>
-				<div class="title">四大会员权益</div>
+				<div class="coservice fadeInLeft animated">Annual fee member</div>
+				<div class="chCore fadeInRight animated">年费会员</div>
+				<div class="span fadeInRight animated"></div>
+				<div class="title fadeInLeft animated">四大会员权益</div>
 			</div>
 			<ul class="service-product">
 				<li>
@@ -305,13 +305,40 @@
 			<img src="../assets/enterprise/photo-10.jpg">
 		</div>
       </div>
+      <!--立即咨询模态框-->
+      
   </div>
+  
 </template>
-<script></script>
+
+
+<script>
+	export default {
+	
+		data(){
+			return {
+				
+			}
+		},
+		//映射数据
+		computed:{
+		},
+		created(){
+			
+		},
+		methods:{
+			
+			
+		  
+		}
+	}
+</script>
+
 <style scoped>
 	.enterprise{
 		text-align: center;
 		width: 1240px;
+		margin:0 auto;
 	}
 	/*轮播图*/
 	.service-photo-wall-wrap{
@@ -425,7 +452,7 @@
 		vertical-align: bottom;
 		white-space: nowrap;
 		word-spacing: 1px;
-		/* z-index: 1; */
+
 	}
 
 	.oneText .chCore,.twoSetTitle .chCore,.threeTitle .chCore{
@@ -436,12 +463,9 @@
 		line-height: 57.15px;
 		margin-bottom: 6px;
 		position: relative;
-		/* transition-delay: 0s;
-		transition-duration: 1s;
-		transition-property: all;
-		transition-timing-function: ease; */
 		word-spacing: 1px;
 		z-index: 2;
+		text-shadow: 10 -15px 10px #fff
 
 	}
 
@@ -613,10 +637,43 @@
 		/*item鼠标移入动画*/
 		li.fadeInRightBig:hover{
 			/* cursor: default; */
-			box-shadow: 0px -10px 0px 0px #7AD4FF,   /*上边阴影*/
-                		-10px 0px 0px 0px #7AD4FF,   /*左边阴影*/
-		                10px 0px 0px 0px #7AD4FF,    /*右边阴影*/
-		                0px 10px 0px 0px #7AD4FF;    /*下边阴影*/
+			box-shadow: 0px -2px 10px 0px #7AD4FF,   /*上边阴影*/
+                		-2px 0px 10px 0px #7AD4FF,   /*左边阴影*/
+		                2px 0px 10px 0px #7AD4FF,    /*右边阴影*/
+		                0px 2px 10px 0px #7AD4FF;    /*下边阴影*/
+		    
 		}
+
+		li.fadeInRightBig:hover .service-card-container{
+		    	background-color: #fff;
+		    	animation-name: move;
+		    	animation-duration: 1s;
+		    	animation-fill-mode: forwards;
+		    }
+		li.fadeInRightBig:hover div.service-card-top{
+			background-color: #1283f0;
+			height: 130px;
+		}
+		li.fadeInRightBig:hover div.service-card-footer{
+			position: relative;
+			top: -15px;
+		}
+		 li.fadeInRightBig:hover div.service-card-top span{
+		 	
+		 	color: #fff;
+		 	font-size: 22px;
+		 	line-height: 55px	
+		 }
+
+		  @keyframes move{
+		  	0%{
+		  		position: relative;
+		    	top: 0px;
+		  	}
+		  	100%{
+				position: relative;
+		    	top: -70px;
+		  	}
+		  }
 	
 </style>
