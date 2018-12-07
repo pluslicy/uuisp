@@ -47,7 +47,7 @@
             </span>
           </div>
           <div class="nav-release">
-            <button>发布</button>
+            <div>发布</div>
           </div>
         </div>
 
@@ -298,9 +298,9 @@ export default {
     text-align: center;
   }
   .header-nav-right .nav-release{
-    padding: 5% 0;
+    padding: 23.5px 0;
   }
-  .header-nav-right .nav-release button{
+  .header-nav-right .nav-release div{
     display: block;
     padding: 2px 9px;
     border-radius: 5px;
