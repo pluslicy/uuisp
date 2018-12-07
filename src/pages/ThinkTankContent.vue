@@ -89,18 +89,18 @@
     		10000+深度合作专家 提供专业咨询
     	</div>
     	
-    		<input class="insert-1" type="text" value="您的姓名">
+    		<input class="insert-1" type="text" placeholder="您的姓名">
     	
     	
-    		<input class="insert-2"  type="text" value="  +86 ^">
-    		<input class="insert-3"  type="text" value="请输入你的手机号">
+    		<input class="insert-2"  type="text" placeholder="  +86 ^">
+    		<input class="insert-3"  type="text" placeholder="请输入你的手机号">
     	
     	
-    		<input class="insert-4"  type="text" value="请输入你的验证码">
+    		<input class="insert-4"  type="text" placeholder="请输入你的验证码">
     		<div class="test">
     			获取验证码
     		</div>
-    		<input class="insert-5" type="text" value="请描述你的需求">	
+    		<input class="insert-5" type="text" placeholder="请描述你的需求">	
     	
     	
     	<div class="telep">

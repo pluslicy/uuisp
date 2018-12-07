@@ -10,15 +10,15 @@
     	</div>
     </div>
     	<div class="list">
-    		<ul>
-    			<a id="item-first" href=""><li>活动类型</li></a>
-    			<a id="item-second"href=""><li><span>不限</span></li></a>
-    			<a href=""><li>展会论坛</li></a>
-    			<a href=""><li>互动沙龙</li></a>
-    			<a href=""><li>项目路演</li></a>
-    			<a href=""><li>培训讲座</li></a>
-    			<a href=""><li>走访考察</li></a>
-    			<a href=""><li>线上分享</li></a>
+    		<ul class="bootPage">
+    			 <li class="item-first">活动类型</li>
+    			<li class="list-css list-bootPage" @click="changeItem(0)">不限</li>
+    			<li class="list-css" @click="changeItem(1)">展会论坛</li>
+    			<li class="list-css"@click="changeItem(2)">互动沙龙</li>
+    			<li class="list-css" @click="changeItem(3)">项目路演</li>
+    			<li class="list-css" @click="changeItem(4)">培训讲座</li>
+    			<li class="list-css" @click="changeItem(5)">走访考察</li>
+    			<li class="list-css" @click="changeItem(6)">线上分享</li>
     			
     		</ul>
     	</div><br>
@@ -48,7 +48,7 @@
     				<a id="one" href=""><li>【讲座】吴晓波带你解读《避免失败》</li></a>
     				<a href=""><li>活动时间：2018.12.11-2018.12.13</li></a>
     				<a href=""><li>简介：先报名享受会员优惠，赠送超值服务</li></a>
-    				<a href=""><button>我要报名</button></a>
+    				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
     	</div><br>
@@ -62,7 +62,7 @@
     				<a id="two" href=""><li>第二届平湖市科技投融资接对接会</li></a>
     				<a href=""><li>活动时间：201812.11-2018.12.31</li></a>
     				<a href=""><li>简介：科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技投融资接对接会</li></a>
-    				<a href=""><button>我要报名</button></a>
+    				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
     	</div><br>
@@ -76,7 +76,7 @@
     				<a id="three" href=""><li>让技术与市场来一场真正的对话|迈科技公益大讲堂</li></a>
     				<a href=""><li>活动时间：201812.11-2018.12.31</li></a>
     				<a href=""><li>简介：不让优质项目买没，真正让技术发挥价值</li></a>
-    				<a href=""><button>我要报名</button></a>
+    				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
     	</div><br>
@@ -90,7 +90,7 @@
     				<a id="four" href=""><li>2019届第十一届上海国际化工技术装备展览会</li></a>
     				<a href=""><li>活动时间：活动时间：201812.11-2018.12.31</li></a>
     				<a href=""><li>简介：2019届第十一届上海国际化工技术装备展览会开始报名啦</li></a>
-    				<a href=""><button>我要报名</button></a>
+    				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
     	</div>
@@ -145,8 +145,12 @@
             changePage (){
                 this.$router.push('/activity/content')
         },
+        changeItem(n){
+            $(".list-css").eq(n).addClass('list-bootPage').siblings().removeClass('list-bootPage')
+        }
             }
         }
+        
     
 </script>
 <style>
@@ -180,28 +184,35 @@
 	}
 	.container .list{
 		background-color:#ededed;
-		height:50px;
-		line-height: 50px;
+		margin-top:2em;
+        height:50px;
+        line-height:50px;
+    }
+	.container .list > ul > li{
+        cursor:pointer;
+        float: left;
+        line-height: 2em;
+        margin-left:3.5em;
+        padding:0.1em .5em;
+        margin-top:.7em;
+    }
+    .container .list-bootPage{
+       
+        border: 1px solid #4DAFED;
+        background-color: #E3F1FF;
+        color:#0A539A;
+    }
 
-
-	}
-	.container .list>ul>a>li{
-        margin-left:15px;
-		display:inline-block;
-		width:100px;
-		
-        color:black;
-
-	}
-	.container #item-first{
+	.container .item-first{
 		
 		font-weight:bolder;
 	}
-	.container #item-second span{
-		background-color:lightblue;
-		padding:5px 20px 5px 20px;
-		border:1px solid #4dafed;
-	}
+	.container .list-bootPage {
+       
+        border:1px solid #4dafed;
+        background-color: #e3f1ff;
+        text-align:center;
+    }
 	.container .nav-1{
 		position:relative;
 	}
@@ -226,7 +237,7 @@
 		font-size:14px;
         border: 1px solid #1f86ed;
 	}
-  .container a button:hover{
+  .container  button:hover{
 	background-color: rgb(40, 96, 144);
 	color:white;
     cursor:pointer;

@@ -11,7 +11,7 @@
 			</div><br><br>
 			</div>
 			<div class="input" style="text-align:center;vertical-align:middel;">
-				<input  style="width:610px;height:40px;font-size:18px; color:#ccc;" type="text" value="寻找你的专家顾问">
+				<input  style="width:610px;height:40px;font-size:18px; color:#ccc;" type="text" placeholder="寻找你的专家顾问">
 				<i>搜&nbsp;&nbsp;&nbsp;&nbsp;索</i>
 			</div><br>
 			<br>
@@ -54,7 +54,7 @@
 				<div class="pic-2">
 					<div class="model-1">
 						<ul>
-							<li><i style="border:1px solid white; padding:10px">药物化学</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">慢性疼痛药</i></li>
+							<li @click="changePageOne"><i style="border:1px solid white; padding:10px">药物化学</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">慢性疼痛药</i></li>
 						</ul>
 					</div>
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fjfipb1pUJxqzNm12bdiE-ZDx4HO"  alt="">
@@ -68,7 +68,7 @@
 				<div class="pic-3">
 					<div class="model-3">
 						<ul>
-							<li><li><i style="border:1px solid white; padding:10px">尼古丁</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">食品</i></li></li>
+							<li><li @click="changePageOne"><i style="border:1px solid white; padding:10px">尼古丁</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">食品</i></li></li>
 						</ul>
 					</div>
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fs88q36P3SlCS025FiNIOK9_sAqg" alt="">
@@ -82,7 +82,7 @@
 				<div class="pic-4">
 					<div class="model-4">
 						<ul>
-							<li><li><li><i style="border:1px solid white; padding:10px">药物输送</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">新型药品</i></li></li></li>
+							<li><li><li @click="changePageOne"><i style="border:1px solid white; padding:10px">药物输送</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">新型药品</i></li></li></li>
 						</ul>
 					</div>
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW"  alt="">

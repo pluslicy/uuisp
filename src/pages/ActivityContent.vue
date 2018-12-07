@@ -132,7 +132,7 @@
 .activityContent{
 	margin:0 auto;
 	width:1240px;
-	background-color:;
+	background-color:white;
 	height:1600px;
 	position:relative;
 
@@ -150,7 +150,7 @@
 
 	.nat>ul>li{
 		display:inline-block;
-		margin-right:13px;
+		margin-right:5px;
 
 	}
 	.nat>ul>li:hover{
