@@ -16,16 +16,16 @@
             <span class="nav-main-span" @click="toMain">首页</span>  
           </div>
           <div class="nav-technology">
-            <span class="nav-technology-span" @click="toTechnology">技术</span>
+            <span class="nav-technology-span" @click="toTechnology">就业成果</span>
           </div>
           <div class="nav-thinktank">
-            <span class="nav-thinktank-span" @click="toThinktank">智库</span>
+            <span class="nav-thinktank-span" @click="toThinktank">专家团队</span>
             </div>
           <div class="nav-activity">
-            <span class="nav-activity-span" @click="toActivity">活动</span>
+            <span class="nav-activity-span" @click="toActivity">培训交流</span>
           </div>
           <div class="nav-message">
-            <span class="nav-message-span" @click="toMessage">资讯</span>
+            <span class="nav-message-span" @click="toMessage">行业资讯</span>
           </div>
         </div>
 
@@ -42,12 +42,12 @@
             <span class="nav-experts-span"><a href="http://127.0.0.1:8080/#/professor" target="_blank">我是专家</a></span>
           </div>
           <div class="nav-login">
-            <span class="nav-login-span">
+            <!-- <span class="nav-login-span">
               <i class="fa fa-user-circle-o" style="font-size:18px;"></i>&nbsp;登录
-            </span>
+            </span> -->
           </div>
           <div class="nav-release">
-            <div>发布</div>
+            <!-- <div>发布</div> -->
           </div>
         </div>
 
@@ -251,13 +251,13 @@ export default {
   }
   /* header-left */
   .header-wrapper .header-nav .header-nav-left{
-    flex: 360px;
+    flex: 492px;
     background-color: rgba(255, 255, 255, 0);
     position: relative;
     display: flex;
   }
   .header-wrapper .header-nav .header-nav-position{
-    flex: 472px;
+    flex: 340px;
     background-color: rgba(255, 255, 255, 0);
     opacity: 0;
   }

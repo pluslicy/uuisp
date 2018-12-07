@@ -69,7 +69,7 @@
     </div>
     <div>
       <div class="footer-info">
-        Copyright © 沪ICP备15000929号-1 | 上海迈坦信息科技有限公司 | 021-54336693
+        Copyright © 沪ICP备15000929号-1 | 上海UUISP信息科技有限公司 | 021-54336693
         <a href="javascript:void(0)">注册条款</a>
       </div>
     </div>
