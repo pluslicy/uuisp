@@ -145,56 +145,54 @@
 	}
 </script>
 <style scoped>
-    #infoPage,.messageContent,*, :after,:before{
+    #infoPage,*, :after,:before{
     	box-sizing: border-box;
 	    margin: 0;
     }
-    #infoPage,.messageContent ul>li{
+    #infoPage ul>li{
     	list-style: none;
     }
-     #infoPage,.messageContent table {
+     #infoPage table {
     	border-spacing: 0;
         border-collapse: collapse;
     }
-     #infoPage,.messageContent, td, th {
+     #infoPage td, th {
 	    padding: 0;
 	    display: table-cell;
-        vertical-align: inherit;
 	}
-	 #infoPage,.messageContent h1,h2,h3{
+	 #infoPage h1,h2,h3{
 		 margin-top: 20px;
          margin-bottom: 10px;
 	}
-	 #infoPage,.messageContent button {
+	 #infoPage button {
 		text-transform: none;
 	    overflow: visible;
 	}
-	 #infoPage,.messageContent p{
+	 #infoPage p{
 		 margin: 0 0 10px;
 	}
-     #infoPage,.messageContent a{
+     #infoPage a{
     	display: inline;
     	color: #707070;
 	    text-decoration: none;
     }
-	 #infoPage,.messageContent{
+	 #infoPage{
 		padding-bottom: 50px;
     	word-spacing: 3px;
     	line-height: 1.42857143;
         color: #333;
-	}
-	 /* #infoPage{
 	    margin: 0 auto;
 	    max-width: 1240px;
 	    width: 100%;
-	    background-color: red;
-	} */
+        box-sizing: border-box;
+	}
 	 #infoPage,.messageContent .item-catalog-container{
 		margin-bottom: 50px;
 	}
 	 #infoPage,.messageContent .item-catalog-container{
-	    margin-top: 30px;
-	    margin-bottom: 28px;
+	    padding-top:30px;
+		padding-left:10px;
+	    margin-bottom: 35px;
 	    width: 100%;
 	}
 	.messageContent .item-catalog-container .catalog-item{
@@ -202,7 +200,7 @@
 	}
 	.messageContent .item-catalog-container .catalog-item a{
 		display: inline-block;
-		margin-left: 10px;
+		/* margin-left: 10px; */
 	    margin-right: 5px;
 	    font-size: 14px;
 	    color: #707070;
@@ -228,7 +226,7 @@
 	.messageContent .side-layout-container .side-left .m-cover{
 		margin-bottom: 46px;
 	    height: 490px;
-	    background-color: #fff;
+	    background-color: #ebe9ea;
 	    background-size: cover;
 	    background-position: 50%;
 	    background-repeat: no-repeat;
@@ -432,7 +430,7 @@
 	} 
 	.messageContent .side-layout-container .side-column-divider{
         width: 90px;
-        background:red;
+        /* background:red; */
 	}
     .messageContent .side-layout-container .side-right{
         width: 356px;
@@ -464,7 +462,7 @@
 	    font-size: 16px;
 	    display: block;
 	 }
-	.messageContent,#infoPage .side-layout-container .relate-list-item .prefix{
+	 #infoPage .side-layout-container .relate-list-item .prefix{
         margin-top: 11px;
 	    margin-right: 8px;
 	    width: 8px;

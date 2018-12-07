@@ -2,6 +2,14 @@
 <template>
 	<div class="message">
 		<div class="message-container" id="infoMessage">
+			<div class="header">
+				<div class="header-wrapper">
+				    <div class="title">
+						<h1>创新之道 浪潮之巅</h1>
+						<p class="text">解读企业技术创新的成功案例，分享技术创新的经验, 感受行业创新脉搏</p>
+					</div>	
+			    </div>	
+			</div>
 			<div class="message-section-1 card" v-for = 'list in listItem' :key="list">
 				<div class="title overflow-hidden">
 					{{list.one}}●<span class="emphasis">企业案例 </span>解读
@@ -9,17 +17,17 @@
 				<div class="list-container section-left" >
 					<ul class="list" >
 						  <li class="list-item" >
-							   <a href="/edu/articles/5be53b5c544f9b50f781da8a" class="" target="_blank" v-for = 'item in list.list' :key="item">
-								     <p class="title overflow-hidden">{{item.title}}</p>
+							   <a class=""  v-for = 'item in list.list' :key="item" >
+								     <p class="title overflow-hidden" @click="info">{{item.title}}</p>
 								     <p class="text overflow-hidden">{{item.content}}</p>
 							   </a>
 						  </li>
 						  <li class="list-caption">
-							   <a href="/edu/articles?column=%E4%BC%81%E4%B8%9A%E6%A1%88%E4%BE%8B" class="btn btn-primary"> 进入专栏</a>
+							   <a class="btn btn-primary"> 进入专栏</a>
 						  </li>
 					</ul>
 				</div>
-				<a href="#" class="m-cover section-right" :style="list.bgImg" >
+				<a class="m-cover section-right" :style="list.bgImg" >
 					<div class="m-cover-caption overflow-hidden">{{list.imgText}}</div>
 				
 				</a>
@@ -130,7 +138,9 @@
             }
 		},
 		methods:{
-
+             info(){
+				this.$router.push('/message/content')
+			 }
 		}
 	}
 </script>
@@ -147,12 +157,14 @@
     	color: #337ab7;
 	    text-decoration: none;
     }
-    .message{
+	.holy-grail{
         margin: 0 auto;
-	    /*max-width: 1240px;*/
-	    /*width: 100%;*/
-	    /*background-color: red;*/
-	    /*box-sizing: border-box;*/
+	    max-width: 1240px;
+	    width: 100%;
+	}
+    .message{  
+	    background-color: red; 
+	    box-sizing: border-box;
     	font-size: 14px;
 	    line-height: 1.42857143;
 	    color: #333;
@@ -165,13 +177,31 @@
 	    line-height: 1.42857143;
 	    color: #333;
     }
-	/*.message-container{
+	.message-container{
 		margin: 0 auto;
 	    max-width: 1240px;
 	    width: 100%;
-	    background-color: red;
 	    box-sizing: border-box;
-	}*/
+	}
+	#infoMessage .header .header-wrapper{
+		position: absolute;
+		margin-top: -395px;
+		z-index: 10000;
+		color: #fff;
+		text-align: center;
+	}
+	 #infoMessage .header .header-wrapper h1{
+	   font-size: 49px;
+       line-height: 2.4;
+	   margin-top: 20px;
+	   font-weight: normal;
+       margin-bottom: 10px;
+	   text-align: center;
+	}
+	#infoMessage .header .header-wrapper .text{
+		font-size: 18px;
+	    margin: 0 0 10px;
+	} 
 	#infoMessage .message-section-1{
 	    margin-top: 100px;
 	    padding: 64px 70px;
@@ -263,9 +293,9 @@
 	    border-radius: 4px;
 	}
 	#infoMessage .btn-primary:focus{
-        background-color: #1f86ed; */
+        background-color: #1f86ed;
 	    border-color: #1f86ed;
-	    color: #fff;
+	    color:#fff;
 	}
 	#infoMessage .btn-primary{
         color: #fff;
@@ -280,13 +310,17 @@
 	    width: 476px;
 	    height: 360px;
 	    background-color: #a0a0a0;
-	}
-	#infoMessage .m-cover{
 		background-color: #1f86ed;
 	    background-size: cover;
 	    background-position: 50%;
 	    background-repeat: no-repeat;
 	}
+	/* #infoMessage .m-cover{
+		background-color: #1f86ed;
+	    background-size: cover;
+	    background-position: 50%;
+	    background-repeat: no-repeat;
+	} */
 	.message .message-section-1 .section-right{
 		float: right;
 	}
