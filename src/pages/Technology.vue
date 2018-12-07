@@ -14,7 +14,7 @@
 				<div class="technology-first-carousel">
 					<ul>
 						<li>
-							<div class="tfc-technology">
+							<div class="tfc-technology" @click="toTechnologyContant">
 		    				<div>
 		    					<img src="https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu" alt="">
 		    				</div>
@@ -42,49 +42,49 @@
 				<div class="screen">
 					<ul class="territory">
 						<li>所属领域</li>
-						<li>不限</li>
-						<li>能源电力</li>
-						<li>环境工程</li>
-						<li>化学化工</li>
-						<li>科技材料</li>
-						<li>生农医药</li>
-						<li>机械电子</li>
+						<li class="screen-css screen-territory" @click="changeScreenTer(0)">不限</li>
+						<li class="screen-css" @click="changeScreenTer(1)">能源电力</li>
+						<li class="screen-css" @click="changeScreenTer(2)">环境工程</li>
+						<li class="screen-css" @click="changeScreenTer(3)">化学化工</li>
+						<li class="screen-css" @click="changeScreenTer(4)">科技材料</li>
+						<li class="screen-css" @click="changeScreenTer(5)">生农医药</li>
+						<li class="screen-css" @click="changeScreenTer(6)">机械电子</li>
 					</ul>
 					<ul class="territory">
 						<li>应用行业</li>
-						<li>不限</li>
-						<li>环保行业</li>
-						<li>化工新材料行业</li>
-						<li>IT|通信|电子|互联网</li>
-						<li>生产|加工|制造</li>
-						<li>能源|电力</li>
-						<li>其它</li>
+						<li class="screen-css screen-territory" @click="changeScreenTer(7)">不限</li>
+						<li class="screen-css" @click="changeScreenTer(8)">环保行业</li>
+						<li class="screen-css" @click="changeScreenTer(9)">化工新材料行业</li>
+						<li class="screen-css" @click="changeScreenTer(10)">IT|通信|电子|互联网</li>
+						<li class="screen-css" @click="changeScreenTer(11)">生产|加工|制造</li>
+						<li class="screen-css" @click="changeScreenTer(12)">能源|电力</li>
+						<li class="screen-css" @click="changeScreenTer(13)">其它</li>
 					</ul>
 					<ul class="territory">
 						<li>成熟度</li>
-						<li>不限</li>
-						<li>小试</li>
-						<li>生试</li>
-						<li>中试</li>
+						<li class="screen-css screen-territory" @click="changeScreenTer(14)">不限</li>
+						<li class="screen-css" @click="changeScreenTer(15)">小试</li>
+						<li class="screen-css" @click="changeScreenTer(16)">生试</li>
+						<li class="screen-css" @click="changeScreenTer(17)">中试</li>
 					</ul>
 					<ul class="territory">
 						<li>来源地</li>
-						<li>不限</li>
-						<li>中国</li>
-						<li>中国(香港)</li>
-						<li>中国(台湾)</li>
-						<li>美国</li>
-						<li>德国</li>
-						<li>英国</li>
-						<li>日本</li>
-						<li>俄罗斯</li>
+						<li class="screen-css screen-territory" @click="changeScreenTer(18)">不限</li>
+						<li class="screen-css" @click="changeScreenTer(19)">中国</li>
+						<li class="screen-css" @click="changeScreenTer(20)">中国(香港)</li>
+						<li class="screen-css" @click="changeScreenTer(21)">中国(台湾)</li>
+						<li class="screen-css" @click="changeScreenTer(22)">美国</li>
+						<li class="screen-css" @click="changeScreenTer(23)">德国</li>
+						<li class="screen-css" @click="changeScreenTer(24)">英国</li>
+						<li class="screen-css" @click="changeScreenTer(25)">日本</li>
+						<li class="screen-css" @click="changeScreenTer(26)">俄罗斯</li>
 					</ul>
 					<ul class="territory">
 						<li>合作标签</li>
-						<li>不限</li>
-						<li>股权融资合作</li>
-						<li>市场渠道合作</li>
-						<li>落地孵化合作</li>
+						<li class="screen-css screen-territory" @click="changeScreenTer(27)">不限</li>
+						<li class="screen-css" @click="changeScreenTer(28)">股权融资合作</li>
+						<li class="screen-css" @click="changeScreenTer(29)">市场渠道合作</li>
+						<li class="screen-css" @click="changeScreenTer(30)">落地孵化合作</li>
 					</ul>
 				</div>
 			</div>
@@ -103,11 +103,11 @@
 									<i class="fa fa-phone"></i>&nbsp;联系技术方
 								</div>
 								<div class="use">
-									适用于:{{item.use}}
+									{{item.use}}
 								</div>
 								<div class="read">
-									<div class="readtime">浏览量:{{item.readtime}}</div>
-									<div class="infotime">咨询量:{{item.infotime}}</div>
+									<div class="readtime">{{item.readtime}}</div>
+									<div class="infotime">{{item.infotime}}</div>
 								</div>
 							</div>
 							<img :src="item.image" alt="">
@@ -141,11 +141,11 @@
 									<i class="fa fa-phone"></i>&nbsp;联系技术方
 								</div>
 								<div class="use">
-									适用于:{{item.use}}
+									{{item.use}}
 								</div>
 								<div class="read">
-									<div class="readtime">浏览量:{{item.readtime}}</div>
-									<div class="infotime">咨询量:{{item.infotime}}</div>
+									<div class="readtime">{{item.readtime}}</div>
+									<div class="infotime">{{item.infotime}}</div>
 								</div>
 						</div>
 						<img :src="item.image" alt="">
@@ -182,105 +182,105 @@
 		data(){
 			return{
 				product:[{
-        	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
-        	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
-        	description:"脱模剂是一种在轮胎硫化时介于胶囊和轮胎之间的功能性物质，起到润滑、隔...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"通用|工程塑料、天然|合成橡胶、表面处理、功能材料",
-        	readtime:12,
-        	infotime:5
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=255dd153-dd4e-4ed9-b41d-9e5dfd5de292&ProcessName=Logo",
+        	title:"人民路隧道",
+        	description:"人民路隧道为东西走向，西起...",
+        	site:"上海市",
+        	stage:"地下交通/地下道路",
+        	use:"人民路隧道为东西走向，西起黄浦区淮海东路...",
+        	readtime:"建成",
+        	infotime:"3090m"
         },{
-        	image:"https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq",
-        	title:"有机硅助剂－流平剂",
-        	description:"本技术方案是国家有机硅重点实验室研发团队提供，产品基本能达到德国某公...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"树脂",
-        	readtime:22,
-        	infotime:12
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessName=Logo&ProcessID=6dc3b762-931f-4e70-8b33-8e6994e3c248",
+        	title:"深圳万科云城智能立体车库",
+        	description:"深圳万科云城智能立体车库项...",
+        	site:"广东省",
+        	stage:"城市停车/智能立体停车",
+        	use:"深圳万科云城智能立体车库项目位于深圳市留",
+        	readtime:"工程项目",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/Fj6oIUyEekYqDgWLqoPe6pt8VmJn",
-        	title:"食品中违禁物残留检测",
-        	description:"国际上食品安全最权威的仲裁测定方法，产品价格是进口的25%左右，打破...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"仪器仪表及工业自动化",
-        	readtime:15,
-        	infotime:2
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=260293cd-1cbd-4825-90e7-b3a8b081805a&ProcessName=Logo",
+        	title:"重庆八一隧道",
+        	description:"重庆八一隧道位于重庆市渝中...",
+        	site:"重庆市",
+        	stage:"地下工程技术/非开挖技术",
+        	use:"重庆八一隧道位于重庆市渝中区，为双向6车道...",
+        	readtime:"建成",
+        	infotime:"1261m"
         },{
-        	image:"https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X",
-        	title:"绿色环保低成本的LED光催化有机合成技术",
-        	description:"LED光催化合成技术，是仿植物的光合作用来合成有机产品，以极低的成本...",
-        	site:"中国",
-        	stage:"中试阶段",
-        	use:"新型高分子材料、功能材料、医药|生物工程、光学",
-        	readtime:42,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=9c9a9a16-e029-4140-8c26-0345020e5eee&ProcessName=Logo",
+        	title:"鸿恩寺隧道",
+        	description:"鸿恩寺隧道位于重庆市江北区...",
+        	site:"重庆市",
+        	stage:"地下交通/地下道路",
+        	use:"鸿恩寺隧道位于重庆市江北区，是连接嘉华大...",
+        	readtime:"建成",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/Fk-6BgdAGybk136VAE44vrwbVZaS",
-        	title:"全自动轮毂打磨生产线",
-        	description:null,
-        	site:"中国",
-        	stage:"中试阶段",
-        	use:"大型设备|机电设备|重工业、仪器仪表及工业自动化、加工制造（原料加工|模具）",
-        	readtime:4029,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=46d4dfea-ef44-4dc8-aefb-7cfd9526167f&ProcessName=Logo",
+        	title:"拱北隧道",
+        	description:"拱北隧道为港珠澳大桥珠海连...",
+        	site:"广东省",
+        	stage:"地下交通/地下道路",
+        	use:"拱北隧道为港珠澳大桥珠海连接线的关键性工...",
+        	readtime:"建成",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/FmQQe-ZADjIlc3uGAoVScXxrJdlK",
-        	title:"欠驱动三指手爪系统",
-        	description:null,
-        	site:"中国",
-        	stage:"中试阶段",
-        	use:"仪器仪表及工业自动化、大型设备|机电设备|重工业",
-        	readtime:4029,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=f02b6b33-69d1-4c37-9779-0e7ff0dcfe2e&ProcessName=Logo",
+        	title:"厦门翔安海底隧道",
+        	description:"厦门翔安海底隧道 ，全长8.69...",
+        	site:"福建省",
+        	stage:"地下交通/地下道路",
+        	use:"厦门翔安海底隧道 ，全长8.695公里，从厦门本...",
+        	readtime:"建成",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/FqZKIIPTWXB46zq3LFCuXQ2Fe5Zx",
-        	title:"可节约空间的多叶光栅压电控制定位和驱动技术",
-        	description:null,
-        	site:"德国",
-        	stage:"中试阶段",
-        	use:"医疗|医疗设备|器械 ",
-        	readtime:4029,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=d5b1fce8-4d82-470c-afa9-d4867b160b5c&ProcessName=Logo",
+        	title:"武汉建设局塔库",
+        	description:"位于武汉市江汉区建设局内的...",
+        	site:"湖北省",
+        	stage:"城市停车/智能立体停车",
+        	use:"位于武汉市江汉区建设局内的武汉建设局塔库...",
+        	readtime:"工程项目",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/Fk8LX5Ck9zkV1j8PfrstHcy8vO0C",
-        	title:"运用传统中医药药食同源理论开发的女性“颜值”药食同源产品",
-        	description:null,
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"医药|生物工程 ",
-        	readtime:4029,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=305cc914-e40e-4a0a-9cc1-f6ee7e96a202&ProcessName=Logo",
+        	title:"胶州湾海底隧道",
+        	description:"胶州湾海底隧道，又称“青岛胶...",
+        	site:"山东省",
+        	stage:"地下交通/地下道路",
+        	use:"胶州湾海底隧道，又称“青岛胶州湾隧道”。南接...",
+        	readtime:"建成",
+        	infotime:"7800m"
         }],
         recommendProduct:[{
-        	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
-        	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
-        	description:"脱模剂是一种在轮胎硫化时介于胶囊和轮胎之间的功能性物质，起到润滑、隔...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"通用|工程塑料、天然|合成橡胶、表面处理、功能材料",
-        	readtime:12,
-        	infotime:5
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=255dd153-dd4e-4ed9-b41d-9e5dfd5de292&ProcessName=Logo",
+        	title:"人民路隧道",
+        	description:"人民路隧道为东西走向，西起...",
+        	site:"上海市",
+        	stage:"地下交通/地下道路",
+        	use:"人民路隧道为东西走向，西起黄浦区淮海东路...",
+        	readtime:"建成",
+        	infotime:"3090m"
         },{
-        	image:"https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq",
-        	title:"有机硅助剂－流平剂",
-        	description:"本技术方案是国家有机硅重点实验室研发团队提供，产品基本能达到德国某公...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"树脂",
-        	readtime:22,
-        	infotime:12
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessName=Logo&ProcessID=6dc3b762-931f-4e70-8b33-8e6994e3c248",
+        	title:"深圳万科云城智能立体车库",
+        	description:"深圳万科云城智能立体车库项...",
+        	site:"广东省",
+        	stage:"城市停车/智能立体停车",
+        	use:"深圳万科云城智能立体车库项目位于深圳市留",
+        	readtime:"工程项目",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/Fj6oIUyEekYqDgWLqoPe6pt8VmJn",
-        	title:"食品中违禁物残留检测",
-        	description:"国际上食品安全最权威的仲裁测定方法，产品价格是进口的25%左右，打破...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"仪器仪表及工业自动化",
-        	readtime:15,
-        	infotime:2
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=260293cd-1cbd-4825-90e7-b3a8b081805a&ProcessName=Logo",
+        	title:"重庆八一隧道",
+        	description:"重庆八一隧道位于重庆市渝中...",
+        	site:"重庆市",
+        	stage:"地下工程技术/非开挖技术",
+        	use:"重庆八一隧道位于重庆市渝中区，为双向6车道...",
+        	readtime:"建成",
+        	infotime:"1261m"
         }]
 			}
 		},
@@ -289,6 +289,9 @@
 			toTechnologyContant(){
     		this.$router.push('/technology/content')
     	},
+    	changeScreenTer(n){
+    		$(".screen-css").eq(n).addClass('screen-territory').siblings().removeClass('screen-territory')
+    	}
 		}
 	}
 </script>
@@ -298,6 +301,14 @@
 	}
 	div,span,li,p{
 		box-sizing: border-box;
+	}
+	/*搜索切换样式*/
+	.technology .screen-territory{
+		/*text-align: center;*/
+		/*min-width:20px;*/
+		border: 1px solid #4DAFED;
+		background-color: #E3F1FF;
+		color:#0A539A;
 	}
 	.technology{
 		position: relative;
@@ -416,24 +427,19 @@
 	.technology .screen > ul > li{
 		cursor:pointer;
 		float: left;
-		min-width: 4em;
-		height: 2em;
+		/*min-width: 4em;*/
+		/*height: 2em;*/
 		line-height: 2em;
-		text-align: left;
 		margin-left:1em;
+		padding:0.1em .5em;
 	}
 	.technology .screen > ul > li:first-child{
 		cursor:auto;
 		margin-left:0;
 		font-weight: bolder;
 		color: #333;
-	}
-	.technology .screen > ul > li:nth-child(2){
-		text-align: center;
-		width:20px;
-		border: 1px solid #4DAFED;
-		background-color: #E3F1FF;
-		color:#0A539A
+		width: 4em;
+		padding: 0
 	}
 	.technology .technology-nav{
 		position: relative;
@@ -560,7 +566,7 @@
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
-		width: 64px;
+		/*width: 64px;*/
 		height: 24px;
 		line-height: 24px;
 		text-align: center;

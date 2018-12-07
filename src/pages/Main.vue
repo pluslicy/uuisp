@@ -139,11 +139,11 @@
 								<i class="fa fa-phone"></i>&nbsp;联系技术方
 							</div>
 							<div class="use">
-								适用于:{{item.use}}
+								{{item.use}}
 							</div>
 							<div class="read">
-								<div class="readtime">浏览量:{{item.readtime}}</div>
-								<div class="infotime">咨询量:{{item.infotime}}</div>
+								<div class="readtime">{{item.readtime}}</div>
+								<div class="infotime">{{item.infotime}}</div>
 							</div>
 						</div>
 						<img :src="item.image" alt="">
@@ -301,7 +301,30 @@
 				<h1>成功案例</h1>
 				<p>技术创新，您也可以</p>
 			</div>
-			<div class="body"></div>
+			<div class="body">
+				<div class="ss-warp">
+					<div class="success-carousel">
+						<ul>
+							<li>
+								<img src="https://maikeji.cn/images/index/cases/mold.jpg" alt="">
+							</li>
+							<li>
+								<img src="https://maikeji.cn/images/index/cases/voc.jpg" alt="">
+							</li>
+							<li>
+								<img src="https://maikeji.cn/images/index/cases/gene.jpg" alt="">
+							</li>
+							<li>
+								<img src="https://maikeji.cn/images/index/cases/qingdao.jpg" alt="">
+							</li>
+							<li>
+								<img src="https://maikeji.cn/images/index/cases/environment.jpg" alt="">
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
 		</div>
 	</div>
 </template>
@@ -352,87 +375,87 @@
       		msg:"徐州某企业通过迈科技平台联系技术方自主对接成功，目前双方正就建厂、引进新设备等事宜展开合作。"
       	}],
         product:[{
-        	image:"https://res4.maikeji.cn/FgIhwvNzGxNJ5mEurIsvQw7euUBu",
-        	title:"可多次脱模的高性价比橡胶轮胎脱模剂",
-        	description:"脱模剂是一种在轮胎硫化时介于胶囊和轮胎之间的功能性物质，起到润滑、隔...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"通用|工程塑料、天然|合成橡胶、表面处理、功能材料",
-        	readtime:12,
-        	infotime:5
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=255dd153-dd4e-4ed9-b41d-9e5dfd5de292&ProcessName=Logo",
+        	title:"人民路隧道",
+        	description:"人民路隧道为东西走向，西起...",
+        	site:"上海市",
+        	stage:"地下交通/地下道路",
+        	use:"人民路隧道为东西走向，西起黄浦区淮海东路...",
+        	readtime:"建成",
+        	infotime:"3090m"
         },{
-        	image:"https://res4.maikeji.cn/FnjvrgRCSCRAWmouqdh6VPi2fALq",
-        	title:"有机硅助剂－流平剂",
-        	description:"本技术方案是国家有机硅重点实验室研发团队提供，产品基本能达到德国某公...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"树脂",
-        	readtime:22,
-        	infotime:12
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessName=Logo&ProcessID=6dc3b762-931f-4e70-8b33-8e6994e3c248",
+        	title:"深圳万科云城智能立体车库",
+        	description:"深圳万科云城智能立体车库项...",
+        	site:"广东省",
+        	stage:"城市停车/智能立体停车",
+        	use:"深圳万科云城智能立体车库项目位于深圳市留",
+        	readtime:"工程项目",
+        	infotime:null
         },{
-        	image:"https://res4.maikeji.cn/Fj6oIUyEekYqDgWLqoPe6pt8VmJn",
-        	title:"食品中违禁物残留检测",
-        	description:"国际上食品安全最权威的仲裁测定方法，产品价格是进口的25%左右，打破...",
-        	site:"中国",
-        	stage:"生试阶段",
-        	use:"仪器仪表及工业自动化",
-        	readtime:15,
-        	infotime:2
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=260293cd-1cbd-4825-90e7-b3a8b081805a&ProcessName=Logo",
+        	title:"重庆八一隧道",
+        	description:"重庆八一隧道位于重庆市渝中...",
+        	site:"重庆市",
+        	stage:"地下工程技术/非开挖技术",
+        	use:"重庆八一隧道位于重庆市渝中区，为双向6车道...",
+        	readtime:"建成",
+        	infotime:"1261m"
         },{
-        	image:"https://res4.maikeji.cn/FvxZYg8M3sHP9W1muYdpOdd54d2X",
-        	title:"绿色环保低成本的LED光催化有机合成技术",
-        	description:"LED光催化合成技术，是仿植物的光合作用来合成有机产品，以极低的成本...",
-        	site:"中国",
-        	stage:"中试阶段",
-        	use:"新型高分子材料、功能材料、医药|生物工程、光学",
-        	readtime:42,
-        	infotime:14
+        	image:"http://test.uuisp.cn/FileUpLoad/FileDownLoadLogo?ProcessID=9c9a9a16-e029-4140-8c26-0345020e5eee&ProcessName=Logo",
+        	title:"鸿恩寺隧道",
+        	description:"鸿恩寺隧道位于重庆市江北区...",
+        	site:"重庆市",
+        	stage:"地下交通/地下道路",
+        	use:"鸿恩寺隧道位于重庆市江北区，是连接嘉华大...",
+        	readtime:"建成",
+        	infotime:null
         }],
         counselor:[{
         	face:"https://res4.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa",
-        	name:"钱锋",
-        	position:"研究员",
-        	direction:["新型药物","呼吸性疾病发病机理与分子机制","高通量药物"],
-        	msg:"概况实验室简要介绍代表成果突出研究成果教学工作本科生：《微生物学与免疫学..."
+        	name:"施仲衡",
+        	position:"中国工程院院士、高级工程师（教授级）",
+        	direction:["轨道交通"],
+        	msg:"中国地铁工程咨询公司"
         },{
         	face:"https://res4.maikeji.cn/Fjfipb1pUJxqzNm12bdiE-ZDx4HO",
-        	name:"傅磊",
-        	position:"教授，博导",
-        	direction:["药物化学","慢性疼痛药物","糖尿病药物"],
-        	msg:"概况课题组成立于2006年初，主要从事化学药物、 药用化妆品和功能食品的..."
+        	name:"钱七虎",
+        	position:"中国工程院院士",
+        	direction:["防护工程","岩土工程"],
+        	msg:"中国工程院"
         },{
         	face:"https://res4.maikeji.cn/Fs88q36P3SlCS025FiNIOK9_sAqg",
-        	name:"许平",
-        	position:"教授",
-        	direction:["尼古丁","食品","应用与环境微生物"],
-        	msg:"论文Structural and computational studi..."
+        	name:"俞明健",
+        	position:"高级工程师（教授级",
+        	direction:["地下空间","道路交通"],
+        	msg:"上海市政工程设计研究总院（集团）有限公司"
         },{
         	face:"https://res4.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW",
-        	name:"郭圣荣",
+        	name:"陈志龙",
         	position:"教授",
-        	direction:["药物输送系统","新型医药用高分子材料","生物可降解高分子合成"],
-        	msg:"概况实验室简要介绍代表成果主要从事新型医药用高分子材料、药物输送系统的研..."
+        	direction:["地下空间与地下工程"],
+        	msg:"解放军理工大学"
         }],
         innovate:[{
         	img:"https://res4.maikeji.cn/FmJJBPl68Mh6pCle96rBjJS2fbTo",
-        	title:"【企业案例】高效！“自助”技术对接，达成合作仅用2天！",
-        	linkOne:"【迈科技】以市场为导向，专业科技服务让成...",
-        	linkTwo:"【迈科技】德清丨精准匹配，企业对接中科院..."
+        	title:"媒体聚焦 | 上海市政总院：专业服务平台助力创新发展",
+        	linkOne:"交通拥堵停车难、雨洪内涝“城市看海”、管线事故“拉链路”",
+        	linkTwo:"一系列影响市民生活的“城市病”也随之而来，而地上“问题”"
         },{
         	img:"https://res4.maikeji.cn/Fmwe-h9Ou9eeL9p4AOe2c-NOC3WA",
-        	title:"【服务指导】一图看懂2018年国家重点研发计划重点专...",
-        	linkOne:"你问我答 | 科研人员及科研助理实务问题...",
-        	linkTwo:"“科技创新券”让更多科技成果走出“深闺”"
+        	title:"地下空间 | 杭州将新增500万平方米地下空间",
+        	linkOne:" 本文转载自“钱江晚报”   △龚子皓/制图",
+        	linkTwo:"差不多再过两三年，大家去杭州武林商圈，不出地面就可以去往各个商场"
         },{
         	img:"https://res4.maikeji.cn/FuPlYHkO97XfT-yZ0RRM2XroY8sq",
-        	title:"【行业观察】最贵iphone发布，7nm的半导体工艺...",
+        	title:"综合管廊 | 城市地下综合管廊发展前景探讨",
         	linkOne:"科技部三定方案发布，成立成果转化与区域创...",
-        	linkTwo:"【迈科技】环保技术“走进园区”，共谋产业..."
+        	linkTwo:"  城市地下综合管廊是指在城市地下用于集中敷设电力等市政管线的公共隧道"
         },{
         	img:"https://res4.maikeji.cn/FuEqbaMMVc_b6S1EwRdwnSHMW20C",
-        	title:"【迈科技新闻】长治市副市长石建旺、山西省发改委副主任...",
-        	linkOne:"全球创业周丨技术转移+互联网模式初露数据...",
-        	linkTwo:"四川丨迈科技受邀第二期四川省技术经纪人培..."
+        	title:"智慧停车 | “停车难，停车贵” VS 智慧停车，你看好吗？",
+        	linkOne:"“停车难，难于上青天。”",
+        	linkTwo:"“去吃饭找不到停车位。”"
         }]
       };
     },
@@ -685,7 +708,7 @@ text-overflow: ellipsis;
 		color: #4BDCC6;
 	}
 	.main .content{
-		padding: 80px 0 40px 0;
+		padding: 80px 0 0 0;
 		width: 100%;
 	}
 	.main .content > .head{
@@ -786,7 +809,7 @@ text-overflow: ellipsis;
 		font-size: 16px;
 	}
 	.main .product-message > .stage{
-		width: 64px;
+		/*width: 64px;*/
 		height: 24px;
 		line-height: 24px;
 		text-align: center;
@@ -833,6 +856,7 @@ text-overflow: ellipsis;
 		display: none;
 	}
 	.main .counselor > .shade-counselor .msg,.particulars{
+		font-size: 18px;
 		color: #fff;
 		height: 140px;
 		line-height: 2em;
@@ -864,9 +888,9 @@ text-overflow: ellipsis;
 		margin:.3em 0;
 	}
 	.main p.position{
-		font-size: 20px;
+		font-size: 14px;
 		text-align: center;
-		margin:.3em 0;
+		margin:.3em 0 2em 0;
 	}
 	.main .counselor .direction{
 		display: flex;
@@ -974,9 +998,60 @@ text-overflow: ellipsis;
 	}
 	.main .innovate-link > div{
 		margin-top: .5em;
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	.main .innovate-link > div:hover a{
 		color: #1F86EF;
 		text-decoration:underline;
 	}
+	.main .ss-warp{
+		background-color: #efefef;
+		width: 100%;
+		margin-top: 2em
+	}
+	.main .success-carousel{
+		position: relative;
+		width: 900px;
+		height: 500px;
+		overflow: hidden;
+		margin:0 auto;
+	}
+	.main .success-carousel::after{
+		content:"";
+		display: block;
+		clear: both;
+	}
+	.main .success-carousel ul{
+		width: 4500px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		/*轮播*/
+		animation-name:success-carousel;
+		animation-duration:15s;
+		animation-fill-mode: both;
+		animation-direction: normal;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(5);
+	}
+	.main .success-carousel li{
+		float: left;
+		width: 900px;
+		height: 500px;
+		/*margin:0 50px;*/
+	}
+	.main .success-carousel li > img{
+		width: 900px;
+		height: 500px;
+	}
+	@keyframes success-carousel{
+			0%{
+				left:0;
+			}
+			100%{
+				left:-4500px;
+			}
+		}
 </style>

@@ -2,9 +2,9 @@
 <template>
   <div class="technologyContent">
   	<div class="technology-head-nav">
-  		<span>首页</span><i>></i>
-  		<span>技术</span><i>></i>
-  		<span>详情</span><i>></i>
+  		<span @click="toMain">首页</span><i>></i>
+  		<span @click="toTechnology">技术</span><i>></i>
+  		<span id="th-nav-last">详情</span>
   	</div>
     <div class="technology-msg">
     	<div class="technology-msg-img">
@@ -264,7 +264,12 @@
 			}
 		},
 		methods:{
-			
+			toMain(){
+	      this.$router.push('/')
+			},
+			toTechnology(){
+	      this.$router.push('/technology')
+	    },
 		}
 	}
 </script>
@@ -289,6 +294,9 @@
 	.technologyContent > .technology-head-nav > span{
 		margin-right: 0.5em;
 		cursor: pointer;
+	}
+	.technologyContent > .technology-head-nav > #th-nav-last{
+		color: #1E87ED;
 	}
 	.technologyContent > .technology-head-nav > span:hover{
 		color: #1E87ED;
