@@ -11,26 +11,26 @@
     </div>
     	<div class="list">
     		<ul class="bootPage">
-    			 <li class="item-first">活动类型</li>
-    			<li class="list-css list-bootPage" @click="changeItem(0)">不限</li>
-    			<li class="list-css" @click="changeItem(1)">展会论坛</li>
-    			<li class="list-css"@click="changeItem(2)">互动沙龙</li>
-    			<li class="list-css" @click="changeItem(3)">项目路演</li>
-    			<li class="list-css" @click="changeItem(4)">培训讲座</li>
-    			<li class="list-css" @click="changeItem(5)">走访考察</li>
-    			<li class="list-css" @click="changeItem(6)">线上分享</li>
+    			 <li class="item-first" @click="changeFirstPage">首页</li>
+    			<li class="list-css list-bootPage" @click="changeItem(0)">行业资讯</li>
+    			<li class="list-css" @click="changeItem(1)">政策法规</li>
+    			<li class="list-css"@click="changeItem(2)">文献资料</li>
+    			<li class="list-css" @click="changeItem(3)">资讯服务</li>
+    			<li class="list-css" @click="changeItem(4)">软件服务</li>
+    			<li class="list-css" @click="changeItem(5)">检测服务</li>
+    			<li class="list-css" @click="changeItem(6)">创新创业</li>
     			
     		</ul>
     	</div><br>
     	<div class="nav-1">
     		<div class="nav-1-1">
-    			<img style="width:310px;height:180px" src="https://res4.maikeji.cn/FssbvCnaFfUFW8ScbkpJ4cdxqXHl" alt="">
+    			<img style="width:310px;height:180px" src="http://www.uuisp.cn/images/upload/userPhoto/study_1.jpg" alt="">
     		</div>
     		<div class="nav-1-2">
     			<ul>
-    				<li id="filter">与资本零距离|创合会"商学院好项目"第十期路演会</li>
+    				<li id="filter">第四届"两岸城市轨道交通/捷运发展论坛"</li>
     				<li>活动时间：2018.12.09-2018.12.09</li>
-    				<li>简介：迈科技 创合会强强联合，携手百家投资机构，助力创业者精准对接，实现创业梦想</li>
+    				<li>发布机构：中国交通运输协会</li>
     				<!-- <a href=""> -->
                         <button  @click="changePage">我要报名</button>
                     <!-- </a> -->
@@ -41,13 +41,13 @@
         <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-2">
     		<div class="nav-2-1">
-    			<img style="width:310px;height:180px" src="https://res4.maikeji.cn/FvB-7IMYN14zo1DbhfrOwVwx5IgD" alt="">
+    			<img style="width:310px;height:180px" src="http://www.uuisp.cn/images/upload/userPhoto/study_1.jpg" alt="">
     		</div>
     		<div class="nav-2-2">
     			<ul>
-    				<a id="one" href=""><li>【讲座】吴晓波带你解读《避免失败》</li></a>
+    				<a id="one" href=""><li>第十二届轨道交通年会</li></a>
     				<a href=""><li>活动时间：2018.12.11-2018.12.13</li></a>
-    				<a href=""><li>简介：先报名享受会员优惠，赠送超值服务</li></a>
+    				<a href=""><li>发布机构：中国智能交通协会</li></a>
     				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
@@ -55,13 +55,13 @@
         <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-3">
     		<div class="nav-3-1">
-    			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/FhQtJGLFWeMtBaA9uiCZYasWDsYD" alt="">
+    			<img style="width:310px;height:180px"  src="http://www.uuisp.cn/images/upload/userPhoto/study_1.jpg" alt="">
     		</div>
     		<div class="nav-3-2">
     			<ul>
-    				<a id="two" href=""><li>第二届平湖市科技投融资接对接会</li></a>
+    				<a id="two" href=""><li>第八届管道技术与非开挖国际技术研讨会</li></a>
     				<a href=""><li>活动时间：201812.11-2018.12.31</li></a>
-    				<a href=""><li>简介：科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技投融资接对接会</li></a>
+    				<a href=""><li>发布机构：中国地质大学（武汉）中美联合非开挖工程研究中心</li></a>
     				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
@@ -69,13 +69,13 @@
         <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-4">
     		<div class="nav-4-1">
-    			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/Fhk0j9OoOT8IaQsP2pzjodCyS_0Q" alt="">
+    			<img style="width:310px;height:180px"  src="http://www.uuisp.cn/images/upload/userPhoto/study_1.jpg" alt="">
     		</div>
     		<div class="nav-4-2">
     			<ul>
-    				<a id="three" href=""><li>让技术与市场来一场真正的对话|迈科技公益大讲堂</li></a>
+    				<a id="three" href=""><li>2017(第六届)国际桥梁与隧道大会</li></a>
     				<a href=""><li>活动时间：201812.11-2018.12.31</li></a>
-    				<a href=""><li>简介：不让优质项目买没，真正让技术发挥价值</li></a>
+    				<a href=""><li>发布机构：防水排水专业委员会，上海市隧道工程轨道交通设计研究院</li></a>
     				<button  @click="changePage">我要报名</button>
     			</ul>
     		</div>
@@ -83,7 +83,7 @@
         <div style="border-bottom:1px solid #ccc" class="bottpm"></div>
     	<div class="nav-5">
     		<div class="nav-5-1">
-    			<img style="width:310px;height:180px"  src="https://res4.maikeji.cn/Fk1kiY55VQDnvqHwxjfnOj8hm2Wm" alt="">
+    			<img style="width:310px;height:180px"  src="http://www.uuisp.cn/images/upload/userPhoto/study_1.jpg" alt="">
     		</div>
     		<div class="nav-5-2">
     			<ul>
@@ -108,7 +108,7 @@
     </div>
     <div class="pop" style="border:1px solid #ccc">
     	<div class="top-1">
-    		活动回顾
+    		培训交流
     	</div><br>
     	<div class="top-2">
     		<img style="width:240px;height:180px;" src="https://res4.maikeji.cn/FpJ8zik8TTGnqipwgNp8m9UdKEtG" alt="">
@@ -147,9 +147,13 @@
         },
         changeItem(n){
             $(".list-css").eq(n).addClass('list-bootPage').siblings().removeClass('list-bootPage')
+        },
+        changeFirstPage(){
+            this.$router.push('/')
         }
             }
         }
+        
         
     
 </script>

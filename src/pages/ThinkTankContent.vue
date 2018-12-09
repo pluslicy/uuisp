@@ -20,7 +20,7 @@
     	<br>
     	<div class="talent">
     		<ul>
-    			<li style="color:#333333;font-size:20px;"><b>钱峰</b></li>
+    			<li style="color:#333333;font-size:20px;"><b>&nbsp;&nbsp; 施仲衡</b></li>
     			<li style="font-size:16px;">研究员&nbsp;&nbsp;|&nbsp;&nbsp;上海交通大学</li>
     		</ul>
     	</div><br>

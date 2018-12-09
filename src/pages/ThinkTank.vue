@@ -46,7 +46,7 @@
 						
 					<div style="width:300px;height:80px;background-color: white" class="name">
 						<ul>
-							<li><b>钱峰</b> 研究员</li>
+							<li><b>施仲衡</b> 研究员</li>
 							<li>上海交通大学|药学院</li>
 						</ul>
 					</div>
@@ -60,7 +60,7 @@
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fjfipb1pUJxqzNm12bdiE-ZDx4HO"  alt="">
 					<div style="width:300px;height:80px;background-color: white" class="name-1">
 						<ul>
-							<li><b>傅磊</b> 教授，博导</li>
+							<li><b>钱七虎</b> 教授，博导</li>
 							<li>上海交通大学|药学院</li>
 						</ul>
 					</div>
@@ -74,7 +74,7 @@
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fs88q36P3SlCS025FiNIOK9_sAqg" alt="">
 					<div style="width:300px;height:80px;background-color: white" class="name-3">
 						<ul>
-							<li><b>许平</b> 教授</li>
+							<li><b>俞明健</b> 教授</li>
 							<li>上海交通大学|生命与科学技术学院</li>
 						</ul>
 					</div>
@@ -88,7 +88,7 @@
 					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW"  alt="">
 					<div style="width:300px;height:80px;background-color: white" class="name-4">
 						<ul>
-							<li><b>郭圣荣</b> 教授</li>
+							<li><b>陈志龙</b> 教授</li>
 							<li>上海交通大学|药学院</li>
 						</ul>
 					</div>

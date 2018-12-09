@@ -12,13 +12,13 @@
     	</div>
     	<div class="rout">
     		<div class="router-1">
-    			<img style="margin-left:25px;margin-top:25px" src="https://res4.maikeji.cn/FhQtJGLFWeMtBaA9uiCZYasWDsYD" alt="">
+    			<img style="margin-left:25px;margin-top:25px;height:250px;width:500px" src="http://www.uuisp.cn/images/banner.jpg" alt="">
     		</div>
     		<div class="router-2">
     			<ul>
-    				<a style="color:#7aa5b6;font-size:25px" href=""><li>第二届平湖市科技企业投融资对接会</li></a>
+    				<a style="color:#7aa5b6;font-size:25px" href=""><li>上海市地下基础设施技术服务平台</li></a>
     				<a style="color:#898989;font-size:18px" href=""><li>活动时间：2018.12.01-2018.12.31 </li></a>
-    				<a style="color:#898989;font-size:18px" href=""><li>活动地点：浙江·平湖</li></a>
+    				<a style="color:#898989;font-size:18px" href=""><li>活动地点：上海·平湖</li></a>
     				<a href=""><button>我要报名</button></a>
     			</ul>
     		</div>
@@ -28,7 +28,7 @@
     	<div class="card-1">
     		<ul>
     			<li>活动简介</li>
-    			<li>科技赋能，激发创新活力，诚邀各位参加第二届平湖市科技企业投融资对接会</li>
+    			<li>科技赋能，激发创新活力，诚邀各位参加上海市地下基础设施技术服务平台交流会</li>
     		</ul>
     	</div><hr>
     	<div class="card-2">
@@ -36,7 +36,7 @@
     			<a style="color:#1f86ed;font-size:20px;font-weight:bolder;" href=""><li>活动详情</li></a>
     			<a style="color: rgb(51, 51, 51);;font-weight: bolder;"  href=""><li>一、活动概况</li></a>
     			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动时间</span>：2018年12月（拟）</li></a>
-    			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动地点</span>：浙江平湖圣雷克大酒店</li></a>
+    			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动地点</span>：上海平湖圣雷克大酒店</li></a>
     			<a style="color: rgb(51, 51, 51);;" href=""><li><span style="color: rgb(51, 51, 51);;font-weight: bolder;">活动规模</span>：100人左右</li></a>
     		</ul>
     	</div><br>
@@ -165,7 +165,7 @@
 	}
 	.router-2{
 		position:absolute;
-		left:470px;
+		left:550px;
 		top:25px;
 		line-height:65px;
 	}
