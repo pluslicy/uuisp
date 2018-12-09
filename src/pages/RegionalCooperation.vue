@@ -232,6 +232,7 @@
           <div>
               <label class="note">留言内容</label>
               <textarea name="" id="" cols="30" rows="10" placeholder="请输入您的留言内容"></textarea>
+              <button class="submitNote">提交内容</button>
             </div>
         </div>
       </div>
@@ -626,7 +627,7 @@
     background-image: url("../assets/regional/bg-1.jpg");
     background-repeat: no-repeat;
     background-position: top;
-    height:2500px; 
+    height:1600px; 
   }
   .regional .station-conditions-container{
     height: 520px;
@@ -813,6 +814,8 @@
     height: 50px;
     padding: 0 20px;
     font-size:16px;
+    border: 1px solid #ccc;
+    font-family:'微软雅黑';
   }
   .regional .station-conditions-container .station-form>div:first-of-type input:nth-of-type(2){
     width: 128px;
@@ -821,6 +824,7 @@
     display: inline-block;
     background-color: #fff;
     border: 1px solid #ccc;
+    transform: translateY(1px);
     width: 70px;
     margin-right: 20px;
     height: 50px;
@@ -835,14 +839,14 @@
     width: 128px;
     min-width: 128px;
     background-color: #1f86ed;
-    height: 54px;
+    height: 52px;
     font-size: 18px;
     letter-spacing: 1px;
     outline: none;
     border: 1px solid #1f86ed;
     margin-left:-6px;
     color:#fff;
-    transform: translateY(2px);
+    transform: translateY(1px);
   }
   .btn-send-code:focus {
     background-color: #1f86ed;
@@ -854,12 +858,25 @@
   .station-form .note{
     margin-top:40px;
   }
-  .regional .station-conditions-container  textarea {
+  .regional .station-conditions-container  textarea{
     display: block;
     width: 1210px;
     height: 175px;
     padding: 15px;
     font-size:16px;
+    border: 1px solid #ccc;
+    font-size:16px;
+    font-family:'微软雅黑';
   }
-
+  .submitNote{
+    width: 100%;
+    margin-top: 20px;
+    height: 54px;
+    background-color: #0e5aa5;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    transition: .5s;
+  }
 </style>
