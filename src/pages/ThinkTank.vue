@@ -1,7 +1,7 @@
 <!-- 首页 -->
 <template>
 	<div class="ThinkTank">
-		<div class="content" style="border:1px solid #ccc">
+		<div class="cencent">
 			<div class="warperrr">
 			<div class="biaoti">
 				<h1>有问题&nbsp;&nbsp;找专家</h1>
@@ -16,6 +16,8 @@
 			</div><br>
 			<br>
 			<br>
+			
+
 			<div class="zhuanjia">
 				<i>入&nbsp;驻&nbsp;专&nbsp;家</i>
 			</div><br>
@@ -41,8 +43,8 @@
 						</ul>
 						
 					</div>
-					<
-					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa" alt="">
+				
+					<img style="width:300px;height:330px;margin-left:15px" src="https://res4.maikeji.cn/FlcdTlvZyfwZe8gLMBqMPwTagWoa" alt="">
 						
 					<div style="width:300px;height:80px;background-color: white" class="name">
 						<ul>
@@ -85,7 +87,7 @@
 							<li><li><li @click="changePageOne"><i style="border:1px solid white; padding:10px">药物输送</i>&nbsp;&nbsp;&nbsp;&nbsp;<i style="border:1px solid white;padding:10px">新型药品</i></li></li></li>
 						</ul>
 					</div>
-					<img style="width:300px;height:330px" src="https://res4.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW"  alt="">
+					<img style="width:300px;height:330px;" src="https://res4.maikeji.cn/Fn6QnLSS8ORdQdT3C4eMC2ngB6NW"  alt="">
 					<div style="width:300px;height:80px;background-color: white" class="name-4">
 						<ul>
 							<li><b>陈志龙</b> 教授</li>
@@ -97,8 +99,10 @@
 			<div class="morethan">
 				查看更多医药科学类专家
 			</div><br>
+			</div>
 			<br>
 			<br>
+			<div class="sizing">
 			<div class="help">
 				合作机构
 			</div><br>
@@ -134,15 +138,23 @@
 </script>
 <style>
  .ThinkTank{
-	width:1240px;
-	margin:0 auto;
+	
 	background-color:#ebe9ea;
+
+}
+.sizing{
+	background-color: white;
+
+
 }
 i{
 	font-style:normal;
 }
-.content{
+.cencent{
 	position:relative;
+	width:1240px;
+	margin:0 auto;
+	background-color:#ebe9ea;
 	
 }
 .content .warperrr{
@@ -233,6 +245,8 @@ i{
 		line-height:40px;
 		font-size:16px;
 		margin-left:15px;
+		
+
 	}
 	.content .name-1{
 		text-align:center;
@@ -329,6 +343,7 @@ i{
 		text-align:center;
 		font-size:40px;
 		color:#333333;
+		padding-top:30px;
 	}
 	.content .toget{
 		text-align:center;
@@ -337,7 +352,9 @@ i{
 	.content .boot{
 		width:1240px;
 		height:600px;
-		background-color: lightblue;
+		background-color: white;
+		margin:0 auto;
+
 	}
 	
 	.content .look{
@@ -345,6 +362,7 @@ i{
 		font-size:25px;
 		color:#156fb8;
 		text-decoration:underline;
+		margin-bottom:2em;
 
 	}
 	
