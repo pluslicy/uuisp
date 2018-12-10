@@ -82,9 +82,9 @@
               </div>
             </div>
             <div class="station-pr-img">
-              <img src="../assets/regional/1-1.png" alt="">
-              <img src="../assets/regional/1-2.png" alt="">
-              <img src="../assets/regional/1-3.png" alt="">
+              <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/1-1.png" alt="">
+              <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/1-2.png" alt="">
+              <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/1-3.png" alt="">
             </div>
           </li>
           <li class="station-products ta">
@@ -163,7 +163,7 @@
           <ul class="station-conditions">
             <li>
               <div class="station-conditions-circle">
-                <img src="../assets/regional/circle.png" alt="">
+                <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/circle.png" alt="">
                 <span>1</span>
               </div>
               <p>
@@ -172,7 +172,7 @@
             </li>
             <li>
               <div class="station-conditions-circle">
-                <img src="../assets/regional/circle.png" alt="">
+                <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/circle.png" alt="">
                 <span>2</span>
               </div>
               <p>
@@ -181,7 +181,7 @@
             </li>
             <li>
               <div class="station-conditions-circle">
-                <img src="../assets/regional/circle.png" alt="">
+                <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/circle.png" alt="">
                 <span>3</span>
               </div>
               <p>
@@ -190,7 +190,7 @@
             </li>
             <li>
               <div class="station-conditions-circle">
-                <img src="../assets/regional/circle.png" alt="">
+                <img src="https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/circle.png" alt="">
                 <span>4</span>
               </div>
               <p>
@@ -261,7 +261,8 @@
   .regional .station-banner{
     height: 840px;
     padding-top: 220px;
-    background-image: url("../assets/regional/banner.jpg");
+    /*background-image: url("../assets/regional/banner.jpg");*/
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/banner.jpg");
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -423,7 +424,7 @@
     position: relative;
     overflow: hidden;
     background-color: #fafbfc;
-    background-image: url("../assets/regional/products-bg.png");
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/products-bg.png");
     background-position: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -573,16 +574,18 @@
     box-sizing: border-box;
   }
   .regional .station-content-container  .station-support li:first-of-type {
-    background-image: url("../assets/regional/support-1.png");
+    /*background-image: url("../assets/regional/support-1.png");*/
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/support-1.png");
+
   }
   .regional .station-content-container  .station-support li:nth-of-type(2) {
-    background-image: url("../assets/regional/support-2.png");
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/support-2.png");
   }
   .regional .station-content-container  .station-support li:nth-of-type(3) {
-    background-image: url("../assets/regional/support-3.png");
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/support-3.png");
   }
   .regional .station-content-container  .station-support li:nth-of-type(4) {
-    background-image: url("../assets/regional/support-4.png");
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/support-4.png");
   }
   .regional .station-content-container  .station-support li{
     height: 100%;
@@ -624,7 +627,8 @@
   }
   .regional section{
     padding-top: 70px;
-    background-image: url("../assets/regional/bg-1.jpg");
+    /*background-image: url("../assets/regional/bg-1.jpg");*/
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/bg-1.jpg");
     background-repeat: no-repeat;
     background-position: top;
     height:1600px; 
@@ -719,7 +723,9 @@
     background-color: #fff;
     box-shadow: 0 0 15px #828282;
     border-radius: 7px;
-    background-image: url("../assets/regional/bg-2.png");
+    /*background-image: url("../assets/regional/bg-2.png");*/
+    background-image: url("https://raw.githubusercontent.com/pluslicy/uuisp/master/src/assets/regional/bg-2.png");
+
     background-repeat: no-repeat;
     background-position: 630px 0;
   }
