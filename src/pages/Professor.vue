@@ -68,7 +68,7 @@
         </div>
       </div>
       <!-- 列表 -->
-      <div class="lib-recommend-container">
+      <div class="lib-recommend-container-xuge">
         <ul class="list">
           <li class="list-item null-hint" v-for="item in listData">
             <a href="#" class="m-cover" target="_black">{{item.header}}</a>
@@ -293,11 +293,11 @@
     color: #0a539a;
     outline: 1px solid #4dafed;
   }
-  .professor .card2 .lib-recommend-container{
+  .professor .card2 .lib-recommend-container-xuge{
     width:1240px;
     margin:0 auto;
   }
-  .professor .card2 .lib-recommend-container .list-item{
+  .professor .card2 .lib-recommend-container-xuge .list-item{
     display: flex;
     -ms-flex-align: center;
     align-items: center;
@@ -310,7 +310,7 @@
     box-sizing: border-box;
   }
 
-  .professor .card2 .lib-recommend-container .list-item .m-cover{
+  .professor .card2 .lib-recommend-container-xuge .list-item .m-cover{
     margin-right: 30px;
     height: 100px;
     line-height: 100px;
@@ -325,7 +325,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
   }
-  .professor .card2 .lib-recommend-container .list-item .item-content{
+  .professor .card2 .lib-recommend-container-xuge .list-item .item-content{
     -ms-flex-positive: 1;
     flex-grow: 1;
     display: -ms-flexbox;
@@ -336,28 +336,28 @@
     justify-content: space-between;
     height: 180px;
   }
-  .professor .card2 .lib-recommend-container .list-item .item-content .title{
+  .professor .card2 .lib-recommend-container-xuge .list-item .item-content .title{
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 20px;
     color: #2a2a2a;
   }
-  .professor .card2 .lib-recommend-container .list-item:hover .item-content .title .hover{
+  .professor .card2 .lib-recommend-container-xuge .list-item:hover .item-content .title .hover{
     color: #337ab7;
   };
-  .professor .card2 .lib-recommend-container .list .list-item .item-content .title .prefix{
+  .professor .card2 .lib-recommend-container-xuge .list .list-item .item-content .title .prefix{
   } 
-  .professor .card2 .lib-recommend-container .list .list-item .item-content .inner .hre .title .prefix{
+  .professor .card2 .lib-recommend-container-xuge .list .list-item .item-content .inner .hre .title .prefix{
     display: inline-block;
     margin-left: -12px;
     color: #f7b52d;
   }
-  .professor .card2 .lib-recommend-container .list .list-item .item-content .inner .brief{
+  .professor .card2 .lib-recommend-container-xuge .list .list-item .item-content .inner .brief{
     line-height: 1.8;
     font-size: 16px;
     color: #858585;
   }
-  .professor .card2 .lib-recommend-container .list .list-item .item-content .text-container{
+  .professor .card2 .lib-recommend-container-xuge .list .list-item .item-content .text-container{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -366,43 +366,43 @@
     font-size: 14px;
     line-height: 1;
   }
-  .professor .card2 .lib-recommend-container .list-pagination{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination{
     height:81px;
     padding-right: 28px;
     text-align: right;
     display: block;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination{
     display: inline-block;
     padding-left: 0;
     margin: 20px 0;
     border-radius: 4px;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li {
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li {
     display: inline-block;
     width:36px;
     height: 36px;
     border:2px solid rgb(31, 134, 237);
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li:first-child{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li:first-child{
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li:last-child{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li:last-child{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     width:80px;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li:last-child>a{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li:last-child>a{
     width:80px;
     color:#fff;
     background-color: #1f86ed;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li:first-child>a{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li:first-child>a{
     background-color: #1f86ed;
     color:#fff;
   }
-  .professor .card2 .lib-recommend-container .list-pagination .pagination>li>a{
+  .professor .card2 .lib-recommend-container-xuge .list-pagination .pagination>li>a{
     color: #1f86ed;
     border-color: #1f86ed;
     margin-left: 0;
