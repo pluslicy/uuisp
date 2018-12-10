@@ -324,4 +324,7 @@
 	    border: .5px solid #eee;
 	    box-shadow: 0 0 0.5px rgba(0,0,0,.2);
 	}
+	.message-section-1.card {
+		width: 100%;
+	}
 </style>
