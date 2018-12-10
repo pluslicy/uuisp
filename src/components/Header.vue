@@ -33,13 +33,25 @@
 
         <div class="header-nav-right">
           <div class="nav-service">
-            <span class="nav-service-span"><a href="http://127.0.0.1:8080/#/enterprise" target="_blank">企业服务</a></span>
+            <span class="nav-service-span">
+              <a>
+              <router-link target="_blank" to="/enterprise">企业服务</router-link>
+              </a>
+            </span>
           </div>
           <div class="nav-cooperation">
-            <span class="nav-cooperation-span"><a href="http://127.0.0.1:8080/#/regional" target="_blank">区域合作</a></span>
+            <span class="nav-cooperation-span">
+              <a>
+                <router-link target="_blank" to="/regional">区域合作</router-link>
+              </a>
+            </span>
           </div>
           <div class="nav-experts">
-            <span class="nav-experts-span"><a href="http://127.0.0.1:8080/#/professor" target="_blank">我是专家</a></span>
+            <span class="nav-experts-span">
+              <a>
+                <router-link target="_blank" to="/professor">我是专家</router-link>
+              </a>
+            </span>
           </div>
           <div class="nav-login">
             <!-- <span class="nav-login-span">
@@ -245,6 +257,17 @@ export default {
       $('.bg-one').animate({opacity:1},5000,function(){
         that.play1();
       })
+    },
+
+    herfService(){
+      // window.location.href = '/enterprise';
+    },
+    herfCooperation(){
+      // window.location.href = '/regional';
+    },
+    herfExperts(){
+      // window.open('/professor','target','');
+      // window.location.href = '/professor';
     },
   },
 }
