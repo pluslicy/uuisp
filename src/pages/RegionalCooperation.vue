@@ -124,26 +124,26 @@
       <ul class="station-support">
         <li>
           <div>
-            <div>品牌赋能</div>
-            <p>科技品牌授权，市场资源支持等。</p>
+            <div class="one">品牌赋能</div>
+            <div class="two">科技品牌授权，市场资源支持等。</div>
           </div>
         </li>
         <li>
           <div>
-            <div>品牌赋能</div>
-            <p>科技品牌授权，市场资源支持等。</p>
+            <div class="one">品牌赋能</div>
+            <div class="two">科技品牌授权，市场资源支持等。</div>
           </div>
         </li>
         <li>
           <div>
-            <div>品牌赋能</div>
-            <p>科技品牌授权，市场资源支持等。</p>
+            <div class="one">品牌赋能</div>
+            <div class="two">科技品牌授权，市场资源支持等。</div>
           </div>
         </li>
         <li>
           <div>
-            <div>品牌赋能</div>
-            <p>科技品牌授权，市场资源支持等。</p>
+            <div class="one">品牌赋能</div>
+            <div class="two">科技品牌授权，市场资源支持等。</div>
           </div>
         </li>
       </ul>
@@ -602,14 +602,14 @@
     position:absolute;
     top:245px;
   }
-  .regional .station-content-container  .station-support li>div>div{
+  .regional .station-content-container  .station-support li>div>div.one{
     height: 100px;
     line-height: 100px;
     text-align: center;
     font-size: 26px;
     font-weight: 700;
   }
-  .regional .station-content-container  .station-support li>div>p{
+  .regional .station-content-container  .station-support li>div>div.tow{
     font-size: 20px;
     line-height: 40px;
     margin: 0 0 10px;
