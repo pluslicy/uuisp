@@ -47,6 +47,9 @@ a {
   color: #707070;
   text-decoration: none;
 }
+#app .content{
+  padding: 0 0 1em 0;
+}
 /* #app .content{
   width: 1240px;
   margin: 0 auto;

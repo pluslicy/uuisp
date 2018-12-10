@@ -131,7 +131,7 @@
 		},
 		methods:{
 			 changePageOne (){
-                this.$router.push('/thinkTank/content')
+                this.$router.push('/thinkTank/ThinkTank')
         },
 		}
 	}
@@ -150,97 +150,97 @@
 i{
 	font-style:normal;
 }
-.cencent{
+.ThinkTank{
 	position:relative;
 	width:1240px;
 	margin:0 auto;
 	background-color:#ebe9ea;
 	
 }
-.content .warperrr{
+.ThinkTank .warperrr{
 	position:absolute;
 	top:-300px;
 	z-index:1000;
 	left:40%;
 }
-	.content .biaoti{
+	.ThinkTank .biaoti{
 		text-align:center;
 		font-size:16px;
 		color:white;
 	}
-	.content .fubiao{
+	.ThinkTank .fubiao{
 		text-align:center;
 		font-size:26px;
 		color:#a9dbfe;
 		font-weight:lighter;
 	}
-	.content .input{
+	.ThinkTank .input{
 		position:absolute;
 		top:-150px;
 		z-index:1000;
 		left:310px;
 	}
-	.content .input i{
+	.ThinkTank .input i{
 		margin-left:-5px;
 		background-color:#156fb8;
 		padding:12px 13px 12px 20px;
 		color:white;
 		font-size:18px;
 	}
-	.content .input i:hover{
+	.ThinkTank .input i:hover{
 		cursor:pointer;
 		background-color:#395a77;
 	}
-	.content .zhuanjia {
+	.ThinkTank .zhuanjia {
 		text-align:center;
 		
 	}
-	.content .zhuanjia i{
+	.ThinkTank .zhuanjia i{
 		font-weight: lighter;
 		font-size:40px;
 		color:#333333;
 	}
-	.content .title-1{
+	.ThinkTank .title-1{
 		text-align:center;
 		color:#333333;
 	}
-	.content .title-2{
+	.ThinkTank .title-2{
 		text-align:center;
 		font-size:28px;
 		font-weight:bolder;
 	}
-	.content .title-2 i:hover{
+	.ThinkTank .title-2 i:hover{
 		color:#156fb8;
 		cursor:pointer;
 	}
-	.content .pic{
+	.ThinkTank .pic{
 		position:relative;
 	}
 	
 	
-.content .pic .pic-1{
+.ThinkTank .pic .pic-1{
 	position:absolute;
 		left:-15px;
 		
 }
-	.content .pic .pic-2{
+	.ThinkTank .pic .pic-2{
 		position:absolute;
 		left:312px;
 		
 
 	}
-	.content .pic .pic-3{
+	.ThinkTank .pic .pic-3{
 		position:absolute;
 		left:626px;
 		
 	}
-	.content .pic .pic-4{
+	.ThinkTank .pic .pic-4{
 		position:absolute;
 		left:940px;
 		
 
 	}
-	.content .name{
+	.ThinkTank .name{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
@@ -248,33 +248,33 @@ i{
 		
 
 	}
-	.content .name-1{
+	.ThinkTank .name-1{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 
 	}
-	.content .name-2{
+	.ThinkTank .name-2{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 	}
-	.content .name-3{
+	.ThinkTank .name-3{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 	}
-	.content .name-4{
+	.ThinkTank .name-4{
 		text-align:center;
 		line-height:40px;
 		font-size:16px;
 		margin-top:-3px;
 
 	}
-	.content .pic-1{
+	.ThinkTank .pic-1{
 		position:relative;
 	}
-	.content .model{
+	.ThinkTank .model{
 		left:15px;
 		color:white;
 		line-height:410px;
@@ -285,11 +285,11 @@ i{
 		background:rgba(0,0,0,0.5);
 		 display:none; 
 	}
-	.content .pic-1:hover .model{
+	.ThinkTank .pic-1:hover .model{
 		display:block;
 		cursor:pointer;
 	}
-	.content .model-1{
+	.ThinkTank .model-1{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -299,11 +299,11 @@ i{
 		background:rgba(0,0,0,0.5);
 		display:none;
 	}
-	.content .pic-2:hover .model-1{
+	.ThinkTank .pic-2:hover .model-1{
 		display:block;
 		cursor:pointer;
 	}
-	.content .model-3{
+	.ThinkTank .model-3{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -313,11 +313,11 @@ i{
 		background:rgba(0,0,0,0.5);
 		display:none;
 	}
-	.content .pic-3:hover .model-3{
+	.ThinkTank .pic-3:hover .model-3{
 		display:block;
 		cursor:pointer;
 	}
-	.content .model-4{
+	.ThinkTank .model-4{
 		color:white;
 		line-height:410px;
 		text-align:center;
@@ -328,28 +328,28 @@ i{
 		display:none;
 
 	}
-	.content .pic-4:hover .model-4{
+	.ThinkTank .pic-4:hover .model-4{
 		display:block;
 		cursor:pointer;
 	}
-	.content .morethan{
+	.ThinkTank .morethan{
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
 		margin-top:500px;
 		text-decoration:underline;
 	}
-	.content .help{
+	.ThinkTank .help{
 		text-align:center;
 		font-size:40px;
 		color:#333333;
 		padding-top:30px;
 	}
-	.content .toget{
+	.ThinkTank .toget{
 		text-align:center;
 		color:black;
 	}
-	.content .boot{
+	.ThinkTank .boot{
 		width:1240px;
 		height:600px;
 		background-color: white;
@@ -357,7 +357,7 @@ i{
 
 	}
 	
-	.content .look{
+	.ThinkTank .look{
 		text-align:center;
 		font-size:25px;
 		color:#156fb8;
